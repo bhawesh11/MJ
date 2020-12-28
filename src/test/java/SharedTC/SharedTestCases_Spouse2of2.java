@@ -10,8 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_Spouse2of2 {
 
-    
-    
     public void Spouse2of2(Testing test) {
         test.setPage(Spouse2of2.class);
         Spouse2of2 spouse = (Spouse2of2) PageFactory.initElements(test.driver, test.getPage());

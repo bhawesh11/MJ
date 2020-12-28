@@ -12,17 +12,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_InsuranceHistory {
 
-    
-    
-
     public void insuranceHistory_Yes(Testing test) {
         test.setPage(InsuranceHistory.class);
         InsuranceHistory insuranceHistory = (InsuranceHistory) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test,insuranceHistory.btn_CurrentlyInsured,test.getTestData("InsuranceHistory.CurrentlyInsured"));
-        test.webFunctions().dropdown(test,insuranceHistory.dropdown_InsuranceProvider, test.getTestData("InsuranceHistory.CurrentInsuranceProvider"));
-        test.webFunctions().dropdown(test,insuranceHistory.dropdown_YearsWithCurrentInsuranceProvider, test.getTestData("InsuranceHistory.YearswithCurrentInsurer"));
-        test.webFunctions().dropdown(test,insuranceHistory.dropdown_BILimit, test.getTestData("InsuranceHistory.BILimit"));
-        test.webFunctions().dropdown(test,insuranceHistory.dropdown_Uninsured, test.getTestData("InsuranceHistory.Uninsuredinlast3years"));
+        test.webFunctions().click(test,insuranceHistory.dropdownInsuranceProvider);
+        test.webFunctions().click(test,insuranceHistory.dropdownInsuranceProvider_Select, test.getTestData("InsuranceHistory.CurrentInsuranceProvider"));
+        test.webFunctions().click(test,insuranceHistory.dropdownYearsWithCurrentInsuranceProvider);
+        test.webFunctions().click(test,insuranceHistory.dropdownYearsWithCurrentInsuranceProvider_Select, test.getTestData("InsuranceHistory.YearswithCurrentInsurer"));
+        test.webFunctions().click(test,insuranceHistory.dropdownBILimit);
+        test.webFunctions().click(test,insuranceHistory.dropdownBILimit_Select, test.getTestData("InsuranceHistory.BILimit"));
+        test.webFunctions().click(test,insuranceHistory.dropdownUninsured);
+        test.webFunctions().click(test,insuranceHistory.dropdownUninsured_Select, test.getTestData("InsuranceHistory.Uninsuredinlast3years"));
         test.webFunctions().click(test,insuranceHistory.btn_Next);
         test.getLogger().info("Insurance History page: Success!");
     }
@@ -33,7 +34,7 @@ public class SharedTestCases_InsuranceHistory {
         test.setPage(InsuranceHistory.class);
         InsuranceHistory insuranceHistory = (InsuranceHistory) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test,insuranceHistory.btn_CurrentlyInsured,test.getTestData("InsuranceHistory.CurrentlyInsured"));
-        test.webFunctions().dropdown(test,insuranceHistory.dropdown_Reason, test.getTestData("InsuranceHistory.Reason"));
+        test.webFunctions().dropdown(test,insuranceHistory.dropdownReason, test.getTestData("InsuranceHistory.Reason"));
         test.webFunctions().click(test,insuranceHistory.btn_Next);
         test.getLogger().info("Insurance History page: Success!");
     }

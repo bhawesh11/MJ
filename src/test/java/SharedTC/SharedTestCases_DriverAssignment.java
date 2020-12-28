@@ -9,9 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_DriverAssignment {
 
-    
-    
-
     public void driverAssignment(Testing test) {
         test.setPage(DriverAssignment.class);
         DriverAssignment driverAssignment = (DriverAssignment) PageFactory.initElements(test.driver, test.getPage());

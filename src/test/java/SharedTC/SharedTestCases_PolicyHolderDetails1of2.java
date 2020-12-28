@@ -10,9 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_PolicyHolderDetails1of2 {
 
-    
-    
-
     //	POLICYHOLDER-DETAILS-1
     public void policyHolderDetails1of2(Testing test) {
         test.setPage(PolicyholderDetails1of2.class);

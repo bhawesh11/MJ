@@ -9,10 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_GetInfo {
 
-
-    
-    
-
     //For Getting the Policy Number
     public  void GetPolicyNumber(Testing test)
     {

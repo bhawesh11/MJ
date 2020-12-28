@@ -8,15 +8,14 @@ public class Output {
 	private JSONObject output;
 
 	// CONSTRUCTOR:
-	Output(Database db, String brandName, String environment) {
+	Output(TestData td) {
 		try {
-			String json = db.getPolicyDetails(brandName,environment);
-			if(json==null){
-				json="{\"Policy No\":\"247-000-000-02\"}";
-			}
-			output = new JSONObject(json);
-			output.put("Password", "Passw0rd");
-			output.put("ZIP", "75001");
+			//String json = db.getPolicyDetails(brandName,environment);
+			//if(json==null){
+				//json="{\"Policy No\":\"247-000-000-02\"}";
+			//}
+			output = new JSONObject();
+			output.put("LastName", td.createRandomString(6));
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
