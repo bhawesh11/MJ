@@ -34,6 +34,16 @@ public class PolicyholderDetails1of2 {
 	@FindBy(how=How.ID,using="btnNext")
 	public WebElement btn_Continue;
 			
-	
+    @FindBy(how=How.XPATH,using="//*[@identity='driverOccupation']/div/div/ul/li[1]")
+    public WebElement Occupation_options;
+	   
+    @FindBy(how=How.XPATH,using="//*[@identity='daysDrive']/div/label[text()='{0}']")
+    public WebElement Days_drive;
+	   
+    @FindBy(how=How.XPATH,using="//*[@identity='attendingSchool']/div/label[text()='{0}']")
+    public WebElement attending_School;
+	           
+    @FindBy(how=How.XPATH,using="//*[@identity='wfh']/div/label[text()='{0}']")
+    public WebElement WFH;
 	
 }

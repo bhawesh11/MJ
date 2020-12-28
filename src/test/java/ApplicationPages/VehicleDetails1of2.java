@@ -11,20 +11,34 @@ public class VehicleDetails1of2 {
 	public WebElement textBox_Year;
 	
 	@FindBy(how=How.ID,using="vehicleMake")
-	public WebElement dropDown_Make;
+	public WebElement dropDownMake;
+	
+	public String dropDownMake_Select = "//*[@id='vehicleMake']/option[contains(text(),'{0}')]";
 	
 	@FindBy(how=How.ID,using="vehicleModel")
-	public WebElement dropDown_Model;
+	public WebElement dropDownModel;
+	
+	public String dropDownModel_Select = "//*[@id='vehicleModel']/option[contains(text(),'{0}')]";
 	
 	@FindBy(how=How.ID,using="vehicleBodyStyle")
-	public WebElement dropDown_Style;
+	public WebElement dropDownStyle;
+	
+	public String dropDownStyle_Select = "//*[@id='vehicleBodyStyle']/option[contains(text(),'{0}')]";
 	
 	public String btn_FinanceOrLease = "//*[@identity='vehicleOwnership']/div/div/label[contains(text(),'{0}')]";
 	
-	public String btn_Use = "//*[@identity='vehicleUsage']/div/label[contains(text(),'{0}')]";
-	
+	public String btn_vehicleUse = "//*[text()='{0}']";
+
 	@FindBy(how=How.ID,using="vehicleEstMileage")
-	public WebElement dropDown_Mileage;
+	public WebElement dropDownMileage;
+	
+	public String dropDownMileage_Select = "//*[@id='vehicleEstMileage']/option[contains(text(),'{0}')]";
+	
+	@FindBy(how=How.ID,using="primarilyParked")
+	public WebElement dropDownParked;
+	
+	public String dropDownParked_Select = "//*[@id='primarilyParked']/option[contains(text(),'{0}')]";
+	
 	
 	public String btn_KeptInZIP = "//*[@identity='rdCurrentZipcode']/div/div/label[contains(text(),'{0}')]";
 	

@@ -15,7 +15,7 @@ public class SharedTestCases_PostalCode {
 
         test.setPage(PostalCode.class);
         PostalCode postalCode = (PostalCode) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test,postalCode.btn_LetsGetStarted);
+       test.webFunctions().click(test,postalCode.btn_LetsGetStarted);
         test.getLogger().info("Beginning to Quote.");
     }
 

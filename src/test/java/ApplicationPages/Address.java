@@ -20,8 +20,12 @@ public class Address {
 	@FindBy(how=How.ID,using="yearSelection_ddl")
 	public WebElement MoveInYear;
 	
+	public String MoveInYear_Select = "//*[@id=\"yearSelection_ddl\"]/option[contains(text(),'{0}')]";
+	
 	@FindBy(how=How.ID,using="monthSelection_ddl")
-	public WebElement MoveInMonth;
+	public WebElement MoveInMonth;	
+
+	public String MoveInMonth_Select = "//*[@id=\"monthSelection_ddl\"]/option[contains(text(),'{0}')]";
 	
 	public String btn_ResidenceType="//*[@identity='driverResidenceOwnership']/div/label[contains(text(),'{0}')]";
 	

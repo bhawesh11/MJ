@@ -10,6 +10,8 @@ public class PostalCode {
 
 	@FindBy(how=How.ID,using="btnPostalCode")
 	public WebElement btn_LetsGetStarted;
-	
+	  
+	@FindBy(how=How.XPATH,using="//*[@id='step-postal-code']/div/div/a/span[contains(text(),'Retrieve Saved Quote')]")
+	public WebElement btn_RetrieveQuote;
 
 }

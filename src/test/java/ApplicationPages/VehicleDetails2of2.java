@@ -7,14 +7,16 @@ import org.openqa.selenium.support.How;
 public class VehicleDetails2of2 {
 	
 	@FindBy(how=How.ID,using="yearSelection_ddl")
-	public WebElement dropDown_YearBought;
+	public WebElement dropDownYearBought;
+	
+	public String dropDownYearBought_Select = "//*[@id=\"yearSelection_ddl\"]/option[contains(text(),'{0}')]";
 	
 	@FindBy(how=How.ID,using="monthSelection_ddl")
-	public WebElement dropDown_MonthBought;
+	public WebElement dropDownMonthBought;
+	
+	public String dropDownMonthBought_Select = "//*[@id=\"monthSelection_ddl\"]/option[contains(text(),'{0}')]";
 
 	public String btn_OwnedByYou = "//*[@identity='originalOwner']/div/div/label[contains(text(),'{0}')]";
-	
-//	public String btn_TitledToYou= "";
 	
 	@FindBy(how=How.XPATH,using="//*[@identity='CustomEquipment']/div/div/label")
 	public WebElement checkBox_CustomEquipment;
