@@ -9,13 +9,13 @@ public class RetrieveQuote {
     @FindBy(how=How.ID,using="//a[@class='postal-code-hero__saved-quote-link ng-scope']")
     public WebElement btn_RetrieveSavedQuote;
 
-    @FindBy(how= How.XPATH,using="//*[@id=\"email\"]")
+    @FindBy(how= How.XPATH,using="//*[@id='email']")
     public WebElement text_Email;
 
-    @FindBy(how= How.XPATH,using="//*[@id=\"customerDob\"]")
+    @FindBy(how= How.XPATH,using="//*[@id='customerDob']")
     public WebElement text_DOB;
 
-    @FindBy(how= How.XPATH,using="//*[@id=\"customerLname\"]")
+    @FindBy(how= How.XPATH,using="//*[@id='customerLname']")
     public WebElement text_LastName;
 
     @FindBy(how=How.ID,using="btnContinue")

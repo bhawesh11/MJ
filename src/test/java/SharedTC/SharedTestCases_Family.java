@@ -10,8 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_Family {
 
-    
-    
     //	FAMILY
     public void family(Testing test) {
         try{Thread.sleep(2000);}catch(Exception e2){};

@@ -9,10 +9,6 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_PaymentPlan {
-
-    
-    
-
     public void paymentPlan(Testing test) {
         test.setPage(PaymentPlan.class);
         PaymentPlan paymentPlan = (PaymentPlan) PageFactory.initElements(test.driver, test.getPage());

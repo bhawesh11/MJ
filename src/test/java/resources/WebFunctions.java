@@ -115,10 +115,10 @@ public class WebFunctions {
 		while (!done && (attempt <= 3)) {
 			try {
 				attempt++;
-//				wait.until(ExpectedConditions.elementToBeClickable(element));
+				wait.until(ExpectedConditions.elementToBeClickable(element));
 				element.click();
 				try {
-					Thread.sleep(4000);
+					Thread.sleep(7000);
 				} catch (Exception e) {
 				}
 				;
@@ -136,7 +136,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(3000);
+					staticWait(4000);
 					Utility.stop(test);
 				} else
 					throw e;
