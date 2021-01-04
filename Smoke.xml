@@ -6,10 +6,10 @@
 		<listener class-name="testNGListners.ITestAnnotation"></listener>
 	</listeners>
 
-	<test name="testApparent">
+	<test name="testElephant">
 		<parameter name="ENV" value="QA6" />
 		<classes>
-				<class name="testApparent.TC_Apparent">
+				<class name="testElephant.TC_Elephant">
 				<methods>
 					<include name="TC001" />
 				</methods>

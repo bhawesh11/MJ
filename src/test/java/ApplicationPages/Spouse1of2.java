@@ -2,17 +2,16 @@ package ApplicationPages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 public class Spouse1of2 {
 
-    @FindBy(how= How.ID,using="customerFname")
+    @FindBy(id="customerFname")
     public WebElement textBox_FirstName;
 
-    @FindBy(how=How.ID,using="customerLname")
+    @FindBy(id="customerLname")
     public WebElement textBox_LastName;
 
-    @FindBy(how=How.ID,using="customerDob")
+    @FindBy(id="customerDob")
     public WebElement textBox_DOB;
 
     public String btn_Gender="//*[@identity='genderOption']/div/label[contains(text(),'{0}')]";
@@ -28,13 +27,13 @@ public class Spouse1of2 {
 
     public String btn_Branch="//*[@identity='militaryBranch']/div/label[text()='{0}']";
 
-    @FindBy(how=How.XPATH,using="//*[@identity='militaryBranch']/div/label[text()='{0}']")
+    @FindBy(xpath="//*[@identity='militaryBranch']/div/label[text()='{0}']")
     public WebElement dropdown_Rank;
 
-    @FindBy(how=How.ID,using="driverOccupation")
+    @FindBy(id="driverOccupation")
     public WebElement textBox_Occupation;
 
-    @FindBy(how=How.ID,using="btnContinue")
+    @FindBy(id="btnContinue")
     public WebElement btn_Continue;
 
 }

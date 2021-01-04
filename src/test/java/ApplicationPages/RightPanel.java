@@ -2,18 +2,17 @@ package ApplicationPages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 public class RightPanel {
 
 
-    @FindBy(how=How.XPATH,using="//*[contains(text(),'Add Driver')]")
+    @FindBy(xpath="//*[contains(text(),'Add Driver')]")
     public WebElement btn_AddDriver;
-    @FindBy(how=How.XPATH,using="//*[contains(text(),'Add Vehicle')]")
+    @FindBy(xpath="//*[contains(text(),'Add Vehicle')]")
     public WebElement btn_AddVehicle;
-    @FindBy(how=How.XPATH,using="//*[contains(text(),'Vehicles')]/i")
+    @FindBy(xpath="//*[contains(text(),'Vehicles')]/i")
     public WebElement btn_RightPanelVehicleExpand;
-    @FindBy(how=How.XPATH,using="//*[contains(text(),'Drivers')]/i")
+    @FindBy(xpath="//*[contains(text(),'Drivers')]/i")
     public WebElement btn_RightPanelDriverExpand;
 
 
