@@ -13,10 +13,10 @@ public class ConfirmDriver {
 
     public String dropdown_licenseState = "//*[contains(@id,'driverState-{0}')]";
 
-    @FindBy(how=How.ID,using="btnNext")
+    @FindBy(id="btnNext")
     public WebElement btn_Next;
 
-    @FindBy(how=How.NAME,using="driverLicense")
+    @FindBy(name="driverLicense")
     public WebElement btn_LINO;
 
 

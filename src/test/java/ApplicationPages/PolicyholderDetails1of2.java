@@ -2,7 +2,6 @@ package ApplicationPages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 public class PolicyholderDetails1of2 {
 	
@@ -25,25 +24,25 @@ public class PolicyholderDetails1of2 {
 		
 	public String btn_Branch="//*[@identity='militaryBranch']/div/label[text()='{0}']";
 					
-	@FindBy(how=How.XPATH,using="//*[@identity='militaryBranch']/div/label[text()='{0}']")
+	@FindBy(xpath="//*[@identity='militaryBranch']/div/label[text()='{0}']")
 	public WebElement dropdown_Rank;
 			
-	@FindBy(how=How.ID,using="driverOccupation")
+	@FindBy(id="driverOccupation")
 	public WebElement textBox_Occupation;
 	
-	@FindBy(how=How.ID,using="btnNext")
+	@FindBy(id="btnNext")
 	public WebElement btn_Continue;
 			
-    @FindBy(how=How.XPATH,using="//*[@identity='driverOccupation']/div/div/ul/li[1]")
+    @FindBy(xpath="//*[@identity='driverOccupation']/div/div/ul/li[1]")
     public WebElement Occupation_options;
 	   
-    @FindBy(how=How.XPATH,using="//*[@identity='daysDrive']/div/label[text()='{0}']")
+    @FindBy(xpath="//*[@identity='daysDrive']/div/label[text()='{0}']")
     public WebElement Days_drive;
 	   
-    @FindBy(how=How.XPATH,using="//*[@identity='attendingSchool']/div/label[text()='{0}']")
+    @FindBy(xpath="//*[@identity='attendingSchool']/div/label[text()='{0}']")
     public WebElement attending_School;
 	           
-    @FindBy(how=How.XPATH,using="//*[@identity='wfh']/div/label[text()='{0}']")
+    @FindBy(xpath="//*[@identity='wfh']/div/label[text()='{0}']")
     public WebElement WFH;
 	
 }

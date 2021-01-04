@@ -13,6 +13,6 @@ public class PaymentPlan {
 public String link_PaymentPlan = "//*[@class='payment-options']/div/label/p[contains(text(),'{0}')]";
     // {0} = Payment Plan Name
 
-    @FindBy(how=How.ID,using="btnContinue")
+    @FindBy(id="btnContinue")
     public WebElement btn_Next;
 }

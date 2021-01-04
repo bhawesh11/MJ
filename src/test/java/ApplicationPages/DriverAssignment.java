@@ -6,6 +6,6 @@ import org.openqa.selenium.support.How;
 
 public class DriverAssignment {
 
-    @FindBy(how= How.ID,using="btnNext")
+    @FindBy(id="btnNext")
     public WebElement btn_Next;
 }
