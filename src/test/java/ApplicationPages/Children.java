@@ -6,19 +6,19 @@ import org.openqa.selenium.support.How;
 
 public class Children {
 	
-	@FindBy(how=How.ID,using="//*[@identity='childrenOption']/div/input[@id='childrenOptionHasLittleOnes']//following-sibling::label")
+	@FindBy(xpath="//*[@identity='childrenOption']/div/input[@id='childrenOptionHasLittleOnes']//following-sibling::label")
 	public WebElement CheckBox_LittleOnes;
 	
-	@FindBy(how=How.ID,using="childrenOptionHasPreTeens")
+	@FindBy(id="childrenOptionHasPreTeens")
 	public WebElement CheckBox_Tweens;
 	
-	@FindBy(how=How.ID,using="childrenOptionHasTeens")
+	@FindBy(id="childrenOptionHasTeens")
 	public WebElement CheckBox_Teens;
 	
-	@FindBy(how=How.ID,using="childrenOptionHasYoungAdults")
+	@FindBy(id="childrenOptionHasYoungAdults")
 	public WebElement CheckBox_YoungAdults;
 	
-	@FindBy(how=How.ID,using="btnContinue")
+	@FindBy(id="btnContinue")
 	public WebElement btn_Next;
 	
 }
