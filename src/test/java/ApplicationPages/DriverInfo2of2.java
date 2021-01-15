@@ -14,10 +14,10 @@ public class DriverInfo2of2 {
     public String btn_vehicleAssignment = "//*[@identity='driverPrimaryVehicle']/div/label[contains(text(),'{0}')]";
     public String btn_IncidentHistory = "//*[@identity='HasIncidents']/div/div/label[contains(text(),'{0}')]";
 
-    @FindBy(how=How.ID,using="btnContinue")
+    @FindBy(id="btnContinue")
     public WebElement btn_Next;
 
-    @FindBy(how=How.XPATH,using="//*[@id=\"lnkBtnAddNewVehicle\"]")
+    @FindBy(xpath="//*[@id=\"lnkBtnAddNewVehicle\"]")
     public WebElement btn_AddAnotherDriver;
 
 }

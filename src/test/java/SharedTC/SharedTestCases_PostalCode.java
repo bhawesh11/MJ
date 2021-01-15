@@ -15,10 +15,19 @@ public class SharedTestCases_PostalCode {
 
         test.setPage(PostalCode.class);
         PostalCode postalCode = (PostalCode) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test,postalCode.btn_LetsGetStarted);
+        
+       test.webFunctions().click(test,postalCode.btn_LetsGetStarted);
         test.getLogger().info("Beginning to Quote.");
     }
 
+    
 // -------------------------------------------------------------------------------------------
+    public void postalCode_Elephant(Testing test) {
 
+        test.setPage(PostalCode.class);
+        PostalCode postalCode = (PostalCode) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().type(test,postalCode.textBox_PostalCode, test.getTestData("PostalCode.PostalCode"));
+       test.webFunctions().click(test,postalCode.btn_LetsGetStarted);
+        test.getLogger().info("Beginning to Quote.");
+    }
 }

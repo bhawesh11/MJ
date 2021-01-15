@@ -8,8 +8,13 @@ public class PostalCode {
 	
 //	LET THE SEQUENCE ALWAYS REMAIN THE SAME AS THEY APPEAR ON THE WEBPAGE.
 
-	@FindBy(how=How.ID,using="btnPostalCode")
-	public WebElement btn_LetsGetStarted;
+	@FindBy(id="customerZip")
+	public WebElement textBox_PostalCode;
 	
+	@FindBy(id="btnPostalCode")
+	public WebElement btn_LetsGetStarted;
+	  
+	@FindBy(xpath="//*[@id='step-postal-code']/div/div/a/span[contains(text(),'Retrieve Saved Quote')]")
+	public WebElement btn_RetrieveQuote;
 
 }
