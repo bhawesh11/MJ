@@ -15,10 +15,14 @@ public class Testing {
     private BrowserFactory bf;
     private WebFunctions webFunctions;
     private Logger logger;
+    public int vehicleCount ;
+    public int driverCount ;
+    
 
     //	CONSTRUCTOR
     public Testing(String environment, String brandName, String scriptName) {
-
+    	vehicleCount = countVehicle(scriptName);
+    	driverCount = countDrivers(scriptName);
 //		1. INITIALIZING ATTRIBUTES:
         db = new Database();
         td = new TestData(db, brandName, scriptName);
@@ -37,9 +41,25 @@ public class Testing {
 
 //		3. INITIALING CURRENT PAGE
         page = null;
+        
 
     }
 
+    public int countVehicle(String scriptName)
+    {
+    	String s = scriptName;
+    	vehicleCount = Character.getNumericValue(s.charAt(1));
+    	//System.out.println(vehicleCount);
+    	 	return vehicleCount;
+    }
+    
+    
+    public int countDrivers(String scriptName)
+    {
+    	String s = scriptName;
+    	driverCount = Character.getNumericValue(s.charAt(4));
+    	 	 	return driverCount;
+    }
 //	---------------------------------------------------------------------
 
     //	GETTERs and SETTERs FOR PAGE:
