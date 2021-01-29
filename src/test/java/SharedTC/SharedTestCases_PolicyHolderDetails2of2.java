@@ -16,6 +16,7 @@ public class SharedTestCases_PolicyHolderDetails2of2 {
         PolicyHolderDetails2of2 policyholderDetails2of2 = (PolicyHolderDetails2of2) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test,policyholderDetails2of2.btn_ValidLicense, test.getTestData("Policyholder-details-2.ValidLicense"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_AgeFirstLicensed,test.getTestData("Policyholder-details-2.Agefirstlicensed"));
+        test.webFunctions().click(test,policyholderDetails2of2.btn_VehicleDriveMostOften,test.getTestData("Vehicle.V1.Model"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_IncidentHistory,test.getTestData("Policyholder-details-2.IncidentHistory"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_Next);
         test.getLogger().info("Policy Holder Details 2of2 page: Success!");
