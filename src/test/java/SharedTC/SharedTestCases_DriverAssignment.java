@@ -12,6 +12,12 @@ public class SharedTestCases_DriverAssignment {
     public void driverAssignment(Testing test) {
         test.setPage(DriverAssignment.class);
         DriverAssignment driverAssignment = (DriverAssignment) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test,driverAssignment.SelectVehicle,test.getTestData("Vehicle"));
+        test.webFunctions().click(test,driverAssignment.SelectDriver,test.getTestData("DriverName"));
+        
+        test.webFunctions().click(test,driverAssignment.SelectVehicle,test.getTestData("Vehicle"));
+        test.webFunctions().click(test,driverAssignment.SelectDriver,test.getTestData("DriverName"));
+        
         test.webFunctions().click(test,driverAssignment.btn_Next);
         test.getLogger().info("Driver Assignment page: Success!");
     }
