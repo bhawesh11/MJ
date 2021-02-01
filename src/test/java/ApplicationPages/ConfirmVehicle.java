@@ -26,7 +26,7 @@ public class ConfirmVehicle {
     public  String textBox_LienHolder = "//input[contains(@id,'lienHolder') and contains(@id,'{0}')]";
     // {0} = Year + Make + Model
 
-    @FindBy(how=How.ID,using="btnContinue")
+    @FindBy(id="btnContinue")
     public WebElement btn_Next;
 
 

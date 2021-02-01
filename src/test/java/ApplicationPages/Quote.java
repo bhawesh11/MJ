@@ -8,13 +8,13 @@ public class Quote {
 
 //	LET THE SEQUENCE ALWAYS REMAIN THE SAME AS THEY APPEAR ON THE WEBPAGE.
 	
-	@FindBy(how=How.XPATH,using="//*[@id='step-quote']/div[2]/div[2]/div[1]/span[2]")
+	@FindBy(xpath="//*[@id='step-quote']/div[2]/div[2]/div[1]/span[2]")
 	public WebElement text_QuoteValue;
 
-	@FindBy(how=How.ID,using="btnContinueQuote")
+	@FindBy(id="btnContinueQuote")
 	public WebElement btn_Continue;
 
-	@FindBy(how=How.ID,using="//*[@id='btnContinueWithoutCoverage']")
+	@FindBy(xpath="//*[@id='btnContinueWithoutCoverage']")
 	public WebElement btn_ContinueWithoutCoveragePOPUP;
 
 }
