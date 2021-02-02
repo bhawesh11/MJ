@@ -15,7 +15,9 @@ public class SharedTestCases_ConfirmDriver {
 		ConfirmDriver confirmDriver = (ConfirmDriver) PageFactory.initElements(test.driver, test.getPage());
 
 		for (int count = 1; count <= test.driverCount; count++) {
-			test.webFunctions().type(test, confirmDriver.btn_LINO, test.getTestData("Driver.D" + count + ".Licenseno"));
+			//test.webFunctions().type(test, confirmDriver.btn_LINO, test.getTestData("ConfirmDriver.D" + count + ".Licenseno"));
+			
+			test.webFunctions().type(test, confirmDriver.textBox_licenseNumber,String.valueOf(count) ,test.getTestData("ConfirmDriver.D" + count + ".Licenseno"));
 
 		}
 		test.webFunctions().click(test, confirmDriver.btn_Next);
