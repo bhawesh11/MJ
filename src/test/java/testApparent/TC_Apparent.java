@@ -44,7 +44,7 @@ public class TC_Apparent {
 	    SharedTestCases_DriverInfo2of2 DriverInfo2of2 = new SharedTestCases_DriverInfo2of2();
 	    SharedTestCases_Incidents incidents = new SharedTestCases_Incidents();
 	    SharedTestCases_DriverList DriverList = new SharedTestCases_DriverList();
-	    SharedTestCases_DriverAssignment DriverAssignment = new SharedTestCases_DriverAssignment();
+	    SharedTestCases_Assignment DriverAssignment = new SharedTestCases_Assignment();
 	    SharedTestCases_InsuranceHistory InsuranceHistory = new SharedTestCases_InsuranceHistory();
 	    SharedTestCases_PolicyStatrDate PolicyStatrDate = new SharedTestCases_PolicyStatrDate();
 	    SharedTestCases_Quote Quote = new SharedTestCases_Quote();
