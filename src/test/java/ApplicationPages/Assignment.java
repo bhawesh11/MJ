@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class DriverAssignment {
+public class Assignment {
 
 	//Select vehicle to choose primary driver of the vehicle.
 	public String SelectVehicle= "//select[contains(@id,'vehicle-{0}')]"; // Replace the vehicle index with {0} starting from 0
