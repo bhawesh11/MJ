@@ -42,7 +42,7 @@ public class TC_Elephant {
     SharedTestCases_DriverInfo2of2 DriverInfo2of2 = new SharedTestCases_DriverInfo2of2();
     SharedTestCases_Incidents incidents = new SharedTestCases_Incidents();
     SharedTestCases_DriverList DriverList = new SharedTestCases_DriverList();
-    SharedTestCases_DriverAssignment DriverAssignment = new SharedTestCases_DriverAssignment();
+    SharedTestCases_Assignment DriverAssignment = new SharedTestCases_Assignment();
     SharedTestCases_InsuranceHistory InsuranceHistory = new SharedTestCases_InsuranceHistory();
     SharedTestCases_PolicyStatrDate PolicyStatrDate = new SharedTestCases_PolicyStatrDate();
     SharedTestCases_Quote Quote = new SharedTestCases_Quote();
@@ -64,7 +64,7 @@ public class TC_Elephant {
  
 
     // TC001
-    @Test(enabled = true, priority = 5, description = "Elephant_Test")
+    @Test(enabled = false, priority = 5, description = "Elephant_Test")
     @Parameters("ENV")
     public void TC001(String ENV) throws Throwable {
 
@@ -97,4 +97,102 @@ public class TC_Elephant {
         } finally {
             test.tearDown();
         }
-}}
+}
+    
+ // ---------------------------------------------------------------------------------------
+ 	// TC002
+ 		@Test(enabled = false, priority = 5, description = "Elephant_RetrieveQuote")
+ 		@Parameters("ENV")
+ 		public void TC002(String ENV) throws Throwable {
+
+ 			Testing test = new Testing(ENV, brandName, "Elephant_RetrieveQuote");
+ 			try {
+
+ 				PostalCode.postalCode(test);
+ 				RetrieveQuote.RetrieveQuote(test);
+ 		        try {
+ 					Thread.sleep(8000);
+ 				} catch (Exception e) {
+ 				}
+ 		        Quote.quote(test);
+ 		        ConfirmDriver.confirmDriver(test);
+ 		        try {
+ 					Thread.sleep(4000);
+ 				} catch (Exception e) {
+ 				}
+ 		        ConfirmVehicle.confirmVehicle(test);
+ 		        try {
+ 					Thread.sleep(9000);
+ 				} catch (Exception e) {
+ 				}
+ 		        Billing.billing(test);
+ 			} catch (Throwable e) {
+ 				throw (e);
+ 			} finally {
+ 				test.tearDown();
+ 			}
+ 		}// closing TC002 method
+
+    
+ 	// ---------------------------------------------------------------------------------------
+ 
+ 	    // TC003
+ 	    @Test(enabled = true, priority = 5, description = "V2_D2_TX")
+ 	    @Parameters("ENV")
+ 	    public void TC003(String ENV) throws Throwable {
+
+ 	 
+
+ 	        Testing test = new Testing(ENV, brandName, "V2_D2_TX");
+ 	        try { 
+
+ 	            PostalCode.postalCode_Elephant(test);
+ 	            PolicyHolder.policyholder(test);
+ 	            Address.address(test);
+ 	            VehicleDetails1of2.vehicleDetails(test); 	           
+ 	            PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+ 	            PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+ 	            DriverInfo1of2.driverDetails(test);
+ 	            InsuranceHistory.insuranceHistory_Yes(test);
+ 	            PolicyStatrDate.policyStartDate(test);
+ 	            test.webFunctions().staticWait(8000);
+ 	            Quote.quote(test);
+ 	            
+ 	        } catch (Throwable e) {
+ 	            throw (e);
+ 	        } finally {
+ 	            test.tearDown();
+ 	        }
+ 	}
+ 	   
+ 	 	// ---------------------------------------------------------------------------------------
+ 	 
+ 	 	    // TC004
+ 	 	    @Test(enabled = true, priority = 5, description = "V2_D2_TX")
+ 	 	    @Parameters("ENV")
+ 	 	    public void TC004(String ENV) throws Throwable {
+
+ 	 	 
+
+ 	 	        Testing test = new Testing(ENV, brandName, "V2_D2_VA");
+ 	 	        try { 
+ 	 	        	PostalCode.postalCode_Elephant(test);
+ 	 	            PolicyHolder.policyholder(test);
+ 	 	            Address.address(test);
+ 	 	            VehicleDetails1of2.vehicleDetails(test); 	           
+ 	 	            PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+ 	 	            PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+ 	 	            DriverInfo1of2.driverDetails(test);
+ 	 	            InsuranceHistory.insuranceHistory_Yes(test);
+ 	 	            PolicyStatrDate.policyStartDate(test);
+ 	 	            test.webFunctions().staticWait(8000);
+ 	 	            Quote.quote(test);
+ 		
+ 		
+ 	 	        }catch (Throwable e) {
+ 	 	            throw (e);
+ 	 	        } finally {
+ 	 	            test.tearDown();
+ 	 	        }
+ 	 	    }
+    }
