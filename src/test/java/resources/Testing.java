@@ -34,7 +34,7 @@ public class Testing {
 
 //		2. INITIALIZING DRIVER
         String url = address.getURL(environment);
-        System.out.println("-------test-----" + url);
+        System.out.println("-------URL-----" + url);
         String browser = "Google Chrome";
         bf = new BrowserFactory(browser, url);
         driver = bf.driver;
