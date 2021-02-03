@@ -26,8 +26,15 @@ public class VehicleDetails1of2 {
 	
 	public String btn_FinanceOrLease = "//*[@identity='vehicleOwnership']/div/div/label[contains(text(),'{0}')]";
 	
-	@FindBy(xpath="//label[contains(@for,'rideSharingNo')]")
-    public WebElement btn_rideSharingNo;
+	public String btn_rideSharingOption = "//label[contains(@for,'rideSharing{0}')]";
+	
+	@FindBy(xpath="//label[contains(@for,'rideSharingYes')]")
+	public WebElement btn_rideSharing;
+    
+    @FindBy(id="rideSharingHours")
+	public WebElement dropDownRidesharingHrs;
+    
+    public String dropDownRidesharingHrs_Select = "//*[@id=\"rideSharingHours\"]/option[@label='{0}']";
 	
 	public String btn_vehicleUse = "//*[text()='{0}']";
 
