@@ -44,6 +44,10 @@ public class SharedTestCases_VehicleDetails1of2 {
         test.webFunctions().click(test,vehicleDetails1of2.dropDownModel);
         test.webFunctions().click(test,vehicleDetails1of2.dropDownModel_Select,test.getTestData("Vehicle.V"+count+".Model"));
         test.webFunctions().click(test,vehicleDetails1of2.btn_FinanceOrLease,test.getTestData("Vehicle.V"+count+".Financeorlease"));
+        try {
+            if(vehicleDetails1of2.btn_rideSharingNo.isDisplayed()==true){
+                test.webFunctions().click(test,vehicleDetails1of2.btn_rideSharingNo);
+            }}catch (Exception e) {}
         test.webFunctions().click(test,vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V"+count+".Use"));
         test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage);
         test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage_Select,test.getTestData("Vehicle.V"+count+".Mileage"));
@@ -60,15 +64,21 @@ public class SharedTestCases_VehicleDetails1of2 {
         test.setPage(VehicleDetails2of2.class);
         VehicleDetails2of2 vehicleDetails2of2 = (VehicleDetails2of2) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test,vehicleDetails2of2.dropDownYearBought);
-        test.webFunctions().click(test,vehicleDetails2of2.dropDownYearBought_Select, test.getTestData("Vehicle.V1.YearBought"));
+        test.webFunctions().click(test,vehicleDetails2of2.dropDownYearBought_Select, test.getTestData("Vehicle.V"+count+ ".YearBought"));
         test.webFunctions().click(test,vehicleDetails2of2.dropDownMonthBought);
-        test.webFunctions().click(test,vehicleDetails2of2.dropDownMonthBought_Select, test.getTestData("Vehicle.V1.MonthBought"));
-        test.webFunctions().click(test,vehicleDetails2of2.btn_OwnedByYou, test.getTestData("Vehicle.V1.Ownedbyyou"));
+        test.webFunctions().click(test,vehicleDetails2of2.dropDownMonthBought_Select, test.getTestData("Vehicle.V"+count+".MonthBought"));
+        test.webFunctions().click(test,vehicleDetails2of2.btn_OwnedByYou, test.getTestData("Vehicle.V"+count+".Ownedbyyou"));
+        try{if(vehicleDetails2of2.checkBox_CrashAvoidance.isDisplayed()) {
         test.webFunctions().click(test,vehicleDetails2of2.checkBox_HandsFree);
         test.webFunctions().click(test,vehicleDetails2of2.checkBox_CrashAvoidance);
+        }}catch(Exception e) {}
+        try {
+        if(vehicleDetails2of2.btn_Antitheft_Yes.isDisplayed()) {
+        	test.webFunctions().click(test,vehicleDetails2of2.btn_Antitheft, test.getTestData("Vehicle.V"+count+".AntiTheft"));
+        }
         test.webFunctions().click(test,vehicleDetails2of2.btn_Next);
         test.getLogger().info("Vehicle Details 2of2 page: Success!");
-
+        }catch(Exception e) {}
     }
     
     public void vehicleList(Testing test, int count)
