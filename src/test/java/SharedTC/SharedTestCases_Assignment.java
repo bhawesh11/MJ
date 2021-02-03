@@ -19,7 +19,7 @@ public class SharedTestCases_Assignment {
         //test.webFunctions().click(test,driverAssignment.SelectDriver,test.getTestData("DriverName"));
         
         test.webFunctions().click(test,driverAssignment.btn_Next);
-        test.getLogger().info("Driver Assignment page: Success!");
+        test.getLogger().info("Assignment page: Success!");
     }
 
 }
