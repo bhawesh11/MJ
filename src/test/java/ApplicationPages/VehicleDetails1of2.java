@@ -26,6 +26,9 @@ public class VehicleDetails1of2 {
 	
 	public String btn_FinanceOrLease = "//*[@identity='vehicleOwnership']/div/div/label[contains(text(),'{0}')]";
 	
+	@FindBy(xpath="//label[contains(@for,'rideSharingNo')]")
+    public WebElement btn_rideSharingNo;
+	
 	public String btn_vehicleUse = "//*[text()='{0}']";
 
 	@FindBy(id="vehicleEstMileage")

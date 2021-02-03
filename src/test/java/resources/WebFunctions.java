@@ -36,7 +36,7 @@ public class WebFunctions {
 				element.clear();
 				element.sendKeys(value);
 				try {
-					Thread.sleep(3000);
+					Thread.sleep(1000);
 				} catch (Exception e) {
 				}
 				;
@@ -54,7 +54,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(3000);
+					staticWait(2000);
 					Utility.stop(test);
 				} else
 					throw e;
@@ -80,7 +80,7 @@ public class WebFunctions {
 		int attempt = 0;
 		webElement = webElement.replace("{0}", var1);
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(1000);
 		} catch (Exception e) {
 		}
 		; // By D
@@ -118,7 +118,7 @@ public class WebFunctions {
 				wait.until(ExpectedConditions.elementToBeClickable(element));
 				element.click();
 				try {
-					Thread.sleep(7000);
+					Thread.sleep(3000);
 				} catch (Exception e) {
 				}
 				;
@@ -136,7 +136,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(4000);
+					staticWait(3000);
 					Utility.stop(test);
 				} else
 					throw e;
@@ -217,7 +217,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(3000);
+					staticWait(2000);
 					Utility.stop(test);
 				} else
 					throw e;
@@ -303,7 +303,7 @@ public class WebFunctions {
 					element.click();
 				} catch (WebDriverException e) {
 					/* Do Nothing */}
-				staticWait(4000);
+				staticWait(3000);
 				test.driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
 				staticWait(1000);
 				Utility.stop(test);
@@ -320,7 +320,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(3000);
+					staticWait(2000);
 					Utility.stop(test);
 				} else
 					throw e;
@@ -354,7 +354,7 @@ public class WebFunctions {
 						element.click();
 					} catch (WebDriverException e) {
 						/* Do Nothing */}
-					staticWait(4000);
+					staticWait(3000);
 					option.click();
 					staticWait(1000);
 					Utility.stop(test);
@@ -371,7 +371,7 @@ public class WebFunctions {
 				catch (NoSuchElementException e) {
 					if (attempt <= 3) {
 						test.getLogger().error("NoSuchElement Exception");
-						staticWait(3000);
+						staticWait(2000);
 						Utility.stop(test);
 					} else
 						throw e;

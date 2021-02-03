@@ -9,7 +9,9 @@ public class ConfirmDriver {
 
     //	LET THE SEQUENCE ALWAYS REMAIN THE SAME AS THEY APPEAR ON THE WEBPAGE.
 
-    public String textBox_licenseNumber = "//*[contains(@id,'driver-{0}')]";
+   //public String textBox_licenseNumber = "//*[contains(@id,'driver-{0}')]";
+    
+    public String textBox_licenseNumber = "(//input[@name='driverLicense'])[{0}]";
 
     public String dropdown_licenseState = "//*[contains(@id,'driverState-{0}')]";
 
