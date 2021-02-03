@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_DriverInfo1of2 {
+	 
 
 	public void driverInfo1of2(Testing test) {
 
@@ -44,12 +45,23 @@ public class SharedTestCases_DriverInfo1of2 {
 		test.webFunctions().click(test, driverInfo1of2.btn_MaritalStatus,
 				test.getTestData("Driver.D" + count + ".MaritalStatus"));
 		test.webFunctions().click(test, driverInfo1of2.btn_Continue);
+		try { 
+			if(driverInfo1of2.btn_CurrentlyInSchool.isDisplayed()==true)
+			{
+				test.webFunctions().click(test,driverInfo1of2.btn_CurrentlyInSchool);
+				test.webFunctions().click(test,driverInfo1of2.btn_Continue);
+			}
+		}catch (Exception e) {
+		}
 		test.getLogger().info("Additional Driver 1of2 page: Success!");
 	}
+	
+
 
 	public void driverInfo_2of2(Testing test, int count) {
 		test.setPage(DriverInfo2of2.class);
 		DriverInfo2of2 driverInfo2of2 = (DriverInfo2of2) PageFactory.initElements(test.driver, test.getPage());
+		test.webFunctions().staticWait(2000);
 		test.webFunctions().click(test, driverInfo2of2.btn_ValidLicense,
 				test.getTestData("Driver.D" + count + ".ValidLicense"));
 		test.webFunctions().click(test, driverInfo2of2.btn_AgeFirstLicensed,

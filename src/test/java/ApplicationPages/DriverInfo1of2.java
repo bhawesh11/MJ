@@ -21,8 +21,11 @@ public class DriverInfo1of2 {
     public String btn_Relationship="//*[@identity='driverRelationship']/div/label[contains(text(),'{0}')]";
 
     public String btn_MaritalStatus = "//*[@identity='customerMaritalStatus']/div/label[text()='{0}']";
-
-    @FindBy(xpath="//*[@id=\"btnContinue\"]")
+    
+	@FindBy(xpath="//label[contains(@for,'InSchoolNo')]")
+	public WebElement btn_CurrentlyInSchool;
+	
+	@FindBy(xpath="//*[@id=\"btnContinue\"]")
     public WebElement btn_Continue;
 
 

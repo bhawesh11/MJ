@@ -25,6 +25,7 @@ public class SharedTestCases_VehicleDetails1of2 {
         test.webFunctions().click(test,vehicleDetails1of2.dropDownModel);
         test.webFunctions().click(test,vehicleDetails1of2.dropDownModel_Select,test.getTestData("Vehicle.V1.Model"));
         test.webFunctions().click(test,vehicleDetails1of2.btn_FinanceOrLease,test.getTestData("Vehicle.V1.Financeorlease"));
+        test.webFunctions().click(test,vehicleDetails1of2.btn_rideSharingNo);
         test.webFunctions().click(test,vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V1.Use"));
         test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage);
         test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage_Select,test.getTestData("Vehicle.V1.Mileage"));
@@ -45,6 +46,7 @@ public class SharedTestCases_VehicleDetails1of2 {
         test.webFunctions().click(test,vehicleDetails1of2.dropDownModel_Select,test.getTestData("Vehicle.V"+count+".Model"));
         test.webFunctions().click(test,vehicleDetails1of2.btn_FinanceOrLease,test.getTestData("Vehicle.V"+count+".Financeorlease"));
         try {
+
             if(vehicleDetails1of2.btn_rideSharingNo.isDisplayed()==true){
                 test.webFunctions().click(test,vehicleDetails1of2.btn_rideSharingNo);
             }}catch (Exception e) {}
@@ -76,9 +78,9 @@ public class SharedTestCases_VehicleDetails1of2 {
         if(vehicleDetails2of2.btn_Antitheft_Yes.isDisplayed()) {
         	test.webFunctions().click(test,vehicleDetails2of2.btn_Antitheft, test.getTestData("Vehicle.V"+count+".AntiTheft"));
         }
+        }catch(Exception e) {}
         test.webFunctions().click(test,vehicleDetails2of2.btn_Next);
         test.getLogger().info("Vehicle Details 2of2 page: Success!");
-        }catch(Exception e) {}
     }
     
     public void vehicleList(Testing test, int count)
