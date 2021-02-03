@@ -16,6 +16,7 @@ public class SharedTestCases_InsuranceHistory {
         test.setPage(InsuranceHistory.class);
         InsuranceHistory insuranceHistory = (InsuranceHistory) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test,insuranceHistory.btn_CurrentlyInsured,test.getTestData("InsuranceHistory.CurrentlyInsured"));
+        test.webFunctions().staticWait(2000);
         test.webFunctions().click(test,insuranceHistory.dropdownInsuranceProvider);
         test.webFunctions().click(test,insuranceHistory.dropdownInsuranceProvider_Select, test.getTestData("InsuranceHistory.CurrentInsuranceProvider"));
         test.webFunctions().click(test,insuranceHistory.dropdownYearsWithCurrentInsuranceProvider);
