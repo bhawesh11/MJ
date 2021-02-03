@@ -17,10 +17,9 @@ public class SharedTestCases_PolicyStatrDate {
     public void policyStartDate(Testing test) {
         test.setPage(PolicyStartDate.class);
         PolicyStartDate policyStartDate = (PolicyStartDate) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().type(test,policyStartDate.textBox_Email, test.getTestData("Policy-Start-date.Email"));
+        test.webFunctions().type(test,policyStartDate.textBox_Email, test.getOutput("LastName")+test.getTestData("Policy-Start-date.Email"));
         test.webFunctions().click(test,policyStartDate.btn_PaperlessDiscount, test.getTestData("Policy-Start-date.PaperlessDiscount"));
         test.webFunctions().click(test,policyStartDate.btn_ESignDiscount, test.getTestData("Policy-Start-date.E-SignatureDiscount"));
-      //  test.webFunctions().type(test,policyStartDate.textBox_PolicyStartDate, test.getTestData("Policy Start Date"));
         test.webFunctions().type(test,policyStartDate.textBox_Phone, test.getTestData("Policy-Start-date.PhoneNumber"));
         test.webFunctions().click(test,policyStartDate.btn_SeeMyQuote);
         test.getLogger().info("Policy Start page: Success!");

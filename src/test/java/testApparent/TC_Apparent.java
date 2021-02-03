@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import resources.Testing;
 import java.io.IOException;
 
+
 //import SharedTC.QuoteAndBind;
 public class TC_Apparent {
 
@@ -43,7 +44,7 @@ public class TC_Apparent {
 	    SharedTestCases_DriverInfo2of2 DriverInfo2of2 = new SharedTestCases_DriverInfo2of2();
 	    SharedTestCases_Incidents incidents = new SharedTestCases_Incidents();
 	    SharedTestCases_DriverList DriverList = new SharedTestCases_DriverList();
-	    SharedTestCases_DriverAssignment DriverAssignment = new SharedTestCases_DriverAssignment();
+	    SharedTestCases_Assignment DriverAssignment = new SharedTestCases_Assignment();
 	    SharedTestCases_InsuranceHistory InsuranceHistory = new SharedTestCases_InsuranceHistory();
 	    SharedTestCases_PolicyStatrDate PolicyStatrDate = new SharedTestCases_PolicyStatrDate();
 	    SharedTestCases_Quote Quote = new SharedTestCases_Quote();
@@ -72,7 +73,23 @@ public class TC_Apparent {
 	        Family.family(test);
 	        Children.children(test);
 	        PolicyHolder.policyholder(test);
-	        
+	        Address.address(test);
+	        VehicleDetails1of2.vehicleDetails1of2(test);
+	        VehicleDetails2of2.vehicleDetails2of2(test);
+	        VehicleList.vehicleList(test);
+	        PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+	        PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+	        DriverList.driverList(test);
+	        InsuranceHistory.insuranceHistory_Yes(test);
+	        PolicyStatrDate.policyStartDate(test);
+	        test.webFunctions().staticWait(8000);
+	        Quote.quote(test);
+	        ConfirmDriver.confirmDriver(test);	       
+	        test.webFunctions().staticWait(4000);	        
+	        ConfirmVehicle.confirmVehicle(test);
+	        test.webFunctions().staticWait(8000);
+	        Billing.billing(test);
+	        GetInfo.GetPolicyNumber(test);
 		} catch (Throwable e) {
 			throw (e);
 		} finally {
@@ -81,19 +98,37 @@ public class TC_Apparent {
 	}// closing TC001 method
 
 	// ---------------------------------------------------------------------------------------
-	@Test(enabled = false, priority = 5, description = "Create_Claim_without_login")
-	@Parameters("ENV")
-	public void TC004(String ENV) throws Throwable {
+	// TC002
+		@Test(enabled = false, priority = 5, description = "Apparent_Test")
+		@Parameters("ENV")
+		public void TC002(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "Create_Claim_without_login");
-		try {
+			Testing test = new Testing(ENV, brandName, "Apparent_Test");
+			try {
 
-		} catch (Throwable e) {
-			throw (e);
-		} finally {
-			test.tearDown();
-		}
-	}// closing TC004 method
+				PostalCode.postalCode(test);
+				RetrieveQuote.RetrieveQuote(test);
+		        try {
+					Thread.sleep(8000);
+				} catch (Exception e) {
+				}
+		        Quote.quote(test);
+		        ConfirmDriver.confirmDriver(test);
+		        try {
+					Thread.sleep(4000);
+				} catch (Exception e) {
+				}
+		        ConfirmVehicle.confirmVehicle(test);
+		        try {
+					Thread.sleep(9000);
+				} catch (Exception e) {
+				}
+		        Billing.billing(test);
+			} catch (Throwable e) {
+				throw (e);
+			} finally {
+				test.tearDown();
+			}
+		}// closing TC002 method
 
-	// --------------------------------------------------------------------------------------
 }

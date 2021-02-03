@@ -2,7 +2,6 @@ package ApplicationPages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 public class Spouse2of2 {
 
@@ -15,7 +14,7 @@ public class Spouse2of2 {
     public String btn_VehicleDriveMostOften = "//label[contains(text(),'{0}')]";
     //{0} : Year + Make + Model
 
-    @FindBy(how= How.ID,using="btnContinue")
+    @FindBy(id="btnContinue")
     public WebElement btn_Next;
 
 }

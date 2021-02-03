@@ -15,14 +15,18 @@ public class Testing {
     private BrowserFactory bf;
     private WebFunctions webFunctions;
     private Logger logger;
+    public int vehicleCount ;
+    public int driverCount ;
+    
 
     //	CONSTRUCTOR
     public Testing(String environment, String brandName, String scriptName) {
-
+    	vehicleCount = countVehicle(scriptName);
+    	driverCount = countDrivers(scriptName);
 //		1. INITIALIZING ATTRIBUTES:
         db = new Database();
         td = new TestData(db, brandName, scriptName);
-        //output = new Output(db, brandName, environment);
+        output = new Output(td);
         webFunctions = new WebFunctions();
         address = new URL(brandName);
         this.brandName = brandName;
@@ -30,16 +34,32 @@ public class Testing {
 
 //		2. INITIALIZING DRIVER
         String url = address.getURL(environment);
-        System.out.println("-------test-----" + url);
+        System.out.println("-------URL-----" + url);
         String browser = "Google Chrome";
         bf = new BrowserFactory(browser, url);
         driver = bf.driver;
 
 //		3. INITIALING CURRENT PAGE
         page = null;
+        
 
     }
 
+    public int countVehicle(String scriptName)
+    {
+    	String s = scriptName;
+    	vehicleCount = Character.getNumericValue(s.charAt(1));
+    	//System.out.println(vehicleCount);
+    	 	return vehicleCount;
+    }
+    
+    
+    public int countDrivers(String scriptName)
+    {
+    	String s = scriptName;
+    	driverCount = Character.getNumericValue(s.charAt(4));
+    	 	 	return driverCount;
+    }
 //	---------------------------------------------------------------------
 
     //	GETTERs and SETTERs FOR PAGE:

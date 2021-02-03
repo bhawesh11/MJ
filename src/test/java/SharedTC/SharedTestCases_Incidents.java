@@ -10,9 +10,6 @@ import ApplicationPages.Incidents;
 
 public class SharedTestCases_Incidents {
 
-    
-    
-
     public void add_MoreThan3DUI(Testing test)
     {
         test.setPage(Incidents.class);
