@@ -22,8 +22,14 @@ public class DriverInfo1of2 {
 
     public String btn_MaritalStatus = "//*[@identity='customerMaritalStatus']/div/label[text()='{0}']";
     
-	@FindBy(xpath="//label[contains(@for,'InSchoolNo')]")
+	@FindBy(xpath="//label[contains(@for,'InSchoolYes')]") 
 	public WebElement btn_CurrentlyInSchool;
+	
+	@FindBy(xpath="//label[contains(@for,'goodStudentYes')]") 
+	public WebElement btn_GoodStudent;
+	
+	@FindBy(xpath="//label[contains(@for,'awayAtSchoolYes')]")
+    public WebElement btn_AwayAtSchool;
 	
 	@FindBy(xpath="//*[@id=\"btnContinue\"]")
     public WebElement btn_Continue;

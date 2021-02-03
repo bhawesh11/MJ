@@ -45,14 +45,7 @@ public class SharedTestCases_DriverInfo1of2 {
 		test.webFunctions().click(test, driverInfo1of2.btn_MaritalStatus,
 				test.getTestData("Driver.D" + count + ".MaritalStatus"));
 		test.webFunctions().click(test, driverInfo1of2.btn_Continue);
-		try { 
-			if(driverInfo1of2.btn_CurrentlyInSchool.isDisplayed()==true)
-			{
-				test.webFunctions().click(test,driverInfo1of2.btn_CurrentlyInSchool);
-				test.webFunctions().click(test,driverInfo1of2.btn_Continue);
-			}
-		}catch (Exception e) {
-		}
+		currentlyInSchool(test);
 		test.getLogger().info("Additional Driver 1of2 page: Success!");
 	}
 	
@@ -101,6 +94,26 @@ public class SharedTestCases_DriverInfo1of2 {
 
 		}
 
+	}
+	
+	public void currentlyInSchool(Testing test) {
+		test.setPage(DriverInfo1of2.class);
+		DriverInfo1of2 driverInfo1of2 = (DriverInfo1of2) PageFactory.initElements(test.driver, test.getPage());
+		try { 
+			if(driverInfo1of2.btn_CurrentlyInSchool.isDisplayed()==true)
+			{
+				test.webFunctions().click(test,driverInfo1of2.btn_CurrentlyInSchool);
+				try {
+					if(driverInfo1of2.btn_GoodStudent.isDisplayed()==true) {
+						test.webFunctions().click(test, driverInfo1of2.btn_GoodStudent);
+					}
+				}catch (Exception e) {}
+				test.webFunctions().click(test, driverInfo1of2.btn_AwayAtSchool);
+				test.webFunctions().click(test,driverInfo1of2.btn_Continue);
+				test.getLogger().info("Currently In School page: Success!");
+			}
+		}catch (Exception e) {
+		}
 	}
 
 }
