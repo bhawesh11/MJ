@@ -94,27 +94,35 @@ public class TC_Elephant {
 	@Parameters("ENV")
 	public void TC002(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "Elephant_RetrieveQuote");
+		Testing test = new Testing(ENV, brandName, "V1_D1_RetrieveQuote_Bind");
 		try {
-
-			PostalCode.postalCode(test);
+			
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails1of2(test);
+			VehicleDetails2of2.vehicleDetails2of2(test);
+			VehicleList.vehicleList(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverList.driverList(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+			
+			test.webFunctions().refresh(test);
+			RetrieveQuote.clickRetrieveQuote(test);
 			RetrieveQuote.RetrieveQuote(test);
-			try {
-				Thread.sleep(8000);
-			} catch (Exception e) {
-			}
 			Quote.quote(test);
+			
 			ConfirmDriver.confirmDriver(test);
-			try {
-				Thread.sleep(4000);
-			} catch (Exception e) {
-			}
+			test.webFunctions().staticWait(4000);
 			ConfirmVehicle.confirmVehicle(test);
-			try {
-				Thread.sleep(9000);
-			} catch (Exception e) {
-			}
-			Billing.billing(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			
+			
 		} catch (Throwable e) {
 			throw (e);
 		} finally {
@@ -140,7 +148,7 @@ public class TC_Elephant {
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
 			DriverInfo1of2.driverDetails(test);
 			InsuranceHistory.insuranceHistory_Yes(test);
-			DriverAssignment.driverVehicleAssignmentPage(test);
+			Assignment.driverVehicleAssignmentPage(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			Quote.quote(test);
@@ -239,7 +247,7 @@ public class TC_Elephant {
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
 			DriverInfo1of2.driverDetails(test);
 			InsuranceHistory.insuranceHistory_Yes(test);
-			DriverAssignment.driverVehicleAssignmentPage(test);
+			Assignment.driverVehicleAssignmentPage(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			Quote.quote(test);
@@ -252,7 +260,7 @@ public class TC_Elephant {
 		} catch (Throwable e) {
 			throw (e);
 		} finally {
-			test.tearDown();
+			//test.tearDown();
 		}
 	}
 	 	// ---------------------------------------------------------------------------------------
@@ -294,5 +302,5 @@ public class TC_Elephant {
 }
 
 
-}
+
 
