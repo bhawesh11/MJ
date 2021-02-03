@@ -76,13 +76,19 @@ public class SharedTestCases_VehicleDetails1of2 {
         test.webFunctions().click(test,vehicleDetails2of2.checkBox_HandsFree);
         test.webFunctions().click(test,vehicleDetails2of2.checkBox_CrashAvoidance);
         }}catch(Exception e) {}
-        try {
-        if(vehicleDetails2of2.btn_Antitheft_Yes.isDisplayed()) {
-        	test.webFunctions().click(test,vehicleDetails2of2.btn_Antitheft, test.getTestData("Vehicle.V"+count+".AntiTheft"));
-        }
-        }catch(Exception e) {}
+
+       
+       try {
+    	   if(vehicleDetails2of2.btn_Antitheft_Yes.isDisplayed()) 
+           {
+           	test.webFunctions().click(test,vehicleDetails2of2.btn_Antitheft, test.getTestData("Vehicle.V"+count+".AntiTheft"));
+           }        
+       }
+       catch(Exception e){ }   	   
+       
         test.webFunctions().click(test,vehicleDetails2of2.btn_Next);
-        test.getLogger().info("Vehicle Details 2of2 page: Success!");
+        test.getLogger().info("Vehicle Details 2of2 page: Success!");       
+
     }
     
     public void vehicleList(Testing test, int count)
