@@ -544,4 +544,13 @@ public class WebFunctions {
 
 		return fileName;
 	}
+
+	// ============================================================================
+	public void refresh(Testing test) {
+		test.driver.navigate().refresh();
+		staticWait(2000);
+		test.driver.switchTo().alert().accept();
+		staticWait(4000);
+		test.getLogger().info("Page Refreshed..");
+	}
 }

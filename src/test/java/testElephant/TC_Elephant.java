@@ -55,7 +55,7 @@ public class TC_Elephant {
 //    ***_TEST_CASES_***
 
 	// TC001
-	@Test(enabled = true, priority = 5, description = "Elephant_Test")
+	@Test(enabled = false, priority = 5, description = "Elephant_Test")
 	@Parameters("ENV")
 	public void TC001(String ENV) throws Throwable {
 
@@ -65,9 +65,7 @@ public class TC_Elephant {
 			PostalCode.postalCode_Elephant(test);
 			PolicyHolder.policyholder(test);
 			Address.address(test);
-			VehicleDetails1of2.vehicleDetails1of2(test);
-			VehicleDetails2of2.vehicleDetails2of2(test);
-			VehicleList.vehicleList(test);
+			VehicleDetails1of2.vehicleDetails(test);
 			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
 			DriverList.driverList(test);
@@ -90,31 +88,37 @@ public class TC_Elephant {
 
 	// ---------------------------------------------------------------------------------------
 	// TC002
-	@Test(enabled = true, priority = 5, description = "Elephant_RetrieveQuote")
+	@Test(enabled = false, priority = 5, description = "Elephant_RetrieveQuote")
 	@Parameters("ENV")
 	public void TC002(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "Elephant_RetrieveQuote");
+		Testing test = new Testing(ENV, brandName, "V1_D1_RetrieveQuote_Bind");
 		try {
-
-			PostalCode.postalCode(test);
+			
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverList.driverList(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+			
+			test.webFunctions().refresh(test);
+			RetrieveQuote.clickRetrieveQuote(test);
 			RetrieveQuote.RetrieveQuote(test);
-			try {
-				Thread.sleep(8000);
-			} catch (Exception e) {
-			}
 			Quote.quote(test);
+			
 			ConfirmDriver.confirmDriver(test);
-			try {
-				Thread.sleep(4000);
-			} catch (Exception e) {
-			}
+			test.webFunctions().staticWait(4000);
 			ConfirmVehicle.confirmVehicle(test);
-			try {
-				Thread.sleep(9000);
-			} catch (Exception e) {
-			}
-			Billing.billing(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			
+			
 		} catch (Throwable e) {
 			throw (e);
 		} finally {
@@ -125,7 +129,7 @@ public class TC_Elephant {
 	// ---------------------------------------------------------------------------------------
 
 	// TC003
-	@Test(enabled = true, priority = 5, description = "V2_D2_TX")
+	@Test(enabled = false, priority = 5, description = "V2_D2_TX")
 	@Parameters("ENV")
 	public void TC003(String ENV) throws Throwable {
 
@@ -140,7 +144,7 @@ public class TC_Elephant {
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
 			DriverInfo1of2.driverDetails(test);
 			InsuranceHistory.insuranceHistory_Yes(test);
-			DriverAssignment.driverVehicleAssignmentPage(test);
+			Assignment.driverVehicleAssignmentPage(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			Quote.quote(test);
@@ -160,7 +164,7 @@ public class TC_Elephant {
 	// ---------------------------------------------------------------------------------------
 
 	// TC004
-	@Test(enabled = true, priority = 5, description = "V2_D2_TX")
+	@Test(enabled = false, priority = 5, description = "V2_D2_TX")
 	@Parameters("ENV")
 	public void TC004(String ENV) throws Throwable {
 
@@ -188,7 +192,7 @@ public class TC_Elephant {
 	// ---------------------------------------------------------------------------------------
 
 	// TC005
-	@Test(enabled = true, priority = 5, description = "V2_D2_IL_NB")
+	@Test(enabled = false, priority = 5, description = "V2_D2_IL_NB")
 	@Parameters("ENV")
 	public void TC005(String ENV) throws Throwable {
 
@@ -218,13 +222,10 @@ public class TC_Elephant {
 		}
 	}
 	
-
-
-
 	// ---------------------------------------------------------------------------------------
 
 	// TC006
-	@Test(enabled = true, priority = 5, description = "V2_D2_TN")
+	@Test(enabled = false, priority = 5, description = "V2_D2_TN")
 	@Parameters("ENV")
 	public void TC006(String ENV) throws Throwable {
 
@@ -239,7 +240,7 @@ public class TC_Elephant {
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
 			DriverInfo1of2.driverDetails(test);
 			InsuranceHistory.insuranceHistory_Yes(test);
-			DriverAssignment.driverVehicleAssignmentPage(test);
+			Assignment.driverVehicleAssignmentPage(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			Quote.quote(test);
@@ -258,11 +259,9 @@ public class TC_Elephant {
 	 	// ---------------------------------------------------------------------------------------
 	 
 	    // TC007
-	    @Test(enabled = true, priority = 5, description = "V2_D2_VA")
+	    @Test(enabled = false, priority = 5, description = "V2_D2_VA")
 	    @Parameters("ENV")
 	    public void TC007(String ENV) throws Throwable {
-
-	 
 
 	        Testing test = new Testing(ENV, brandName, "V2_D2_VA");
 	        try { 
@@ -272,8 +271,7 @@ public class TC_Elephant {
 	            VehicleDetails1of2.vehicleDetails(test); 	           
 	            PolicyHolderDetails1of2.policyHolderDetails1of2(test);
 	            PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-	            DriverInfo1of2.driverDetails(test);
-	            
+	            DriverInfo1of2.driverDetails(test);	            
 	            InsuranceHistory.insuranceHistory_Yes(test);
 	            Assignment.driverVehicleAssignmentPage(test);
 	            PolicyStatrDate.policyStartDate(test);
@@ -291,8 +289,47 @@ public class TC_Elephant {
 				test.tearDown();
 			}
 	    }
+	 // ---------------------------------------------------------------------------------------
+	 // TC008
+	 		@Test(enabled = true, priority = 5, description = "V2_D2_OH")
+	 		@Parameters("ENV")
+	 		public void TC008(String ENV) throws Throwable {
+
+	 			Testing test = new Testing(ENV, brandName, "V2_D2_OH");
+	 			try {
+
+	 				PostalCode.postalCode_Elephant(test);
+	 				PolicyHolder.policyholder(test);
+	 				Address.address(test);
+	 				VehicleDetails1of2.vehicleDetails(test);
+	 				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+	 				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+	 				DriverInfo1of2.driverDetails(test);
+	 				InsuranceHistory.insuranceHistory_Yes(test);
+	 				Assignment.driverVehicleAssignmentPage(test);
+	 				PolicyStatrDate.policyStartDate(test);
+	 				test.webFunctions().staticWait(8000);
+	 				Quote.quote(test);
+	 				ConfirmDriver.confirmDriver(test);
+	 				ConfirmVehicle.confirmVehicle(test);
+	 				test.webFunctions().staticWait(8000);
+	 				Billing.billing_Elephant(test);
+	 				GetInfo.GetPolicyNumber(test);
+
+	 			} catch (Throwable e) {
+	 				throw (e);
+	 			} finally {
+	 				test.tearDown();
+	 			}
+	 		}
+
+	 		// ---------------------------------------------------------------------------------------
+	    
+	    
+	    
+	    
 }
 
 
-}
+
 
