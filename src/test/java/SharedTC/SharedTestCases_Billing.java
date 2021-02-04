@@ -7,6 +7,7 @@ import resources.TestData;
 import resources.Testing;
 import resources.WebFunctions;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_Billing {
@@ -48,6 +49,17 @@ public class SharedTestCases_Billing {
         test.webFunctions().click(test,billing.dropDownCreditCardExpiryYear_Select_Elephant);    
         test.webFunctions().click(test,billing.btn_UseTheSameCard_Elephant);
         test.webFunctions().click(test,billing.btn_receiveTextMessage);
+        try {
+        test.setOutput("Purchase_Disclaimer", test.webFunctions().readInfo(test, billing.Purchase_Disclaimer));
+        
+        test.setOutput("Messages_Disclaimer", test.webFunctions().readInfo(test, billing.Messages_Disclaimer ));
+       
+        test.setOutput("Esignature_Disclaimer", test.webFunctions().readInfo(test, billing.Esignature_Disclaimer));
+        
+        test.setOutput("Redpoint_County_Disclaimer", test.webFunctions().readInfo(test, billing.Redpoint_County_Disclaimer));
+      
+        test.setOutput("DebitAmount_Disclaimer", test.webFunctions().readInfo(test, billing.DebitAmount_Disclaimer));
+        }catch(NoSuchElementException e) {}
         test.webFunctions().click(test,billing.btn_Purchase);
         test.getLogger().info("Billing page: Success!");
     }
