@@ -74,9 +74,7 @@ public class TC_Apparent {
 	        Children.children(test);
 	        PolicyHolder.policyholder(test);
 	        Address.address(test);
-	        VehicleDetails1of2.vehicleDetails1of2(test);
-	        VehicleDetails2of2.vehicleDetails2of2(test);
-	        VehicleList.vehicleList(test);
+	        VehicleDetails1of2.vehicleDetails(test);
 	        PolicyHolderDetails1of2.policyHolderDetails1of2(test);
 	        PolicyHolderDetails2of2.policyHolderDetails2of2(test);
 	        DriverList.driverList(test);
