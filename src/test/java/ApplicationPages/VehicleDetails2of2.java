@@ -29,6 +29,8 @@ public class VehicleDetails2of2 {
 	@FindBy(xpath="//*[@id='chkHandsFree']/following-sibling::label")
 	public WebElement checkBox_HandsFree;
 	
+	public String btn_Antitheft = "//label[@for='antiTheftDevice{0}']" ;
+	
 	@FindBy(xpath="//label[@for='antiTheftDeviceYes']")
 	public WebElement btn_Antitheft_Yes;
 	
