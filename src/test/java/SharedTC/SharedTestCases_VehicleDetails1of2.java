@@ -42,7 +42,9 @@ public class SharedTestCases_VehicleDetails1of2 {
                 
             }
             }
-        catch (Exception e) {}
+        catch (Exception e) {
+        	test.webFunctions().click(test,vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V"+count+".Use"));
+        	}
         test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage);
         test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage_Select,test.getTestData("Vehicle.V"+count+".Mileage"));
         test.webFunctions().click(test,vehicleDetails1of2.dropDownParked);
@@ -67,6 +69,7 @@ public class SharedTestCases_VehicleDetails1of2 {
         test.webFunctions().click(test,vehicleDetails2of2.checkBox_CrashAvoidance);
         }}catch(Exception e) {}
 
+
        
        try {
     	   if(vehicleDetails2of2.btn_Antitheft_Yes.isDisplayed()) 
@@ -78,6 +81,7 @@ public class SharedTestCases_VehicleDetails1of2 {
        
         test.webFunctions().click(test,vehicleDetails2of2.btn_Next);
         test.getLogger().info("Vehicle Details 2of2 page: Success!");       
+     
 
     }
     

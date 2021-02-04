@@ -16,8 +16,7 @@ public class SharedTestCases_GetInfo {
         GetInfo getInfo = (GetInfo) PageFactory.initElements(test.driver, test.getPage());
         String PolicyNo = test.webFunctions().readInfo(test,getInfo.PolicyNumber);
         test.getLogger().info("Policy Number :"+ PolicyNo );
-        System.out.println("-------------"+ PolicyNo +"=====================");
-
+        
     }
 
     //For Getting the Suspended License status Text
