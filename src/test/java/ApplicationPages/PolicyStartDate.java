@@ -19,6 +19,9 @@ public class PolicyStartDate {
 	@FindBy(id="phone")
 	public WebElement textBox_Phone;
 	
+	@FindBy(xpath="//div[@class='disclaimer']")
+	public WebElement Discount_Page_Disclaimer;
+	
 	@FindBy(id="btnContinue")
 	public WebElement btn_SeeMyQuote;
 	
