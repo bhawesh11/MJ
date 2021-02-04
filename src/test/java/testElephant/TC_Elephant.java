@@ -330,8 +330,38 @@ public class TC_Elephant {
 
 // ---------------------------------------------------------------------------------------
 	    
-	    
-	    
+
+			// TC009
+			@Test(enabled = true, priority = 5, description = "V2_D2_IN")
+			@Parameters("ENV")
+			public void TC009(String ENV) throws Throwable {
+
+				Testing test = new Testing(ENV, brandName, "V2_D2_IN");
+				try {
+					PostalCode.postalCode_Elephant(test);
+					PolicyHolder.policyholder(test);
+					Address.address(test);
+					VehicleDetails1of2.vehicleDetails(test);
+					PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+					PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+					DriverInfo1of2.driverDetails(test);
+					InsuranceHistory.insuranceHistory_Yes(test);
+					Assignment.driverVehicleAssignmentPage(test);
+					PolicyStatrDate.policyStartDate(test);
+					test.webFunctions().staticWait(8000);
+					Quote.quote(test);
+					ConfirmDriver.confirmDriver(test);
+					ConfirmVehicle.confirmVehicle(test);
+					test.webFunctions().staticWait(4000);
+					Billing.billing_Elephant(test);
+					GetInfo.GetPolicyNumber(test);
+				} catch (Throwable e) {
+					throw (e);
+				} finally {
+					test.tearDown();
+				}
+			}
+			// ---------------------------------------------------------------------------------------
 	    
 }
 
