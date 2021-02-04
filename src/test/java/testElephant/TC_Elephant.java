@@ -177,7 +177,7 @@ public class TC_Elephant {
 			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
 			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
+			InsuranceHistory.insuranceHistory_No(test);
 			Assignment.driverVehicleAssignmentPage(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
