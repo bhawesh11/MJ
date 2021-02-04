@@ -54,14 +54,7 @@ public class SharedTestCases_DriverInfo1of2 {
 	public void driverInfo_2of2(Testing test, int count) {
 		test.setPage(DriverInfo2of2.class);
 		DriverInfo2of2 driverInfo2of2 = (DriverInfo2of2) PageFactory.initElements(test.driver, test.getPage());
-		if((test.getTestData("Driver.D" + count + ".ValidLicense")).equalsIgnoreCase("Yes")) {
-		test.webFunctions().click(test, driverInfo2of2.btn_ValidLicense,test.getTestData("Driver.D" + count + ".ValidLicense"));}
-		else 
-		{
-			test.webFunctions().click(test, driverInfo2of2.btn_ValidLicense,test.getTestData("Driver.D" + count + ".ValidLicense"));
-		    test.webFunctions().click(test,driverInfo2of2.dropdown_LicenseStatus);
-			test.webFunctions().click(test, driverInfo2of2.dropdownLicenseStatus_Select,test.getTestData("Driver.D" + count + ".LicenseStatus"));
-		}
+		test.webFunctions().click(test, driverInfo2of2.btn_ValidLicense,test.getTestData("Driver.D" + count + ".ValidLicense"));
 		test.webFunctions().click(test, driverInfo2of2.btn_AgeFirstLicensed,
 				test.getTestData("Driver.D" + count + ".Agefirstlicensed"));
 		// check below line and add 2nd vehicle to additional driver
