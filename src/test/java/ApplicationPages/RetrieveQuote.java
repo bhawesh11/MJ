@@ -5,7 +5,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class RetrieveQuote {
 
-    @FindBy(id="//a[@class='postal-code-hero__saved-quote-link ng-scope']")
+    //@FindBy(id="//a[@class='postal-code-hero__saved-quote-link ng-scope']")
+    @FindBy(xpath="//span[text()='Retrieve Saved Quote']")
     public WebElement btn_RetrieveSavedQuote;
 
     @FindBy(xpath="//*[@id='email']")

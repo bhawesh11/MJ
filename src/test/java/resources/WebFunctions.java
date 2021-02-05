@@ -36,7 +36,7 @@ public class WebFunctions {
 				element.clear();
 				element.sendKeys(value);
 				try {
-					Thread.sleep(3000);
+					Thread.sleep(1000);
 				} catch (Exception e) {
 				}
 				;
@@ -54,7 +54,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(3000);
+					staticWait(2000);
 					Utility.stop(test);
 				} else
 					throw e;
@@ -80,7 +80,7 @@ public class WebFunctions {
 		int attempt = 0;
 		webElement = webElement.replace("{0}", var1);
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(1000);
 		} catch (Exception e) {
 		}
 		; // By D
@@ -118,7 +118,7 @@ public class WebFunctions {
 				wait.until(ExpectedConditions.elementToBeClickable(element));
 				element.click();
 				try {
-					Thread.sleep(7000);
+					Thread.sleep(3000);
 				} catch (Exception e) {
 				}
 				;
@@ -136,7 +136,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(4000);
+					staticWait(3000);
 					Utility.stop(test);
 				} else
 					throw e;
@@ -217,7 +217,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(3000);
+					staticWait(2000);
 					Utility.stop(test);
 				} else
 					throw e;
@@ -303,8 +303,8 @@ public class WebFunctions {
 					element.click();
 				} catch (WebDriverException e) {
 					/* Do Nothing */}
-				staticWait(4000);
-				test.driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
+				staticWait(3000);
+				test.driver.findElement(By.xpath("//option[contains(text(),'" + value + "')]")).click();
 				staticWait(1000);
 				Utility.stop(test);
 				done = true;
@@ -320,7 +320,7 @@ public class WebFunctions {
 			catch (NoSuchElementException e) {
 				if (attempt <= 3) {
 					test.getLogger().error("NoSuchElement Exception");
-					staticWait(3000);
+					staticWait(2000);
 					Utility.stop(test);
 				} else
 					throw e;
@@ -338,55 +338,56 @@ public class WebFunctions {
 	}// Closing METHOD
 //	======================================================================
 	// SELECT GUIDEWIRE'S DROPDOWN
-		public void dropdown(Testing test, WebElement element, WebElement option) {
-			WebDriverWait wait = new WebDriverWait(test.driver, 40);
-			Boolean done = false;
-			int attempt = 0;
-			done = false;
-			attempt = 0;
-			while (!done && (attempt <= 3)) {
-				try {
-					attempt++;
-					wait.until(ExpectedConditions.elementToBeClickable(element));
+
+	public void dropdown(Testing test, WebElement element, WebElement option) {
+		WebDriverWait wait = new WebDriverWait(test.driver, 40);
+		Boolean done = false;
+		int attempt = 0;
+		done = false;
+		attempt = 0;
+		while (!done && (attempt <= 3)) {
+			try {
+				attempt++;
+				wait.until(ExpectedConditions.elementToBeClickable(element));
 //					Select dropdown= new Select(element);
 //					dropdown.selectByVisibleText(value);
-					try {
-						element.click();
-					} catch (WebDriverException e) {
-						/* Do Nothing */}
-					staticWait(4000);
-					option.click();
-					staticWait(1000);
+				try {
+					element.click();
+				} catch (WebDriverException e) {
+					/* Do Nothing */}
+				staticWait(3000);
+				option.click();
+				staticWait(1000);
+				Utility.stop(test);
+				done = true;
+			} // Closing TRY
+
+			catch (StaleElementReferenceException e) {
+				if (attempt <= 3)
+					reInitPageElements(test);
+				else
+					throw e;
+			} // Closing CATCH-1
+
+			catch (NoSuchElementException e) {
+				if (attempt <= 3) {
+					test.getLogger().error("NoSuchElement Exception");
+					staticWait(2000);
 					Utility.stop(test);
-					done = true;
-				} // Closing TRY
+				} else
+					throw e;
+			} // Closing CATCH-2
 
-				catch (StaleElementReferenceException e) {
-					if (attempt <= 3)
-						reInitPageElements(test);
-					else
-						throw e;
-				} // Closing CATCH-1
+			catch (WebDriverException e) {
+				if (attempt <= 3) {
+					test.getLogger().error("WebDriver Exception");
+					staticWait(2000);
+				} else
+					throw e;
+			} // Closing CATCH-3
 
-				catch (NoSuchElementException e) {
-					if (attempt <= 3) {
-						test.getLogger().error("NoSuchElement Exception");
-						staticWait(3000);
-						Utility.stop(test);
-					} else
-						throw e;
-				} // Closing CATCH-2
-
-				catch (WebDriverException e) {
-					if (attempt <= 3) {
-						test.getLogger().error("WebDriver Exception");
-						staticWait(2000);
-					} else
-						throw e;
-				} // Closing CATCH-3
-
-			} // Closing WHILE
-		}// Closing METHOD
+		} // Closing WHILE
+	}// Closing METHOD
 //		======================================================================
 
 	// SELECT DROPDOWN - DYNAMIC
@@ -543,5 +544,14 @@ public class WebFunctions {
 		}
 
 		return fileName;
+	}
+
+	// ============================================================================
+	public void refresh(Testing test) {
+		test.driver.navigate().refresh();
+		staticWait(2000);
+		test.driver.switchTo().alert().accept();
+		staticWait(4000);
+		test.getLogger().info("Page Refreshed..");
 	}
 }
