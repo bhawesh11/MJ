@@ -12,9 +12,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_Billing {
 
-	public void billing(Testing test) {
+	public void billing_Apparent(Testing test) {
 		test.setPage(Billing.class);
         Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());
+
         test.webFunctions().staticWait(9000);
         test.webFunctions().click(test,billing.link_PaymentPlan, test.getTestData("Billing.PaymentPlan"));
         test.webFunctions().type(test,billing.textBox_CreditCardFirstName, test.getTestData("Billing.CardHolderFirstName"));
@@ -32,6 +33,7 @@ public class SharedTestCases_Billing {
 	public void billing_Elephant(Testing test) {
         test.setPage(Billing.class);
         Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());
+
         test.webFunctions().staticWait(9000);
         test.webFunctions().click(test,billing.link_PaymentPlan, test.getTestData("Billing.PaymentPlan"));
         test.webFunctions().type(test,billing.textBox_CardHolderFirstName_Elephant, test.getTestData("Billing.CardHolderFirstName"));
@@ -40,8 +42,17 @@ public class SharedTestCases_Billing {
         test.webFunctions().click(test,billing.dropDown_CreditCardExpiryMonth_Elephant);
         test.webFunctions().click(test,billing.dropDownCreditCardExpiryMonth_Select_Elephant);
         test.webFunctions().click(test,billing.dropDown_CreditCardExpiryYear_Elephant);
-        test.webFunctions().click(test,billing.dropDownCreditCardExpiryYear_Select_Elephant);    
-        test.webFunctions().click(test,billing.btn_UseTheSameCard_Elephant);
+        test.webFunctions().click(test,billing.dropDownCreditCardExpiryYear_Select_Elephant);
+        try {
+        	if(billing.checkbox_UseTheSameCard_Elephant.isDisplayed()==true) {
+        		test.webFunctions().click(test,billing.checkbox_UseTheSameCard_Elephant);
+        	}		
+        	}catch (Exception e) {}
+        try {
+        	if(billing.btn_UseTheSameCard_Elephant.isDisplayed()==true) {
+        		test.webFunctions().click(test,billing.btn_UseTheSameCard_Elephant);
+        	}		
+        	}catch (Exception e) {}		
         test.webFunctions().click(test,billing.btn_receiveTextMessage);
         try {
         test.setOutput("Purchase_Disclaimer", test.webFunctions().readInfo(test, billing.Purchase_Disclaimer));
