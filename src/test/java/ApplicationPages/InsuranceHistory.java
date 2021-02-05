@@ -29,7 +29,7 @@ public class InsuranceHistory {
 	
 	public String dropdownUninsured_Select = "//*[@id='previousLapse']/option[contains(text(),'{0}')]";
 
-	@FindBy(xpath="driverInsuranceReason")
+	@FindBy(id="driverInsuranceReason")
 	public WebElement dropdownReason;
 	
 	public String dropdownReason_Select = "//*[@id='driverInsuranceReason']/option[contains(text(),'{0}')]";
