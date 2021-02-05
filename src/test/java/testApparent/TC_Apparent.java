@@ -62,7 +62,7 @@ public class TC_Apparent {
 
 
 	// TC001
-	@Test(enabled = true, priority = 5, description = "Apparent_Test")
+	@Test(enabled = false, priority = 5, description = "Apparent_Test")
 	@Parameters("ENV")
 	public void TC001(String ENV) throws Throwable {
 
@@ -128,5 +128,82 @@ public class TC_Apparent {
 				test.tearDown();
 			}
 		}// closing TC002 method
+		
+	// ---------------------------------------------------------------------------------------
+		// TC004
+		@Test(enabled = false, priority = 5, description = "V2_D2_TX_App")
+		@Parameters("ENV")
+		public void TC004(String ENV) throws Throwable {
 
+			Testing test = new Testing(ENV, brandName, "V2_D2_TX_App");
+			try {
+
+				PostalCode.postalCode(test);
+		        Family.family(test);
+		        //Children.children(test);
+		        PolicyHolder.policyholder(test);
+		        Address.address(test);
+		        VehicleDetails1of2.vehicleDetails(test);
+		        PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+		        PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+		        DriverInfo1of2.driverDetails(test);
+		        InsuranceHistory.insuranceHistory_Yes(test);
+		        DriverAssignment.driverVehicleAssignmentPage(test);
+		        PolicyStatrDate.policyStartDate(test);
+		        test.webFunctions().staticWait(12000);
+		        Quote.quote(test);
+		        test.webFunctions().staticWait(8000);
+		        ConfirmDriver.confirmDriver(test);	       
+		        test.webFunctions().staticWait(2000);	        
+		        ConfirmVehicle.confirmVehicle(test);
+		        test.webFunctions().staticWait(3000);
+		        Billing.billing(test);
+		        GetInfo.GetPolicyNumber(test);
+			} catch (Throwable e) {
+				throw (e);
+			} finally {
+				test.tearDown();
+			}
+		}// closing TC004 method
+
+	// ---------------------------------------------------------------------------------------
+		
+			// TC005
+				@Test(enabled = true, priority = 5, description = "V2_D3_TX_App")
+				@Parameters("ENV")
+				public void TC005(String ENV) throws Throwable {
+
+					Testing test = new Testing(ENV, brandName, "V2_D3_TX_App");
+					try {
+
+						PostalCode.postalCode(test);
+				        Family.family(test);
+				        PolicyHolder.policyholder(test);
+				        Address.address(test);
+				        VehicleDetails1of2.vehicleDetails(test);
+				        PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+				        PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+				        DriverInfo1of2.driverDetails(test);
+				        InsuranceHistory.insuranceHistory_Yes(test);
+				        DriverAssignment.driverVehicleAssignmentPage(test);
+				        PolicyStatrDate.policyStartDate(test);
+				        test.webFunctions().staticWait(12000);
+				        Quote.quote(test);
+				        test.webFunctions().staticWait(8000);
+				        ConfirmDriver.confirmDriver(test);	       
+				        test.webFunctions().staticWait(2000);	        
+				        ConfirmVehicle.confirmVehicle(test);
+				        test.webFunctions().staticWait(3000);
+				        Billing.billing(test);
+				        GetInfo.GetPolicyNumber(test);
+					} catch (Throwable e) {
+						throw (e);
+					} finally {
+						test.tearDown();
+					}
+				}// closing TC005 method
+
+// ---------------------------------------------------------------------------------------
+				
+		
 }
