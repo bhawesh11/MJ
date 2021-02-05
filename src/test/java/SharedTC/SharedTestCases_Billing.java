@@ -15,10 +15,7 @@ public class SharedTestCases_Billing {
 	public void billing(Testing test) {
 		test.setPage(Billing.class);
         Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());
-        try {
-			Thread.sleep(8000);
-		} catch (Exception e) {
-		}
+        test.webFunctions().staticWait(9000);
         test.webFunctions().click(test,billing.link_PaymentPlan, test.getTestData("Billing.PaymentPlan"));
         test.webFunctions().type(test,billing.textBox_CreditCardFirstName, test.getTestData("Billing.CardHolderFirstName"));
         test.webFunctions().type(test,billing.textBox_CreditCardLastName, test.getTestData("Billing.CardHolderLastName"));
@@ -35,10 +32,7 @@ public class SharedTestCases_Billing {
 	public void billing_Elephant(Testing test) {
         test.setPage(Billing.class);
         Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());
-        try {
-            Thread.sleep(8000);
-        } catch (Exception e) {
-        }
+        test.webFunctions().staticWait(9000);
         test.webFunctions().click(test,billing.link_PaymentPlan, test.getTestData("Billing.PaymentPlan"));
         test.webFunctions().type(test,billing.textBox_CardHolderFirstName_Elephant, test.getTestData("Billing.CardHolderFirstName"));
         test.webFunctions().type(test,billing.textBox_CardHolderLastName_Elephant, test.getTestData("Billing.CardHolderLastName"));
