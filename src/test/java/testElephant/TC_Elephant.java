@@ -102,7 +102,7 @@ public class TC_Elephant {
 			VehicleDetails1of2.vehicleDetails(test);
 			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverList.driverList(test);
+			DriverInfo1of2.driverDetails(test);
 			InsuranceHistory.insuranceHistory_Yes(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
@@ -380,7 +380,7 @@ public class TC_Elephant {
 	 				VehicleDetails1of2.vehicleDetails(test);
 	 				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
 	 				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-	 				DriverList.driverList(test);
+	 				DriverInfo1of2.driverDetails(test);
 	 				InsuranceHistory.insuranceHistory_No(test);
 	 				PolicyStatrDate.policyStartDate(test);
 	 				test.webFunctions().staticWait(10000);
