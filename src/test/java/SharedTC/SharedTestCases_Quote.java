@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SharedTestCases_Quote {
 
-
     public void quote(Testing test) {
         test.setPage(Quote.class);
         Quote quote = (Quote) PageFactory.initElements(test.driver, test.getPage());
@@ -21,8 +20,16 @@ public class SharedTestCases_Quote {
 		} catch (Exception e) {
 		}
         test.webFunctions().click(test,quote.btn_Continue);
- 
-        test.getLogger().info("Quote Page: Success!");
+ if(test.getBrandName().equalsIgnoreCase("Apparent") && quote.btn_ContinueWithoutCoveragePOPUP.isDisplayed() == true )
+ {
+	 test.webFunctions().staticWait(3000);
+	 test.webFunctions().click(test,quote.btn_ContinueWithoutCoveragePOPUP);
+	 test.getLogger().info("Quote Page: Success!");
+ }
+ else {
+	 test.getLogger().info("Quote Page: Success!");
+ }
+       // test.getLogger().info("Quote Page: Success!");
     }
     
 }
