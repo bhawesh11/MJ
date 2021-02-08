@@ -82,8 +82,9 @@ public class TC_Apparent {
 			test.webFunctions().staticWait(4000);
 			ConfirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
-			Billing.billing(test);
+			Billing.billing_Apparent(test);
 			GetInfo.GetPolicyNumber(test);
+
 		} catch (Throwable e) {
 			throw (e);
 		} finally {
@@ -93,7 +94,7 @@ public class TC_Apparent {
 
 	
 		
-
+    //TC002
 	@Test(enabled = true, priority = 5, description = "V1_D1_RetrieveQuote_Bind")
 	@Parameters("ENV")
 	public void TC002(String ENV) throws Throwable {
@@ -122,7 +123,7 @@ public class TC_Apparent {
 			test.webFunctions().staticWait(4000);
 			ConfirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing(test);
+			Billing.billing_Apparent(test);
 			GetInfo.GetPolicyNumber(test);
 
 		} catch (Throwable e) {
@@ -160,7 +161,7 @@ public class TC_Apparent {
 			test.webFunctions().staticWait(4000);
 			ConfirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing(test);
+			Billing.billing_Apparent(test);
 			GetInfo.GetPolicyNumber(test);
 
 		} catch (Throwable e) {
@@ -168,7 +169,7 @@ public class TC_Apparent {
 		} finally {
 			test.tearDown();
 		}
-	}// closing TC002 method
+	}// closing TC003 method
 
 	// TC004
 			@Test(enabled = false, priority = 5, description = "V2_D2_TX_App")
@@ -196,13 +197,15 @@ public class TC_Apparent {
 		        test.webFunctions().staticWait(2000);	        
 		        ConfirmVehicle.confirmVehicle(test);
 		        test.webFunctions().staticWait(3000);
-		        Billing.billing(test);
+		        Billing.billing_Apparent(test);
 		        GetInfo.GetPolicyNumber(test);
+
 			} catch (Throwable e) {
 				throw (e);
 			} finally {
 				test.tearDown();
 			}
+
 		}// closing TC004 method
 
 	// ---------------------------------------------------------------------------------------
@@ -233,7 +236,7 @@ public class TC_Apparent {
 				        test.webFunctions().staticWait(2000);	        
 				        ConfirmVehicle.confirmVehicle(test);
 				        test.webFunctions().staticWait(3000);
-				        Billing.billing(test);
+				        Billing.billing_Apparent(test);
 				        GetInfo.GetPolicyNumber(test);
 					} catch (Throwable e) {
 						throw (e);
