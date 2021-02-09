@@ -15,6 +15,7 @@ public class Testing {
     private BrowserFactory bf;
     private WebFunctions webFunctions;
     private Logger logger;
+    private Reporter reporter;
     public int vehicleCount ;
     public int driverCount ;
     
@@ -26,6 +27,7 @@ public class Testing {
 //		1. INITIALIZING ATTRIBUTES:
         db = new Database();
         td = new TestData(db, brandName, scriptName);
+        reporter = new Reporter(brandName, scriptName);
         output = new Output(td);
         webFunctions = new WebFunctions();
         address = new URL(brandName);
@@ -118,5 +120,20 @@ public class Testing {
 //	---------------------------------------------------------------------
     public Logger getLogger() {
         return logger;
+    }
+// -----------------------------------------------------------------------
+    public void markPassed() {
+        reporter.pass("Test case is successful!");
+        String result = output.getOutputs().toString()
+        		.replace("{","")
+        		.replaceAll(","," | ")
+        		.replaceAll("\"", "")
+        		.replace("}", "");
+        //reporter.info(result);
+       }
+//----------------------------------------------------------------------------
+    public void markFailed(String message) {
+    	reporter.fail("Test case has failed!");
+    	reporter.fail(message);
     }
 }

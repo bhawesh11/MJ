@@ -64,7 +64,7 @@ public class SharedTestCases_Billing {
         test.setOutput("Redpoint_County_Disclaimer", test.webFunctions().readInfo(test, billing.Redpoint_County_Disclaimer));
       
         test.setOutput("DebitAmount_Disclaimer", test.webFunctions().readInfo(test, billing.DebitAmount_Disclaimer));
-        }catch(NoSuchElementException e) {}
+        }catch(Exception e) {}
         test.webFunctions().click(test,billing.btn_Purchase);
         test.getLogger().info("Billing page: Success!");
     }
