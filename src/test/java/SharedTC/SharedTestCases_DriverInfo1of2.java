@@ -80,13 +80,13 @@ public class SharedTestCases_DriverInfo1of2 {
 	}
 
 	public void driverDetails(Testing test) {
-		int x;
+		int count_init;
 		if(test.getTestData("PolicyholderDetails.MaritalStatus").equalsIgnoreCase("Married")) {
-			x=2;}
+			count_init=2;}
 			else {
-				x=1;
+				count_init=1;
 		}
-		for (int count=x; count <= test.driverCount; count++) {
+		for (int count=count_init; count <= test.driverCount; count++) {
 			driverList(test, count);
 			if (count == test.driverCount) {
 				break;
