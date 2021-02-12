@@ -14,7 +14,7 @@ public class Testing {
     private TestData td;
     private BrowserFactory bf;
     private WebFunctions webFunctions;
-    private Logger logger;
+    //private Logger logger;
     private Reporter reporter;
     public int vehicleCount ;
     public int driverCount ;
@@ -32,7 +32,7 @@ public class Testing {
         webFunctions = new WebFunctions();
         address = new URL(brandName);
         this.brandName = brandName;
-        logger = Logger.getLogger(brandName+"-"+scriptName);
+        //logger = Logger.getLogger(brandName+"-"+scriptName);
 
 //		2. INITIALIZING DRIVER
         String url = address.getURL(environment);
@@ -77,6 +77,7 @@ public class Testing {
 //	TEAR DOWN FOR TESTCASE:
     public void tearDown() {
         bf.closeBrowser();
+        reporter.flush();
 //        db.insertRecordInDatabase(scriptName, "Elephant");
         //logger.info(output.getOutputs());
         
@@ -118,8 +119,8 @@ public class Testing {
         return td.createRandomString(length);
     }
 //	---------------------------------------------------------------------
-    public Logger getLogger() {
-        return logger;
+    public Reporter getLogger() {
+        return reporter;
     }
 // -----------------------------------------------------------------------
     public void markPassed() {
