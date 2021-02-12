@@ -37,8 +37,13 @@ public class Billing {
     @FindBy(id="addressEdit")
     public WebElement btn_editAddress;
 
+    @FindBy(xpath="//label[contains(@for,'Use the same card as above')]")
+    public WebElement checkbox_UseTheSameCard_Elephant;
+    
     @FindBy(xpath="//*[@id='achOption1']//following-sibling::label")
     public WebElement btn_UseTheSameCard_Elephant;
+    
+    
     
     @FindBy(id="phone")
     public WebElement textBox_Phoneno;
@@ -69,6 +74,8 @@ public class Billing {
     
     @FindBy(xpath="//*[@id='expiryYear']/option[11]")
     public WebElement dropdownCreditCardExpiryYear_Select;
+    
+   
      
     @FindBy(xpath="//*[text()='Use the same card as above']")
     public WebElement btn_sameCardasAbove;
