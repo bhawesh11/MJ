@@ -14,9 +14,10 @@ public class SharedTestCases_Spouse2of2 {
         test.setPage(Spouse2of2.class);
         Spouse2of2 spouse = (Spouse2of2) PageFactory.initElements(test.driver, test.getPage());
 
-        test.webFunctions().click(test,spouse.btn_ValidLicense, test.getTestData("Policyholder.SpouseValidLicense"));
-        test.webFunctions().click(test,spouse.btn_AgeFirstLicensed, test.getTestData("Policyholder.SpouseAgefirstlicensed"));
-        test.webFunctions().click(test,spouse.btn_IncidentHistory, test.getTestData("Policyholder.SpouseIncident"));
+        test.webFunctions().click(test,spouse.btn_ValidLicense, test.getTestData("Spouse.ValidLicense"));
+        test.webFunctions().click(test,spouse.btn_AgeFirstLicensed, test.getTestData("Spouse.Agefirstlicensed"));
+        test.webFunctions().click(test,spouse.btn_VehicleDriveMostOften,test.getTestData("Vehicle.V2.Model"));
+        test.webFunctions().click(test,spouse.btn_IncidentHistory, test.getTestData("Spouse.Incident"));
         test.webFunctions().click(test,spouse.btn_Next);
         test.getLogger().info("Partner page 2of2 : Success!");
     }
