@@ -30,15 +30,12 @@ public class PolicyholderDetails1of2 {
 	
 	public String btn_WFHOrAttendClasses = "//div/label[contains(text(),'{0}')]";
 	
-	public String btn_InSchool="//label[contains(@for,'attendingSchool{0}')]";
+	public String btn_School="//label[contains(@for,'attendingSchool{0}')]";
 	
 	@FindBy(xpath="//div/input[contains(@name,'driverOccupation')]")
 	public WebElement textbox_CurrentOccupation;
 	
-	@FindBy(xpath="//div/label[contains(text(),'Army')]")
-	public WebElement btn_Army;
-	
-	public String btn_MilitaryBranch_School = "//div/label[contains(text(),'{0}')]";
+	public String btn_MilitaryBranch = "//div/label[contains(text(),'{0}')]";
 	
 	@FindBy(xpath="//select[contains(@name,'militaryStatus')]")
 	public WebElement dropdown_militaryStatus;
@@ -49,8 +46,6 @@ public class PolicyholderDetails1of2 {
 		
 	public String btn_Branch="//*[@identity='militaryBranch']/div/label[text()='{0}']";
 					
-	@FindBy(xpath="//*[@identity='militaryBranch']/div/label[text()='{0}']")
-	public WebElement dropdown_Rank;
 			
 	@FindBy(id="driverOccupation")
 	public WebElement textBox_Occupation;
@@ -58,16 +53,5 @@ public class PolicyholderDetails1of2 {
 	@FindBy(id="btnNext")
 	public WebElement btn_Continue;
 			
-    @FindBy(xpath="//*[@identity='driverOccupation']/div/div/ul/li[1]")
-    public WebElement Occupation_options;
-	   
-    @FindBy(xpath="//*[@identity='daysDrive']/div/label[text()='{0}']")
-    public WebElement Days_drive;
-	   
-    @FindBy(xpath="//*[@identity='attendingSchool']/div/label[text()='{0}']")
-    public WebElement attending_School;
-	           
-    @FindBy(xpath="//*[@identity='wfh']/div/label[text()='{0}']")
-    public WebElement WFH;
 	
 }
