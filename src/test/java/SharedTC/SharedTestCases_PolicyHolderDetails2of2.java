@@ -9,7 +9,9 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
 public class SharedTestCases_PolicyHolderDetails2of2 {
-
+	
+	SharedTestCases_Incidents incident_MethodCall = new SharedTestCases_Incidents();
+	
     //	POLICYHOLDER-DETAILS-2
     public void policyHolderDetails2of2(Testing test) {
         test.setPage(PolicyHolderDetails2of2.class);
@@ -20,6 +22,7 @@ public class SharedTestCases_PolicyHolderDetails2of2 {
         test.webFunctions().click(test,policyholderDetails2of2.btn_IncidentHistory,test.getTestData("Policyholder-details-2.IncidentHistory"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_Next);
         test.getLogger().info("Policy Holder Details 2of2 page: Success!");
+        incident_MethodCall.incident_PolicyHolder(test);
     }
 
     // -------------------------------------------------------------------------------------------
