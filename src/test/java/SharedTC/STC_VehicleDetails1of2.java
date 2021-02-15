@@ -10,7 +10,7 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_VehicleDetails1of2 {
+public class STC_VehicleDetails1of2 {
 
     Logger  log = Logger.getLogger("Shared Test Case_Web");
 
@@ -75,6 +75,7 @@ public class SharedTestCases_VehicleDetails1of2 {
     	   if(vehicleDetails2of2.btn_Antitheft_Yes.isDisplayed()) 
            {
            	test.webFunctions().click(test,vehicleDetails2of2.btn_Antitheft, test.getTestData("Vehicle.V"+count+".AntiTheft"));
+           	test.webFunctions().staticWait(2000);
            }        
        }
        catch(Exception e){ }   	   
@@ -90,6 +91,7 @@ public class SharedTestCases_VehicleDetails1of2 {
         test.setPage(VehicleList.class);
         VehicleList vehicleList = (VehicleList) PageFactory.initElements(test.driver, test.getPage());
         if(count==test.vehicleCount) {
+        test.webFunctions().staticWait(3000);
         test.webFunctions().click(test,vehicleList.btn_Next);
                 test.getLogger().info("VehicleList page: Success!");
         }

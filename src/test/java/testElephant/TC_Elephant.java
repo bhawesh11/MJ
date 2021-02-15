@@ -26,31 +26,31 @@ public class TC_Elephant {
 	// ==============================================================================================
 	// Creating Objects :
 
-	SharedTestCases_PostalCode PostalCode = new SharedTestCases_PostalCode();
-	SharedTestCases_PolicyHolder PolicyHolder = new SharedTestCases_PolicyHolder();
-	SharedTestCases_Address Address = new SharedTestCases_Address();
-	SharedTestCases_VehicleDetails1of2 VehicleDetails1of2 = new SharedTestCases_VehicleDetails1of2();
-	SharedTestCases_VehicleDetails2of2 VehicleDetails2of2 = new SharedTestCases_VehicleDetails2of2();
-	SharedTestCases_VehicleList VehicleList = new SharedTestCases_VehicleList();
-	SharedTestCases_PolicyHolderDetails1of2 PolicyHolderDetails1of2 = new SharedTestCases_PolicyHolderDetails1of2();
-	SharedTestCases_PolicyHolderDetails2of2 PolicyHolderDetails2of2 = new SharedTestCases_PolicyHolderDetails2of2();
-	SharedTestCases_Spouse1of2 Spouse1of2 = new SharedTestCases_Spouse1of2();
-	SharedTestCases_Spouse2of2 Spouse2of2 = new SharedTestCases_Spouse2of2();
-	SharedTestCases_DriverInfo1of2 DriverInfo1of2 = new SharedTestCases_DriverInfo1of2();
-	SharedTestCases_DriverInfo2of2 DriverInfo2of2 = new SharedTestCases_DriverInfo2of2();
-	SharedTestCases_Incidents incidents = new SharedTestCases_Incidents();
-	SharedTestCases_DriverList DriverList = new SharedTestCases_DriverList();
-	SharedTestCases_Assignment Assignment = new SharedTestCases_Assignment();
-	SharedTestCases_InsuranceHistory InsuranceHistory = new SharedTestCases_InsuranceHistory();
-	SharedTestCases_PolicyStatrDate PolicyStatrDate = new SharedTestCases_PolicyStatrDate();
-	SharedTestCases_Quote Quote = new SharedTestCases_Quote();
-	SharedTestCases_RetrieveQuote RetrieveQuote = new SharedTestCases_RetrieveQuote();
-	SharedTestCases_RightPanel RightPanel = new SharedTestCases_RightPanel();
-	SharedTestCases_ConfirmDriver ConfirmDriver = new SharedTestCases_ConfirmDriver();
-	SharedTestCases_ConfirmVehicle ConfirmVehicle = new SharedTestCases_ConfirmVehicle();
-	SharedTestCases_Billing Billing = new SharedTestCases_Billing();
-	SharedTestCases_GetInfo GetInfo = new SharedTestCases_GetInfo();
-	SharedTestCases_Misc misc = new SharedTestCases_Misc();
+	STC_PostalCode PostalCode = new STC_PostalCode();
+	STC_PolicyHolder PolicyHolder = new STC_PolicyHolder();
+	STC_Address Address = new STC_Address();
+	STC_VehicleDetails1of2 VehicleDetails1of2 = new STC_VehicleDetails1of2();
+	STC_VehicleDetails2of2 VehicleDetails2of2 = new STC_VehicleDetails2of2();
+	STC_VehicleList VehicleList = new STC_VehicleList();
+	STC_PolicyHolderDetails1of2 PolicyHolderDetails1of2 = new STC_PolicyHolderDetails1of2();
+	STC_PolicyHolderDetails2of2 PolicyHolderDetails2of2 = new STC_PolicyHolderDetails2of2();
+	STC_Spouse1of2 Spouse1of2 = new STC_Spouse1of2();
+	STC_Spouse2of2 Spouse2of2 = new STC_Spouse2of2();
+	STC_DriverInfo1of2 DriverInfo1of2 = new STC_DriverInfo1of2();
+	STC_DriverInfo2of2 DriverInfo2of2 = new STC_DriverInfo2of2();
+	STC_Incidents incidents = new STC_Incidents();
+	STC_DriverList DriverList = new STC_DriverList();
+	STC_Assignment Assignment = new STC_Assignment();
+	STC_InsuranceHistory InsuranceHistory = new STC_InsuranceHistory();
+	STC_PolicyStatrDate PolicyStatrDate = new STC_PolicyStatrDate();
+	STC_Quote Quote = new STC_Quote();
+	STC_RetrieveQuote RetrieveQuote = new STC_RetrieveQuote();
+	STC_RightPanel RightPanel = new STC_RightPanel();
+	STC_ConfirmDriver ConfirmDriver = new STC_ConfirmDriver();
+	STC_ConfirmVehicle ConfirmVehicle = new STC_ConfirmVehicle();
+	STC_Billing Billing = new STC_Billing();
+	STC_GetInfo GetInfo = new STC_GetInfo();
+	STC_Misc misc = new STC_Misc();
 
 	// ==============================================================================================
 //    ***_TEST_CASES_***
@@ -304,40 +304,41 @@ public class TC_Elephant {
 		}
 	}
 
-	// ---------------------------------------------------------------------------------------
-	// TC008
-	@Test(enabled = true, priority = 5, description = "V2_D2_OH")
-	@Parameters("ENV")
-	public void TC008(String ENV) throws Throwable {
+	 // ---------------------------------------------------------------------------------------
+	 // TC008
+	 		@Test(enabled = false, priority = 5, description = "V2_D2_OH")
+	 		@Parameters("ENV")
+	 		public void TC008(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V2_D2_OH");
-		try {
+	 			Testing test = new Testing(ENV, brandName, "V2_D2_OH");
+	 			try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
-			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
-			ConfirmVehicle.confirmVehicle(test);
-			test.webFunctions().staticWait(8000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
-			test.markPassed();
-		} catch (Throwable e) {
-			test.markFailed(e.getMessage());
-			throw (e);
-		} finally {
-			test.tearDown();
-		}
-	}
+	 				PostalCode.postalCode_Elephant(test);
+	 				PolicyHolder.policyholder(test);
+	 				Address.address(test);
+	 				VehicleDetails1of2.vehicleDetails(test);
+	 				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+	 				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+	 				DriverInfo1of2.driverDetails(test);
+	 				InsuranceHistory.insuranceHistory_Yes(test);
+	 				Assignment.driverVehicleAssignmentPage(test);
+	 				PolicyStatrDate.policyStartDate(test);
+	 				test.webFunctions().staticWait(8000);
+	 				Quote.quote(test);
+	 				ConfirmDriver.confirmDriver(test);
+	 				ConfirmVehicle.confirmVehicle(test);
+	 				test.webFunctions().staticWait(8000);
+	 				Billing.billing_Elephant(test);
+	 				GetInfo.GetPolicyNumber(test);
+
+	 				test.markPassed();
+	 			} catch (Throwable e) {
+	 				test.markFailed(e.getMessage());
+	 				throw (e);
+	 			} finally {
+	 				test.tearDown();
+	 			}
+	 		}
 
 // ---------------------------------------------------------------------------------------
 

@@ -7,7 +7,7 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_Children {
+public class STC_Children {
 
     
     

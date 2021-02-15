@@ -8,7 +8,7 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_Spouse2of2 {
+public class STC_Spouse2of2 {
 
 	SharedTestCases_Incidents incident_MethodCall = new SharedTestCases_Incidents();
 	
