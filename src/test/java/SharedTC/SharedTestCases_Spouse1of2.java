@@ -15,12 +15,12 @@ public class SharedTestCases_Spouse1of2 {
         test.setPage(Spouse1of2.class);
         Spouse1of2 spouse = (Spouse1of2) PageFactory.initElements(test.driver, test.getPage());
 
-        test.webFunctions().type(test,spouse.textBox_FirstName, test.getTestData("Policyholder.SpouseFirstName"));
-        test.webFunctions().type(test,spouse.textBox_LastName, test.getTestData("Policyholder.SpouseLastName"));
-        test.webFunctions().type(test,spouse.textBox_DOB, test.getTestData("Policyholder.SpouseDOB"));
-        test.webFunctions().click(test,spouse.btn_Gender, test.getTestData("Policyholder.SpouseGender"));
-        test.webFunctions().click(test,spouse.btn_Education, test.getTestData("Policyholder.SpouseEducation"));
-        test.webFunctions().click(test,spouse.btn_CurrentlyEmployed, test.getTestData("Policyholder.SpouseEmployment"));
+        test.webFunctions().type(test,spouse.textBox_FirstName, test.getTestData("Spouse.FirstName"));
+        test.webFunctions().type(test,spouse.textBox_LastName, test.getTestData("Spouse.LastName"));
+        test.webFunctions().type(test,spouse.textBox_DOB, test.getTestData("Spouse.DOB"));
+        test.webFunctions().click(test,spouse.btn_Gender, test.getTestData("Spouse.Gender"));
+        test.webFunctions().click(test,spouse.btn_Education, test.getTestData("Spouse.Education"));
+        test.webFunctions().click(test,spouse.btn_CurrentlyEmployed, test.getTestData("Spouse.Employment"));
         test.webFunctions().click(test,spouse.btn_Continue);
         test.getLogger().info("Partner page 1of2 : Success!");
     }
