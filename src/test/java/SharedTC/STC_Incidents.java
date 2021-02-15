@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import ApplicationPages.Incidents;
 
-public class SharedTestCases_Incidents {
+public class STC_Incidents {
 
   
     public void incident_PolicyHolder(Testing test)

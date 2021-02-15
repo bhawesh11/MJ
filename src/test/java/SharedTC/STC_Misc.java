@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import resources.Testing;
 
-public class SharedTestCases_Misc {
+public class STC_Misc {
 	
 	public  void verifyDisclaimerMessages(Testing test){
         

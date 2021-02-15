@@ -10,7 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_PolicyHolderDetails1of2 {
+public class STC_PolicyHolderDetails1of2 {
 
 	// POLICYHOLDER-DETAILS-1
 	public void policyHolderDetails1of2(Testing test) {
@@ -63,11 +63,13 @@ public class SharedTestCases_PolicyHolderDetails1of2 {
 	public void occupation(Testing test) {
 		test.setPage(PolicyholderDetails1of2.class);
 		PolicyholderDetails1of2 policyholderDetails1of2 = (PolicyholderDetails1of2) PageFactory.initElements(test.driver, test.getPage());
+		
 		test.webFunctions().click(test, policyholderDetails1of2.btn_CurrentlyEmployed,
 				test.getTestData("PolicyholderDetails.Employment"));
-		String str = test.getTestData("PolicyholderDetails.Employment");
 		
-		switch (str) {
+		String employementSelected= test.getTestData("PolicyholderDetails.Employment");
+		
+		switch (employementSelected) {
 		case "Employed":
 			test.webFunctions().click(test,policyholderDetails1of2.btn_DaysYouDrive,test.getTestData("PolicyholderDetails.DaysYouDriveToWork"));
 			test.webFunctions().click(test,policyholderDetails1of2.btn_WFHOrAttendClasses,test.getTestData("PolicyholderDetails.WFH"));

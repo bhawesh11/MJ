@@ -8,14 +8,16 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_PolicyHolderDetails2of2 {
+public class STC_PolicyHolderDetails2of2 {
 	
-	SharedTestCases_Incidents incident_MethodCall = new SharedTestCases_Incidents();
-	
+	STC_Incidents incident_MethodCall = new STC_Incidents();
+
+
     //	POLICYHOLDER-DETAILS-2
     public void policyHolderDetails2of2(Testing test) {
         test.setPage(PolicyHolderDetails2of2.class);
         PolicyHolderDetails2of2 policyholderDetails2of2 = (PolicyHolderDetails2of2) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().staticWait(2000);
         test.webFunctions().click(test,policyholderDetails2of2.btn_ValidLicense, test.getTestData("Policyholder-details-2.ValidLicense"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_AgeFirstLicensed,test.getTestData("Policyholder-details-2.Agefirstlicensed"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_VehicleDriveMostOften,test.getTestData("Vehicle.V1.Model"));
