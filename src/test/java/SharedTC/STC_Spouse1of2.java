@@ -9,7 +9,7 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_Spouse1of2 {
+public class STC_Spouse1of2 {
 
     public void Spouse1of2(Testing test) {
         test.setPage(Spouse1of2.class);

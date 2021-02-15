@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import ApplicationPages.RetrieveQuote;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_RetrieveQuote {
+public class STC_RetrieveQuote {
 
     public void RetrieveQuote(Testing test)
     {

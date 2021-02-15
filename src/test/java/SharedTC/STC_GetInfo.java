@@ -7,7 +7,7 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_GetInfo {
+public class STC_GetInfo {
 
     //For Getting the Policy Number
     public  void GetPolicyNumber(Testing test)

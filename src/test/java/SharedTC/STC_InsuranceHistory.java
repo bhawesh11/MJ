@@ -10,11 +10,12 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_InsuranceHistory {
+public class STC_InsuranceHistory {
 
     public void insuranceHistory_Yes(Testing test) {
         test.setPage(InsuranceHistory.class);
         InsuranceHistory insuranceHistory = (InsuranceHistory) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().staticWait(3000);
         test.webFunctions().click(test,insuranceHistory.btn_CurrentlyInsured,test.getTestData("InsuranceHistory.CurrentlyInsured"));
         test.webFunctions().staticWait(2000);
         test.webFunctions().click(test,insuranceHistory.dropdownInsuranceProvider);

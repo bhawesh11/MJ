@@ -9,7 +9,7 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_PolicyHolder {
+public class STC_PolicyHolder {
 
     public void policyholder(Testing test) {
         test.setPage(PolicyHolder.class);

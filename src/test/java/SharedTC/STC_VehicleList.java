@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import resources.TestData;
 
-public class SharedTestCases_VehicleList  {
+public class STC_VehicleList  {
 
     
        //	VEHICLE LIST
