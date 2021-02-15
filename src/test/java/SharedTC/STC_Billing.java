@@ -16,7 +16,7 @@ public class STC_Billing {
         test.setPage(Billing.class);
         Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().staticWait(15000);
-        PaymentPlan(test);
+        selectPaymentPlan(test);
         fillCurrentCardDetails_Apparent(test);       
         selectFuturePaymentOptionGAOHApparent(test);      
         selectTextMessageAndBind(test);   
@@ -26,13 +26,13 @@ public class STC_Billing {
         test.setPage(Billing.class);
         Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().staticWait(15000);
-        PaymentPlan(test);
+        selectPaymentPlan(test);
         fillCurrentCardDetails_Elephant(test);       
         selectFuturePaymentOptionElephant(test);      
         selectTextMessageAndBind(test);   
     }
 	
-	public void PaymentPlan(Testing test) {
+	public void selectPaymentPlan(Testing test) {
         test.setPage(Billing.class);
         Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());             
         test.webFunctions().click(test,billing.link_PaymentPlan, test.getTestData("Billing.PaymentPlan"));
