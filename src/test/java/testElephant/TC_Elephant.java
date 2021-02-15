@@ -331,7 +331,9 @@ public class TC_Elephant {
 	 				Billing.billing_Elephant(test);
 	 				GetInfo.GetPolicyNumber(test);
 
+	 				test.markPassed();
 	 			} catch (Throwable e) {
+	 				test.markFailed(e.getMessage());
 	 				throw (e);
 	 			} finally {
 	 				test.tearDown();
