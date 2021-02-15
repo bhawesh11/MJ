@@ -10,10 +10,15 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_DriverInfo1of2 {
-	 // Creating SharedTestCases_Incidents class object to call its method
-	SharedTestCases_Incidents incident_MethodCall = new SharedTestCases_Incidents();
+
 	
+	
+
+public class STC_DriverInfo1of2 {
+	 
+	 // Creating SharedTestCases_Incidents class object to call its method
+		STC_Incidents incident_MethodCall = new STC_Incidents();
+
 	public void driverInfo1of2(Testing test) {
 
 		test.setPage(DriverInfo1of2.class);

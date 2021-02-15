@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class SharedTestCases_Quote {
+public class STC_Quote {
 
 	public void quote(Testing test) {
 		test.setPage(Quote.class);
@@ -27,5 +27,6 @@ public class SharedTestCases_Quote {
 		}catch(Exception e) {test.getLogger().info("Quote Page: Success!");}
 		// test.getLogger().info("Quote Page: Success!");
 	}
+
 
 }

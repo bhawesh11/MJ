@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_Billing {
+public class STC_Billing {
 
 	public void billing_Apparent(Testing test) {
 		test.setPage(Billing.class);
