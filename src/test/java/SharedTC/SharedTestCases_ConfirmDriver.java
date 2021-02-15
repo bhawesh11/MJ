@@ -18,7 +18,7 @@ public class SharedTestCases_ConfirmDriver {
 
         for (int count = 1; count <= test.driverCount; count++) {
             //test.webFunctions().type(test, confirmDriver.btn_LINO, test.getTestData("ConfirmDriver.D" + count + ".Licenseno"));
-            
+            test.webFunctions().staticWait(5000);
             test.webFunctions().type(test, confirmDriver.textBox_licenseNumber,String.valueOf(count) ,test.getTestData("ConfirmDriver.D" + count + ".Licenseno"));
 
 
