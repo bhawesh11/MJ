@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import ApplicationPages.DriverList;
 
 
-public class SharedTestCases_DriverList {
+public class STC_DriverList {
     
     public void driverList(Testing test) {
         test.setPage(DriverList.class);

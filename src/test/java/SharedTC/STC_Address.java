@@ -4,7 +4,7 @@ import ApplicationPages.Address;
 import resources.Testing;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_Address {
+public class STC_Address {
     //	ADDRESS
     public void address(Testing test) {
         
