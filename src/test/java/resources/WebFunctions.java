@@ -177,6 +177,7 @@ public class WebFunctions {
 
 		webElement = webElement.replace("{0}", value1);
 		webElement = webElement.replace("{1}", value2);
+
 		WebElement element = test.driver.findElement(By.xpath(webElement));
 
 		click(test, element);
@@ -284,6 +285,63 @@ public class WebFunctions {
 
 		} // Closing WHILE
 	}// Closing METHOD
+
+	// ------------------------------------------------------------------------------
+//		CLICKJS DYNAMIC
+	public void clickJS(Testing test, String webElement, String value) {
+		WebDriverWait wait = new WebDriverWait(test.driver, 40);
+		Boolean done = false;
+		int attempt = 0;
+
+		webElement = webElement.replace("{0}", value);
+		WebElement element = test.driver.findElement(By.xpath(webElement));
+
+		clickJS(test, element);
+
+	}// Closing METHOD
+	
+//	-------------------------------------------------------------------------------
+
+// CLICK Quote Page Elements using Actions
+public void clickUsingAction(Testing test, WebElement webElement) {
+	staticWait(2000);		
+	String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);"
+			+ "var elementTop = arguments[0].getBoundingClientRect().top;"
+			+ "window.scrollBy(0, elementTop-(viewPortHeight/2));";
+
+	((JavascriptExecutor) test.driver).executeScript(scrollElementIntoMiddle, webElement);
+	staticWait(2000);
+	Actions builder = new Actions(test.driver);
+	builder.click(webElement);
+	builder.perform();
+
+}// Closing METHOD
+
+//		-------------------------------------------------------------------------------
+
+// CLICK Quote Page Sliders using Action DYNAMIC-1
+public void clickUsingAction(Testing test, String webElement, String value1) {
+	
+	webElement = webElement.replace("{0}", value1);
+	
+	WebElement element = test.driver.findElement(By.xpath(webElement));
+	
+	clickUsingAction(test, element);
+
+}// Closing METHOD
+
+//======================================================================
+	// CLICK Quote Page Sliders using Action DYNAMIC-2
+	public void clickUsingAction(Testing test, String webElement, String value1, String value2) {
+		
+		webElement = webElement.replace("{0}", value1);
+		webElement = webElement.replace("{1}", value2);
+		WebElement element = test.driver.findElement(By.xpath(webElement));
+		
+		clickUsingAction(test, element);
+
+	}// Closing METHOD
+
 //	======================================================================
 
 	// SELECT GUIDEWIRE'S DROPDOWN
@@ -553,5 +611,12 @@ public class WebFunctions {
 		test.driver.switchTo().alert().accept();
 		staticWait(4000);
 		test.getLogger().info("Page Refreshed..");
+	}
+
+	// ============================================================================
+	public void scrollIntoView(Testing test, WebElement element) {
+		JavascriptExecutor jse2 = (JavascriptExecutor) test.driver;
+		jse2.executeScript("arguments[0].scrollIntoView()", element);
+		test.getLogger().info("Scrolling into view...");
 	}
 }

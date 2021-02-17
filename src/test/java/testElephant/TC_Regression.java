@@ -5,6 +5,8 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import SharedTC.STC_Address;
 import SharedTC.STC_Assignment;
@@ -31,6 +33,7 @@ import SharedTC.STC_Spouse2of2;
 import SharedTC.STC_VehicleDetails1of2;
 import SharedTC.STC_VehicleDetails2of2;
 import SharedTC.STC_VehicleList;
+import resources.Testing;
 
 public class TC_Regression {
 
@@ -76,5 +79,47 @@ public class TC_Regression {
 
 	// ==============================================================================================
 //    ***_TEST_CASES_***
+	
+	// ---------------------------------------------------------------------------------------
+		// TC003
+		@Test(enabled = true, priority = 5, description = "Elephant_RetrieveQuote")
+		@Parameters("ENV")
+		public void TC003(String ENV) throws Throwable {
+
+			Testing test = new Testing(ENV, brandName, "V1_D1_03_RetrieveQuote_Bind");
+			try {
+
+				PostalCode.postalCode_Elephant(test);
+				PolicyHolder.policyholder(test);
+				Address.address(test);
+				VehicleDetails1of2.vehicleDetails(test);
+				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+				DriverInfo1of2.driverDetails(test);
+				InsuranceHistory.insuranceHistory_Yes(test);
+				PolicyStatrDate.policyStartDate(test);
+				test.webFunctions().staticWait(10000);
+
+				//test.webFunctions().refresh(test);
+				//RetrieveQuote.clickRetrieveQuote(test);
+				//RetrieveQuote.RetrieveQuote(test);
+				//Quote.quote(test);
+				Quote.editCoverages(test);
+				ConfirmDriver.confirmDriver(test);
+				test.webFunctions().staticWait(4000);
+				ConfirmVehicle.confirmVehicle(test);
+				test.webFunctions().staticWait(9000);
+				Billing.billing_Elephant(test);
+				GetInfo.GetPolicyNumber(test);
+				test.markPassed();
+			} catch (Throwable e) {
+				test.markFailed(e.getMessage());
+				throw (e);
+			} finally {
+				//test.tearDown();
+			}
+		}// closing TC002 method
+
+		// ---------------------------------------------------------------------------------------
 
 }
