@@ -8,9 +8,9 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_Spouse2of2 {
+public class STC_Spouse2of2 {
 
-	SharedTestCases_Incidents incident_MethodCall = new SharedTestCases_Incidents();
+	STC_Incidents incident_MethodCall = new STC_Incidents();
 	
     public void Spouse2of2(Testing test) {
         test.setPage(Spouse2of2.class);

@@ -8,7 +8,7 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_ConfirmVehicle {
+public class STC_ConfirmVehicle {
 
 public void confirmVehicle(Testing test) {
 	test.setPage(ConfirmVehicle.class);

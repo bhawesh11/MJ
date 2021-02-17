@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 
-public class SharedTestCases_PolicyStatrDate {
+public class STC_PolicyStatrDate {
     
     
 

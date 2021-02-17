@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import ApplicationPages.VehicleDetails2of2;
 
-public class SharedTestCases_VehicleDetails2of2 {
+public class STC_VehicleDetails2of2 {
        
     public void vehicleDetails2of2(Testing test) {
         test.setPage(VehicleDetails2of2.class);
