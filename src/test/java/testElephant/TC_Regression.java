@@ -80,6 +80,46 @@ public class TC_Regression {
 	// ==============================================================================================
 //    ***_TEST_CASES_***
 	
+	// TC001
+			@Test(enabled = true, priority = 5, description = "GA Bind with ACH Future Instrument")
+			@Parameters("ENV")
+			public void TC001(String ENV) throws Throwable {
+
+				Testing test = new Testing(ENV, brandName, "V3_D3_01_GA_Bind");
+				try {
+
+					PostalCode.postalCode_Elephant(test);
+					PolicyHolder.policyholder(test);
+					Address.address(test);
+					VehicleDetails1of2.vehicleDetails(test);
+					PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+					PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+					Spouse1of2.Spouse1of2(test);
+					Spouse2of2.Spouse2of2(test);
+					DriverInfo1of2.driverDetails(test);
+					InsuranceHistory.insuranceHistory_Yes(test);
+					Assignment.driverVehicleAssignmentPage(test);
+					PolicyStatrDate.policyStartDate(test);
+					test.webFunctions().staticWait(10000);
+					
+					Quote.quote(test);
+					//Quote.editCoverages(test);
+					ConfirmDriver.confirmDriver(test);
+					test.webFunctions().staticWait(4000);
+					ConfirmVehicle.confirmVehicle(test);
+					test.webFunctions().staticWait(9000);
+					Billing.billing_Elephant(test);
+					GetInfo.GetPolicyNumber(test);
+					test.markPassed();
+				} catch (Throwable e) {
+					test.markFailed(e.getMessage());
+					throw (e);
+				} finally {
+					//test.tearDown();
+				}
+			}// closing TC001 method
+
+			
 	// ---------------------------------------------------------------------------------------
 		// TC003
 		@Test(enabled = true, priority = 5, description = "Elephant_RetrieveQuote")
@@ -100,9 +140,9 @@ public class TC_Regression {
 				PolicyStatrDate.policyStartDate(test);
 				test.webFunctions().staticWait(10000);
 
-				//test.webFunctions().refresh(test);
-				//RetrieveQuote.clickRetrieveQuote(test);
-				//RetrieveQuote.RetrieveQuote(test);
+				test.webFunctions().refresh(test);
+				RetrieveQuote.clickRetrieveQuote(test);
+				RetrieveQuote.RetrieveQuote(test);
 				//Quote.quote(test);
 				Quote.editCoverages(test);
 				ConfirmDriver.confirmDriver(test);

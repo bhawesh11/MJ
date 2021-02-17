@@ -85,9 +85,10 @@ public class STC_Incidents {
     	test.setPage(Incidents.class);
         Incidents incidents = (Incidents) PageFactory.initElements(test.driver, test.getPage());
        
-    	int incident_count = Integer.parseInt(test.getTestData("Driver.D" + driverno + ".IncidentCount"));
+    	
     	if(test.getTestData("Driver.D" + driverno + ".IncidentHistory").equalsIgnoreCase("Yes"))
     	{
+    		int incident_count = Integer.parseInt(test.getTestData("Driver.D" + driverno + ".IncidentCount"));
     		for(int count=1 ; count<=incident_count ; count++)
     		{
     			test.webFunctions().dropdown(test, incidents.dropdown_WhatHappened, test.getTestData("Driver.D1.Incidents.Incident"+ count +".Type"));
