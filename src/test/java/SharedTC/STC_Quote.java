@@ -22,8 +22,9 @@ public class STC_Quote {
 				test.webFunctions().clickJS(test, quote.checkbox_PIPWaiverForm);
 				test.getLogger().info("PIP waiver form checkbox selected!!!");
 			}
-		} catch (Exception e) {	}
-		
+		} catch (Exception e) {
+		}
+
 		test.webFunctions().click(test, quote.btn_Continue);
 		try {
 			if (test.getBrandName().equalsIgnoreCase("Apparent")
@@ -47,8 +48,10 @@ public class STC_Quote {
 		test.setPage(Quote.class);
 		Quote quote = (Quote) PageFactory.initElements(test.driver, test.getPage());
 		test.webFunctions().staticWait(11000);
-
-		test.webFunctions().clickJS(test, quote.btn_Edit);
+		try {
+			test.webFunctions().clickJS(test, quote.btn_Edit);
+		} catch (Exception e) {
+		}
 		String quoteState = test.getTestData("Coverage.State");
 
 		// Editing Policy level Coverages
