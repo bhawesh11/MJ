@@ -25,7 +25,7 @@ public class STC_Billing {
 	public void billing_GAOH(Testing test) {
 		test.setPage(Billing.class);
 		Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());
-		test.webFunctions().staticWait(15000);
+		test.webFunctions().staticWait(9000);
 		selectPaymentPlan(test);
 		fillCurrentCardDetails(test);
 		selectFuturePaymentOptionGAOH(test);
