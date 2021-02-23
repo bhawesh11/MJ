@@ -105,23 +105,23 @@ public class Billing {
   @FindBy(id="billingCardNumber")
   public WebElement textBox_CardNumber_Apparent;
 
-  @FindBy(id="expiryMonth")
+  @FindBy(xpath="(//*[contains(@id,'expiryMonth')])[1]")
   public WebElement dropDown_CreditCardExpiryMonth_Apparent;
   
-  @FindBy(id="expiryYear")
+  @FindBy(xpath="(//*[contains(@id,'expiryYear')])[1]")
   public WebElement dropDown_CreditCardExpiryYear_Apparent;
     
   //Current credit card locators for Apparent ends************************************************************************************************************************************
   
   //Future credit card locators for Apparent starts***********************************************************************************************************************************
   
-  @FindBy(id="newBillingCardholderFirstname")
+  @FindBy(xpath="(//input[contains(@id,'CardholderFirstname')])[2]")
   public WebElement textBox_FutureCardHolderFirstName_Apparent;
 
-  @FindBy(id="newBillingCardholderLastname")
+  @FindBy(xpath="(//input[contains(@id,'CardholderLastname')])[2]")
   public WebElement textBox_FutureCardHolderLastName_Apparent;
 
-  @FindBy(id="billingNewCCNumber")
+  @FindBy(xpath="(//input[contains(@id,'billingCardNumber')])[2]")
   public WebElement textBox_FutureCardNumber_Apparent;
 
   @FindBy(id="newCardExpiryMonth")
@@ -216,13 +216,13 @@ public class Billing {
   @FindBy(id="btnContinue")
   public WebElement btn_Purchase;
   
-  @FindBy(id="billingCardholderFirstname")
+  @FindBy(xpath="(//input[contains(@id,'CardholderFirstname')])[1]")
   public WebElement textBox_CreditCardFirstName;
 
-  @FindBy(id="billingCardholderLastname")
+  @FindBy(xpath="(//input[contains(@id,'CardholderLastname')])[1]")
   public WebElement textBox_CreditCardLastName;
 
-  @FindBy(id="billingCardNumber")
+  @FindBy(xpath="(//input[contains(@id,'billingCardNumber')])[1]")
   public WebElement textBox_CreditCardNo;
   
   @FindBy(id="expiryMonth")
