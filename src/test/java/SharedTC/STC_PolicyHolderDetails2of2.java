@@ -22,7 +22,7 @@ public class STC_PolicyHolderDetails2of2 {
         test.webFunctions().click(test,policyholderDetails2of2.btn_AgeFirstLicensed,test.getTestData("Policyholder-details-2.Agefirstlicensed"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_VehicleDriveMostOften,test.getTestData("Vehicle.V1.Model"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_IncidentHistory,test.getTestData("Policyholder-details-2.IncidentHistory"));
-        test.webFunctions().click(test,policyholderDetails2of2.btn_Next);
+        test.webFunctions().click(test,policyholderDetails2of2.btn_Next);        
         test.getLogger().info("Policy Holder Details 2of2 page: Success!");
         incident_MethodCall.incident_PolicyHolder(test);
     }
