@@ -79,87 +79,327 @@ public class TC_Regression {
 
 	// ==============================================================================================
 //    ***_TEST_CASES_***
-	
+
 	// TC001
-			@Test(enabled = true, priority = 5, description = "GA Bind with ACH Future Instrument")
-			@Parameters("ENV")
-			public void TC001(String ENV) throws Throwable {
+	@Test(enabled = true, priority = 5, description = "GA Bind with ACH Future Instrument")
+	@Parameters("ENV")
+	public void TC001(String ENV) throws Throwable {
 
-				Testing test = new Testing(ENV, brandName, "V3_D3_01_GA_Bind");
-				try {
+		Testing test = new Testing(ENV, brandName, "V3_D3_01_GA_Bind");
+		try {
 
-					PostalCode.postalCode_Elephant(test);
-					PolicyHolder.policyholder(test);
-					Address.address(test);
-					VehicleDetails1of2.vehicleDetails(test);
-					PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-					PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-					Spouse1of2.Spouse1of2(test);
-					Spouse2of2.Spouse2of2(test);
-					DriverInfo1of2.driverDetails(test);
-					InsuranceHistory.insuranceHistory_Yes(test);
-					Assignment.driverVehicleAssignmentPage(test);
-					PolicyStatrDate.policyStartDate(test);
-					test.webFunctions().staticWait(10000);
-					
-					Quote.quote(test);
-					//Quote.editCoverages(test);
-					ConfirmDriver.confirmDriver(test);
-					test.webFunctions().staticWait(4000);
-					ConfirmVehicle.confirmVehicle(test);
-					test.webFunctions().staticWait(9000);
-					Billing.billing_Elephant(test);
-					GetInfo.GetPolicyNumber(test);
-					test.markPassed();
-				} catch (Throwable e) {
-					test.markFailed(e.getMessage());
-					throw (e);
-				} finally {
-					//test.tearDown();
-				}
-			}// closing TC001 method
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
 
-			
+			Quote.quote(test);
+			// Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_GAOH(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC001 method
+
+	// TC002
+	@Test(enabled = true, priority = 5, description = "GA Bind with CC Future Instrument")
+	@Parameters("ENV")
+	public void TC002(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_02_GA_Bind");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			// Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+
+			Quote.quote(test);
+			// Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_GAOH(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC001 method
+
 	// ---------------------------------------------------------------------------------------
-		// TC003
-		@Test(enabled = true, priority = 5, description = "Elephant_RetrieveQuote")
-		@Parameters("ENV")
-		public void TC003(String ENV) throws Throwable {
+	// TC003
+	@Test(enabled = true, priority = 5, description = "Elephant_RetrieveQuote")
+	@Parameters("ENV")
+	public void TC003(String ENV) throws Throwable {
 
-			Testing test = new Testing(ENV, brandName, "V1_D1_03_RetrieveQuote_Bind");
-			try {
+		Testing test = new Testing(ENV, brandName, "V1_D1_03_RetrieveQuote_Bind");
+		try {
 
-				PostalCode.postalCode_Elephant(test);
-				PolicyHolder.policyholder(test);
-				Address.address(test);
-				VehicleDetails1of2.vehicleDetails(test);
-				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-				DriverInfo1of2.driverDetails(test);
-				InsuranceHistory.insuranceHistory_Yes(test);
-				PolicyStatrDate.policyStartDate(test);
-				test.webFunctions().staticWait(10000);
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
 
-				test.webFunctions().refresh(test);
-				RetrieveQuote.clickRetrieveQuote(test);
-				RetrieveQuote.RetrieveQuote(test);
-				//Quote.quote(test);
-				Quote.editCoverages(test);
-				ConfirmDriver.confirmDriver(test);
-				test.webFunctions().staticWait(4000);
-				ConfirmVehicle.confirmVehicle(test);
-				test.webFunctions().staticWait(9000);
-				Billing.billing_Elephant(test);
-				GetInfo.GetPolicyNumber(test);
-				test.markPassed();
-			} catch (Throwable e) {
-				test.markFailed(e.getMessage());
-				throw (e);
-			} finally {
-				//test.tearDown();
-			}
-		}// closing TC002 method
+			test.webFunctions().refresh(test);
+			RetrieveQuote.clickRetrieveQuote(test);
+			RetrieveQuote.RetrieveQuote(test);
+			// Quote.quote(test);
+			Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC003 method
 
-		// ---------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------
+
+	// ---------------------------------------------------------------------------------------
+	// TC004
+	@Test(enabled = true, priority = 5, description = "IL Bind with Future ACH")
+	@Parameters("ENV")
+	public void TC004(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V3_D3_04_IL_Bind");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+
+			Quote.quote(test);
+			// Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC003 method
+
+	// ---------------------------------------------------------------------------------------
+
+	// TC007
+	@Test(enabled = true, priority = 5, description = "TN Bind with same CC as Future Payment Option")
+	@Parameters("ENV")
+	public void TC007(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V3_D3_07_TN_Bind");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+
+			Quote.quote(test);
+			// Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC007 method
+
+	// ---------------------------------------------------------------------------------------
+
+	// ---------------------------------------------------------------------------------------
+
+	// TC008
+	@Test(enabled = true, priority = 5, description = "MD Bind with new CC as Future Payment Option")
+	@Parameters("ENV")
+	public void TC008(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V3_D3_07_MD_Bind");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+
+			Quote.quote(test);
+			// Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC008 method
+
+	// ---------------------------------------------------------------------------------------
+
+	// TC018
+	@Test(enabled = true, priority = 5, description = "OH Bind with new ACH as Future Payment Option")
+	@Parameters("ENV")
+	public void TC018(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V3_D3_18_OH_Bind");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+
+			Quote.quote(test);
+			// Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_GAOH(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC018 method
+
+	// ---------------------------------------------------------------------------------------
+	// TC020
+	@Test(enabled = true, priority = 5, description = "MD Bind with Pay in Full Plan")
+	@Parameters("ENV")
+	public void TC020(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_20_MD_Bind");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+			
+			Quote.quote(test);
+			//Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC020 method
+
+	// ---------------------------------------------------------------------------------------
 
 }

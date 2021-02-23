@@ -18,17 +18,25 @@ public class STC_Billing {
 		test.webFunctions().staticWait(15000);
 		selectPaymentPlan(test);
 		fillCurrentCardDetails(test);
-		selectFuturePaymentOptionApparent(test);
+		if (test.getTestData("Billing.PaymentPlan").equalsIgnoreCase("Pay in Full")) {
+			test.getLogger().info("Payment Plan selected is Pay in Full.");
+		} else {
+			selectFuturePaymentOptionApparent(test);
+		}
 		selectTextMessageAndBind(test);
 	}
-	
+
 	public void billing_GAOH(Testing test) {
 		test.setPage(Billing.class);
 		Billing billing = (Billing) PageFactory.initElements(test.driver, test.getPage());
 		test.webFunctions().staticWait(15000);
 		selectPaymentPlan(test);
 		fillCurrentCardDetails(test);
-		selectFuturePaymentOptionGAOH(test);
+		if (test.getTestData("Billing.PaymentPlan").equalsIgnoreCase("Pay in Full")) {
+			test.getLogger().info("Payment Plan selected is Pay in Full.");
+		} else {
+			selectFuturePaymentOptionGAOH(test);
+		}
 		selectTextMessageAndBind(test);
 	}
 
@@ -38,7 +46,11 @@ public class STC_Billing {
 		test.webFunctions().staticWait(15000);
 		selectPaymentPlan(test);
 		fillCurrentCardDetails(test);
-		selectFuturePaymentOptionElephant(test);
+		if (test.getTestData("Billing.PaymentPlan").equalsIgnoreCase("Pay in Full")) {
+			test.getLogger().info("Payment Plan selected is Pay in Full.");
+		} else {
+			selectFuturePaymentOptionElephant(test);
+		}
 		selectTextMessageAndBind(test);
 	}
 
