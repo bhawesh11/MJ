@@ -98,8 +98,14 @@ public class STC_DriverInfo1of2 {
 			if (count == test.driverCount) {
 				break;
 			} else {
-				driverInfo_1of2(test, count);
-				driverInfo_2of2(test, count);
+				if(test.getTestData("PolicyholderDetails.MaritalStatus").equalsIgnoreCase("Married")) {
+				driverInfo_1of2(test, count-1);
+				driverInfo_2of2(test, count-1);
+				}
+				else {
+					driverInfo_1of2(test, count);
+					driverInfo_2of2(test, count);
+				}
 			}
 
 		}
