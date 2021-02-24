@@ -21,7 +21,9 @@ public class PolicyholderDetails1of2 {
 	@FindBy(xpath="//div/legend[contains(text(),'What is your highest education completed?')]")
 	public WebElement text_EducationCompleted;
 	
-	public String btn_CurrentlyEmployed = "//*[@identity='driverEmployment']/div/label[text()='{0}']";
+	//public String btn_CurrentlyEmployed = "//*[@identity='driverEmployment']/div/label[text()='{0}']";
+	
+	public String btn_CurrentlyEmployed = "//label[text()='{0}']";
 	
 	@FindBy(xpath="//div/label[contains(text(),'1')]")
 	public WebElement radiobutton_Days;

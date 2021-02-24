@@ -363,7 +363,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC008(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D3_07_MD_Bind");
+		Testing test = new Testing(ENV, brandName, "V3_D3_08_MD_Bind");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -442,7 +442,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC012(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V1_D1_011_IL");
+		Testing test = new Testing(ENV, brandName, "V1_D1_012_IL");
 
 		try {
 
@@ -556,7 +556,7 @@ public class TC_Regression {
 	// ---------------------------------------------------------------------------------------
 
 	// TC016
-	@Test(enabled = false, priority = 5, description = "V1_D1_016_TX")
+	@Test(enabled = true, priority = 5, description = "V1_D1_016_TX")
 	@Parameters("ENV")
 	public void TC016(String ENV) throws Throwable {
 
@@ -592,7 +592,7 @@ public class TC_Regression {
 	// ---------------------------------------------------------------------------------------
 
 	// TC017
-	@Test(enabled = false, priority = 5, description = "V1_D1_017_VA_CC")
+	@Test(enabled = true, priority = 5, description = "V1_D1_017_VA_CC")
 	@Parameters("ENV")
 	public void TC017(String ENV) throws Throwable {
 
