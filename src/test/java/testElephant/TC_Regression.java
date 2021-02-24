@@ -154,6 +154,7 @@ public class TC_Regression {
 			throw (e);
 		} finally {
 			test.tearDown();
+
 		}
 	}// closing TC001 method
 
@@ -315,7 +316,7 @@ public class TC_Regression {
 		}
 	}
 
-//---------------------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------------------
 	// TC007
 	@Test(enabled = true, priority = 5, description = "TN Bind with same CC as Future Payment Option")
 	@Parameters("ENV")
@@ -357,8 +358,6 @@ public class TC_Regression {
 
 	// ---------------------------------------------------------------------------------------
 
-	// ---------------------------------------------------------------------------------------
-
 	// TC008
 	@Test(enabled = true, priority = 5, description = "MD Bind with new CC as Future Payment Option")
 	@Parameters("ENV")
@@ -397,6 +396,162 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}// closing TC008 method
+
+	// ---------------------------------------------------------------------------------------
+
+	// TC011
+	@Test(enabled = true, priority = 5, description = "V1_D1_011_TN_CC")
+	@Parameters("ENV")
+	public void TC011(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_011_TN_CC");
+
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverList.driverList(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+
+			test.tearDown();
+		}
+	}
+
+//---------------------------------------------------------------------------------------
+
+	// TC012
+	@Test(enabled = true, priority = 5, description = "V1_D1_011_IL")
+	@Parameters("ENV")
+	public void TC012(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_011_IL");
+
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverList.driverList(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC012 method
+
+	// ---------------------------------------------------------------------------------------
+
+	// TC014
+	@Test(enabled = true, priority = 5, description = "V3_D3_014_TX_ACH")
+	@Parameters("ENV")
+	public void TC014(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V3_D3_014_TX_ACH");
+
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			Billing.fillFutureACHDetails_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}
+
+	// ---------------------------------------------------------------------------------------
+
+	// TC015
+	@Test(enabled = true, priority = 5, description = "V3_D3_015_VA")
+	@Parameters("ENV")
+	public void TC015(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V3_D3_015_VA");
+
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}
 
 	// ---------------------------------------------------------------------------------------
 
@@ -512,6 +667,45 @@ public class TC_Regression {
 	}// closing TC018 method
 
 	// ---------------------------------------------------------------------------------------
+	
+	// TC019
+	@Test(enabled = true, priority = 5, description = "V1_D1_019_OH_CC")
+	@Parameters("ENV")
+	public void TC019(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_019_OH_CC");
+
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverList.driverList(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_GAOH(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			// test.tearDown();
+		}
+	}
+	
+	// ---------------------------------------------------------------------------------------
+	
+	
 	// TC020
 	@Test(enabled = true, priority = 5, description = "MD Bind with Pay in Full Plan")
 	@Parameters("ENV")
@@ -547,6 +741,79 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}// closing TC020 method
+
+	// ---------------------------------------------------------------------------------------.
+	
+	// TC021
+		@Test(enabled = true, priority = 5, description = "V1_D1_021_TX")
+		@Parameters("ENV")
+		public void TC021(String ENV) throws Throwable {
+
+			Testing test = new Testing(ENV, brandName, "V1_D1_021_TX");
+			try {
+
+				PostalCode.postalCode_Elephant(test);
+				PolicyHolder.policyholder(test);
+				Address.address(test);
+				VehicleDetails1of2.vehicleDetails(test);
+				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+				DriverList.driverList(test);
+				InsuranceHistory.insuranceHistory_Yes(test);
+				PolicyStatrDate.policyStartDate(test);
+				test.webFunctions().staticWait(8000);
+				Quote.quote(test);
+				ConfirmDriver.confirmDriver(test);
+				test.webFunctions().staticWait(4000);
+				ConfirmVehicle.confirmVehicle(test);
+				test.webFunctions().staticWait(9000);
+				Billing.billing_Elephant(test);
+				GetInfo.GetPolicyNumber(test);
+				test.markPassed();
+			} catch (Throwable e) {
+				test.markFailed(e.getMessage());
+				throw (e);
+			} finally {
+				// test.tearDown();
+			}
+		}
+
+		// ---------------------------------------------------------------------------------------
+
+		// TC022
+		@Test(enabled = true, priority = 5, description = "V1_D1_022_VA_CC")
+		@Parameters("ENV")
+		public void TC022(String ENV) throws Throwable {
+
+			Testing test = new Testing(ENV, brandName, "V1_D1_022_VA_CC");
+			try {
+
+				PostalCode.postalCode_Elephant(test);
+				PolicyHolder.policyholder(test);
+				Address.address(test);
+				VehicleDetails1of2.vehicleDetails(test);
+				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+				DriverList.driverList(test);
+				InsuranceHistory.insuranceHistory_Yes(test);
+				PolicyStatrDate.policyStartDate(test);
+				test.webFunctions().staticWait(8000);
+				Quote.quote(test);
+				ConfirmDriver.confirmDriver(test);
+				test.webFunctions().staticWait(4000);
+				ConfirmVehicle.confirmVehicle(test);
+				test.webFunctions().staticWait(9000);
+				Billing.billing_Elephant(test);
+				GetInfo.GetPolicyNumber(test);
+				test.markPassed();
+			} catch (Throwable e) {
+				test.markFailed(e.getMessage());
+				throw (e);
+			} finally {
+				test.tearDown();
+
+			}
+		}
 
 	// ---------------------------------------------------------------------------------------
 
@@ -657,5 +924,8 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}
+	
+	// ---------------------------------------------------------------------------------------
 
+	
 }
