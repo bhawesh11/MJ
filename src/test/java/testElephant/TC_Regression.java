@@ -398,6 +398,44 @@ public class TC_Regression {
 	}// closing TC008 method
 
 	// ---------------------------------------------------------------------------------------
+	
+	
+	//TC010
+	@Test(enabled = true, priority = 5, description = "V1_D1_010_IN")
+	@Parameters("ENV")
+	public void TC010(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_010_IN");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverList.driverList(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+		}
+	
+	// ---------------------------------------------------------------------------------------
 
 	// TC011
 	@Test(enabled = true, priority = 5, description = "V1_D1_011_TN_CC")
@@ -438,7 +476,7 @@ public class TC_Regression {
 //---------------------------------------------------------------------------------------
 
 	// TC012
-	@Test(enabled = true, priority = 5, description = "V1_D1_011_IL")
+	@Test(enabled = true, priority = 5, description = "V1_D1_012_IL")
 	@Parameters("ENV")
 	public void TC012(String ENV) throws Throwable {
 
@@ -471,6 +509,44 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}// closing TC012 method
+
+	// ---------------------------------------------------------------------------------------
+	
+
+	// TC013
+	@Test(enabled = true, priority = 5, description = "V1_D1_013_MD")
+	@Parameters("ENV")
+	public void TC013(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_013_MD");
+
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverList.driverList(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC013 method
 
 	// ---------------------------------------------------------------------------------------
 
@@ -774,7 +850,7 @@ public class TC_Regression {
 				test.markFailed(e.getMessage());
 				throw (e);
 			} finally {
-				// test.tearDown();
+				 test.tearDown();
 			}
 		}
 
