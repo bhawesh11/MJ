@@ -160,7 +160,7 @@ public class TC_Regression {
 
 	// ---------------------------------------------------------------------------------------
 	// TC003
-	@Test(enabled = true, priority = 5, description = "Elephant_RetrieveQuote")
+	@Test(enabled = true, priority = 5, description = "VA Elephant_RetrieveQuote")
 	@Parameters("ENV")
 	public void TC003(String ENV) throws Throwable {
 
@@ -245,7 +245,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC005(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D3_005_OH_ACH");
+		Testing test = new Testing(ENV, brandName, "V3_D3_05_OH_ACH");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -284,7 +284,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC006(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D3_006_IN_CC");
+		Testing test = new Testing(ENV, brandName, "V3_D3_06_IN_CC");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -404,7 +404,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC009(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V1_D1_009_OH_CustomCov");
+		Testing test = new Testing(ENV, brandName, "V1_D1_09_OH_CustomCov");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -744,7 +744,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC018(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D3_18_OH_Bind");
+		Testing test = new Testing(ENV, brandName, "V3_D3_018_OH_Bind");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -823,7 +823,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC020(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V1_D1_20_MD_Bind");
+		Testing test = new Testing(ENV, brandName, "V1_D1_020_MD_Bind");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
