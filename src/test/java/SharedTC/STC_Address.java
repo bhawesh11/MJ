@@ -11,7 +11,7 @@ public void address(Testing test) {
     	test.setPage(Address.class);
         Address address = (Address) PageFactory.initElements(test.driver, test.getPage());
         
-        test.webFunctions().dropdownMelissaJS(test,address.textBox_Address, test.getTestData("Address.StreetAddress")); //12 gjdfglkj
+        test.webFunctions().dropdownMelissaJS(test,address.textBox_Address, test.getTestData("Address.StreetAddress")); 
        try { if(address.textBox_Zip.isDisplayed())
         	{
         	test.webFunctions().type(test, address.textBox_Zip,test.getTestData("Address.Zipcode"));
