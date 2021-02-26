@@ -160,7 +160,7 @@ public class TC_Regression {
 
 	// ---------------------------------------------------------------------------------------
 	// TC003
-	@Test(enabled = true, priority = 5, description = "Elephant_RetrieveQuote")
+	@Test(enabled = true, priority = 5, description = "VA Elephant_RetrieveQuote")
 	@Parameters("ENV")
 	public void TC003(String ENV) throws Throwable {
 
@@ -245,7 +245,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC005(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D3_005_OH_ACH");
+		Testing test = new Testing(ENV, brandName, "V3_D3_05_OH_ACH");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -284,7 +284,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC006(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D3_006_IN_CC");
+		Testing test = new Testing(ENV, brandName, "V3_D3_06_IN_CC");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -399,6 +399,42 @@ public class TC_Regression {
 
 	// ---------------------------------------------------------------------------------------
 	
+	// TC009
+	@Test(enabled = true, priority = 5, description = "V1_D1_009_OH_CustomCov")
+	@Parameters("ENV")
+	public void TC009(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_09_OH_CustomCov");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.editCoverages(test);
+			ConfirmDriver.confirmDriver(test);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(8000);
+			Billing.billing_GAOH(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC009 method
+
+	// ---------------------------------------------------------------------------------------
+
 	
 	//TC010
 	@Test(enabled = true, priority = 5, description = "V1_D1_010_IN")
@@ -436,7 +472,7 @@ public class TC_Regression {
 		}
 	
 	// ---------------------------------------------------------------------------------------
-
+	
 	// TC011
 	@Test(enabled = true, priority = 5, description = "V1_D1_011_TN_CC")
 	@Parameters("ENV")
@@ -632,11 +668,11 @@ public class TC_Regression {
 	// ---------------------------------------------------------------------------------------
 
 	// TC016
-	@Test(enabled = true, priority = 5, description = "V1_D1_016_TX")
+	@Test(enabled = true, priority = 5, description = "V1_D1_016_TX_CustomCov")
 	@Parameters("ENV")
 	public void TC016(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V1_D1_016_TX");
+		Testing test = new Testing(ENV, brandName, "V1_D1_016_TX_CustomCov");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -649,7 +685,7 @@ public class TC_Regression {
 			InsuranceHistory.insuranceHistory_Yes(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
+			Quote.editCoverages(test);
 			ConfirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
 			ConfirmVehicle.confirmVehicle(test);
@@ -708,7 +744,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC018(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D3_18_OH_Bind");
+		Testing test = new Testing(ENV, brandName, "V3_D3_018_OH_Bind");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -787,7 +823,7 @@ public class TC_Regression {
 	@Parameters("ENV")
 	public void TC020(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V1_D1_20_MD_Bind");
+		Testing test = new Testing(ENV, brandName, "V1_D1_020_MD_Bind");
 		try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -929,6 +965,44 @@ public class TC_Regression {
 
 	// ---------------------------------------------------------------------------------------
 
+	// TC024
+	@Test(enabled = true, priority = 5, description = "V3_D3_024_MD_CC")
+	@Parameters("ENV")
+	public void TC024(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V3_D3_024_MD_CC");
+		try {
+
+			PostalCode.postalCode_Elephant(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_No(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Elephant(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}
+	
+	//-----------------------------------------------------------------------
 	// TC025
 	@Test(enabled = true, priority = 5, description = "V1_D1_025_IN_ACH")
 	@Parameters("ENV")
