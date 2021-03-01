@@ -10,8 +10,14 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_DriverInfo1of2 {
+
+	
+	
+
+public class STC_DriverInfo1of2 {
 	 
+	 // Creating SharedTestCases_Incidents class object to call its method
+		STC_Incidents incident_MethodCall = new STC_Incidents();
 
 	public void driverInfo1of2(Testing test) {
 
@@ -61,9 +67,10 @@ public class SharedTestCases_DriverInfo1of2 {
 		test.webFunctions().click(test, driverInfo2of2.btn_vehicleAssignment,
 				test.getTestData("Vehicle.V" + count + ".Model"));
 		test.webFunctions().click(test, driverInfo2of2.btn_IncidentHistory,
-				test.getTestData("Driver.D" + count + ".Incident"));
-		test.webFunctions().click(test, driverInfo2of2.btn_Next);
+				test.getTestData("Driver.D" + count + ".IncidentHistory"));
+				test.webFunctions().click(test, driverInfo2of2.btn_Next);				
 		test.getLogger().info("Additional Driver 2of2 page: Success!");
+		incident_MethodCall.incident_Driver(test, count);
 	}
 
 	public void driverList(Testing test, int count) {
@@ -80,14 +87,25 @@ public class SharedTestCases_DriverInfo1of2 {
 	}
 
 	public void driverDetails(Testing test) {
-
-		for (int count = 1; count <= test.driverCount; count++) {
+		int count_init;
+		if(test.getTestData("PolicyholderDetails.MaritalStatus").equalsIgnoreCase("Married")) {
+			count_init=2;}
+			else {
+				count_init=1;
+		}
+		for (int count=count_init; count <= test.driverCount; count++) {
 			driverList(test, count);
 			if (count == test.driverCount) {
 				break;
 			} else {
-				driverInfo_1of2(test, count);
-				driverInfo_2of2(test, count);
+				if(test.getTestData("PolicyholderDetails.MaritalStatus").equalsIgnoreCase("Married")) {
+				driverInfo_1of2(test, count-1);
+				driverInfo_2of2(test, count-1);
+				}
+				else {
+					driverInfo_1of2(test, count);
+					driverInfo_2of2(test, count);
+				}
 			}
 
 		}

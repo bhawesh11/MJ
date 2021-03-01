@@ -35,6 +35,10 @@ public class VehicleDetails1of2 {
 	public WebElement dropDownRidesharingHrs;
     
     public String dropDownRidesharingHrs_Select = "//*[@id=\"rideSharingHours\"]/option[@label='{0}']";
+
+	@FindBy(xpath="//label[contains(@for,'rideSharingNo')]")
+    public WebElement btn_rideSharingNo;
+
 	
 	public String btn_vehicleUse = "//*[text()='{0}']";
 
