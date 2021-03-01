@@ -8,7 +8,7 @@ import resources.TestData;
 import resources.WebFunctions;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_RightPanel {
+public class STC_RightPanel {
     public void AddDriver(Testing test)
     {
         test.setPage(RightPanel.class);

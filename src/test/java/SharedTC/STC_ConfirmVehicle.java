@@ -8,12 +8,13 @@ import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 
-public class SharedTestCases_ConfirmVehicle {
+public class STC_ConfirmVehicle {
 
 public void confirmVehicle(Testing test) {
 	test.setPage(ConfirmVehicle.class);
 	ConfirmVehicle confirmVehicle = (ConfirmVehicle) PageFactory.initElements(test.driver,test.getPage());
 	for (int i = 1; i <= test.vehicleCount; i++) {
+		test.webFunctions().staticWait(3000);
 		test.webFunctions().click(test,confirmVehicle.btn_Damage,test.getTestData("Vehicle.V" + i + ".Model"),test.getTestData("Vehicle.V" +i+ ".Damage"));
 		if((test.getTestData("Vehicle.V"+i+".Financeorlease")).equalsIgnoreCase("Yes")) {
 			test.webFunctions().dropdownMelissaJS(test,confirmVehicle.textBox_LienHolder,test.getTestData("Vehicle.V" + i + ".Model").replace(" ", ""),test.getTestData("Vehicle.V" +i+ ".Lienholder"));

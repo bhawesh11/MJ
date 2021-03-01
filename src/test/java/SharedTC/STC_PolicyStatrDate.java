@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 
-public class SharedTestCases_PolicyStatrDate {
+public class STC_PolicyStatrDate {
     
     
 
@@ -21,6 +21,7 @@ public class SharedTestCases_PolicyStatrDate {
         test.webFunctions().click(test,policyStartDate.btn_PaperlessDiscount, test.getTestData("Policy-Start-date.PaperlessDiscount"));
         test.webFunctions().click(test,policyStartDate.btn_ESignDiscount, test.getTestData("Policy-Start-date.E-SignatureDiscount"));
         test.webFunctions().type(test,policyStartDate.textBox_Phone, test.getTestData("Policy-Start-date.PhoneNumber"));
+        test.setOutput("Discount_Page_Disclaimer", test.webFunctions().readInfo(test, policyStartDate.Discount_Page_Disclaimer));
         test.webFunctions().click(test,policyStartDate.btn_SeeMyQuote);
         test.getLogger().info("Policy Start page: Success!");
     }
