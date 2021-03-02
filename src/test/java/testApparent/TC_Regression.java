@@ -55,47 +55,76 @@ public class TC_Regression {
 
 	// ==============================================================================================
 //	***_TEST_CASES_***
+	
 
 	  // TC001
-    @Test(enabled = true, priority = 5, description = "V3_D1_001_TX_ACH")
-    @Parameters("ENV")
-    public void TC001(String ENV) throws Throwable {
+  @Test(enabled = true, priority = 5, description = "V3_D1_001_TX_ACH")
+  @Parameters("ENV")
+  public void TC001(String ENV) throws Throwable {
 
- 
 
-        Testing test = new Testing(ENV, brandName, "V3_D1_001_TX_ACH");
-        try {
 
-            PostalCode.postalCode(test);
-            Family.family(test);
-            Children.children(test);
-            PolicyHolder.policyholder(test);
-            Address.address(test);
-            VehicleDetails1of2.vehicleDetails(test);
-            PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-            PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-            DriverList.driverList(test);
-            InsuranceHistory.insuranceHistory_Yes(test);
-            PolicyStatrDate.policyStartDate(test);
-            test.webFunctions().staticWait(8000);
-            Quote.quote(test);
-            ConfirmDriver.confirmDriver(test);
-            test.webFunctions().staticWait(4000);
-            ConfirmVehicle.confirmVehicle(test);
-            test.webFunctions().staticWait(8000);
-            Billing.billing_Apparent(test);
-            Billing.fillFutureACHDetails_Apparent(test);
-            GetInfo.GetPolicyNumber(test);
-            test.markPassed();
-            
-        } catch (Throwable e) {
-            test.markFailed(e.getMessage());
-            throw (e);
-        } finally {
-            //test.tearDown();
-        }
-    }// closing TC001 method
-	
+      Testing test = new Testing(ENV, brandName, "V3_D1_001_TX_ACH");
+      try {
+
+          PostalCode.postalCode(test);
+          Family.family(test);
+          Children.children(test);
+          PolicyHolder.policyholder(test);
+          Address.address(test);
+          VehicleDetails1of2.vehicleDetails(test);
+          PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+          PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+          DriverList.driverList(test);
+          InsuranceHistory.insuranceHistory_Yes(test);
+          PolicyStatrDate.policyStartDate(test);
+          test.webFunctions().staticWait(8000);
+          Quote.quote(test);
+          ConfirmDriver.confirmDriver(test);
+          test.webFunctions().staticWait(4000);
+          ConfirmVehicle.confirmVehicle(test);
+          test.webFunctions().staticWait(8000);
+          Billing.billing_Apparent(test);
+          Billing.fillFutureACHDetails_Apparent(test);
+          GetInfo.GetPolicyNumber(test);
+          test.markPassed();
+          
+      } catch (Throwable e) {
+          test.markFailed(e.getMessage());
+          throw (e);
+      } finally {
+          //test.tearDown();
+      }
+  }// closing TC001 method
+	//-------------------------------------------------------------
+  
+	// TC004
+			@Test(enabled = true, priority = 5, description = "V1_D1_04_DUI/DWI")
+			@Parameters("ENV")
+			public void TC004(String ENV) throws Throwable {
+
+				Testing test = new Testing(ENV, brandName, "V1_D1_04_DUI/DWI");
+				try {
+
+					PostalCode.postalCode(test);
+					Family.family(test);
+					PolicyHolder.policyholder(test);
+					Address.address(test);
+					VehicleDetails1of2.vehicleDetails(test);
+					PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+					PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+					test.webFunctions().staticWait(8000);
+					GetInfo.GetDUIMessage(test);
+					test.markPassed();
+				} catch (Throwable e) {
+					test.markFailed(e.getMessage());
+					throw (e);
+				} finally {
+					test.tearDown();
+				}
+			}// closing TC004 method
+// ==============================================================================================
+
 	
 	// TC006
 	@Test(enabled = true, priority = 5, description = "V1_D2_06")
@@ -176,5 +205,77 @@ public class TC_Regression {
 		}
 	}// closing TC007 method
 	
+//--------------------------------------------------------------------------
+	// TC019
+		@Test(enabled = true, priority = 5, description = "V1_D1_019_MilitaryActive")
+		@Parameters("ENV")
+		public void TC019(String ENV) throws Throwable {
+
+			Testing test = new Testing(ENV, brandName, "V1_D1_019_MilitaryActive");
+			try {
+
+				PostalCode.postalCode(test);
+				Family.family(test);
+				PolicyHolder.policyholder(test);
+				Address.address(test);
+				VehicleDetails1of2.vehicleDetails(test);
+				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+				DriverInfo1of2.driverDetails(test);
+				InsuranceHistory.insuranceHistory_Yes(test);
+				PolicyStatrDate.policyStartDate(test);
+				test.webFunctions().staticWait(10000);
+				Quote.quote(test);
+				ConfirmDriver.confirmDriver(test);
+				test.webFunctions().staticWait(4000);
+				ConfirmVehicle.confirmVehicle(test);
+				test.webFunctions().staticWait(9000);
+				Billing.billing_Apparent(test);
+				Billing.fillFutureACHDetails_Apparent(test);
+				GetInfo.GetPolicyNumber(test);
+				test.markPassed();
+			} catch (Throwable e) {
+				test.markFailed(e.getMessage());
+				throw (e);
+			} finally {
+				test.tearDown();
+			}
+		}// closing TC019 method
+//--------------------------------------------------------------------------	
+		// TC020
+		@Test(enabled = true, priority = 5, description = "V1_D1_020_PIF")
+		@Parameters("ENV")
+		public void TC020(String ENV) throws Throwable {
+
+			Testing test = new Testing(ENV, brandName, "V1_D1_020_PIF");
+			try {
+
+				PostalCode.postalCode(test);
+				Family.family(test);
+				Children.children(test);
+				PolicyHolder.policyholder(test);
+				Address.address(test);
+				VehicleDetails1of2.vehicleDetails(test);
+				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+				DriverList.driverList(test);
+				InsuranceHistory.insuranceHistory_Yes(test);
+				PolicyStatrDate.policyStartDate(test);
+				test.webFunctions().staticWait(8000);
+				Quote.quote(test);
+				ConfirmDriver.confirmDriver(test);
+				test.webFunctions().staticWait(4000);
+				ConfirmVehicle.confirmVehicle(test);
+				test.webFunctions().staticWait(8000);
+				Billing.billing_Apparent(test);
+				GetInfo.GetPolicyNumber(test);
+				test.markPassed();
+			} catch (Throwable e) {
+				test.markFailed(e.getMessage());
+				throw (e);
+			} finally {
+				test.tearDown();
+			}
+		}// closing TC020 method
 //--------------------------------------------------------------------------
 }
