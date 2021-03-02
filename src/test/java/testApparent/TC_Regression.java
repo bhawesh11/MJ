@@ -56,6 +56,47 @@ public class TC_Regression {
 	// ==============================================================================================
 //	***_TEST_CASES_***
 
+	  // TC001
+    @Test(enabled = true, priority = 5, description = "V3_D1_001_TX_ACH")
+    @Parameters("ENV")
+    public void TC001(String ENV) throws Throwable {
+
+ 
+
+        Testing test = new Testing(ENV, brandName, "V3_D1_001_TX_ACH");
+        try {
+
+            PostalCode.postalCode(test);
+            Family.family(test);
+            Children.children(test);
+            PolicyHolder.policyholder(test);
+            Address.address(test);
+            VehicleDetails1of2.vehicleDetails(test);
+            PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+            PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+            DriverList.driverList(test);
+            InsuranceHistory.insuranceHistory_Yes(test);
+            PolicyStatrDate.policyStartDate(test);
+            test.webFunctions().staticWait(8000);
+            Quote.quote(test);
+            ConfirmDriver.confirmDriver(test);
+            test.webFunctions().staticWait(4000);
+            ConfirmVehicle.confirmVehicle(test);
+            test.webFunctions().staticWait(8000);
+            Billing.billing_Apparent(test);
+            Billing.fillFutureACHDetails_Apparent(test);
+            GetInfo.GetPolicyNumber(test);
+            test.markPassed();
+            
+        } catch (Throwable e) {
+            test.markFailed(e.getMessage());
+            throw (e);
+        } finally {
+            //test.tearDown();
+        }
+    }// closing TC001 method
+	
+	
 	// TC006
 	@Test(enabled = true, priority = 5, description = "V1_D2_06")
 	@Parameters("ENV")
