@@ -33,7 +33,7 @@ public class STC_GetInfo {
     {
         test.setPage(GetInfo.class);
         GetInfo getInfo = (GetInfo) PageFactory.initElements(test.driver, test.getPage());
-        String DUIMsg = test.webFunctions().readInfo(test,getInfo.SuspendedLicenseText);
+        String DUIMsg = test.webFunctions().readInfo(test,getInfo.DUIMessage);
         System.out.println("-------------"+ DUIMsg +"=====================");
 
     }

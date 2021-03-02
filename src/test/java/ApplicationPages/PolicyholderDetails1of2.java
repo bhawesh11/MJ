@@ -32,7 +32,7 @@ public class PolicyholderDetails1of2 {
 	
 	public String btn_WFHOrAttendClasses = "//div/label[contains(text(),'{0}')]";
 	
-	public String btn_School="//label[contains(@for,'attendingSchool{0}')]";
+	public String btn_School="//label[text()='{0}']";
 	
 	@FindBy(xpath="//div/input[contains(@name,'driverOccupation')]")
 	public WebElement textbox_CurrentOccupation;
@@ -54,6 +54,15 @@ public class PolicyholderDetails1of2 {
 	
 	@FindBy(id="btnNext")
 	public WebElement btn_Continue;
+	
+	@FindBy(xpath="//label[contains(@for,'InSchoolYes')]")
+	public WebElement btn_InSchoolYes;
+	
+	@FindBy(xpath="//label[contains(@for,'awayAtSchoolYes')]")
+	public WebElement btn_AwayAtSchool;
+	
+	@FindBy(id="btnContinue")
+	public WebElement btn_StudenContinue;
 			
 	
 }
