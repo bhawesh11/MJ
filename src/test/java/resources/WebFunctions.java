@@ -522,7 +522,7 @@ public void clickUsingAction(Testing test, String webElement, String value1) {
 				element.clear();
 				action.click(element).build().perform();
 				action.sendKeys(value).build().perform();
-				WebElement option = test.driver.findElement(By.xpath("(//li/a/strong)[1]"));
+				WebElement option = test.driver.findElement(By.xpath("(//*[@id='customerAddress']/ancestor::div[@class='dropdown']//a)[1]"));
 				action.moveToElement(option).click().build().perform();
 
 //				jse.executeScript("arguments[0].value='"+value+"';", element);
