@@ -16,6 +16,9 @@ public class Address {
 	@FindBy(id="customerCounty")
 	public WebElement dropdown_County;
 	
+	@FindBy(id="customerZip")
+	public WebElement textBox_Zip;
+	
 	@FindBy(id="yearSelection_ddl")
 	public WebElement MoveInYear;
 	
