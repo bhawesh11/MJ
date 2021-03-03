@@ -37,7 +37,24 @@ public class STC_GetInfo {
         System.out.println("-------------"+ DUIMsg +"=====================");
 
     }
+    
+    public void GetPhSuspendedLicenseMessage(Testing test)
+    {
+        test.setPage(GetInfo.class);
+        GetInfo getInfo = (GetInfo) PageFactory.initElements(test.driver, test.getPage());
+        String SuspendedLicenseMsg = test.webFunctions().readInfo(test,getInfo.message_PHSuspendedLicense);
+        System.out.println("-------------"+ SuspendedLicenseMsg +"=====================");
 
+    }
+
+    public void GetBrandedVinMessage(Testing test)
+    {
+        test.setPage(GetInfo.class);
+        GetInfo getInfo = (GetInfo) PageFactory.initElements(test.driver, test.getPage());
+        String BrandedVinMsg = test.webFunctions().readInfo(test,getInfo.message_BrandedVin);
+        System.out.println("-------------"+ BrandedVinMsg +"=====================");
+
+    }
 
 
 }

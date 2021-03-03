@@ -19,6 +19,17 @@ public class STC_PolicyHolderDetails2of2 {
         PolicyHolderDetails2of2 policyholderDetails2of2 = (PolicyHolderDetails2of2) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().staticWait(2000);
         test.webFunctions().click(test,policyholderDetails2of2.btn_ValidLicense, test.getTestData("Policyholder-details-2.ValidLicense"));
+        try {
+        	if(policyholderDetails2of2.dropdown_DriverLicenseStatus.isDisplayed())
+        	{
+        	test.webFunctions().click(test,policyholderDetails2of2.dropdown_DriverLicenseStatus);
+        	test.webFunctions().click(test, policyholderDetails2of2.dropdown_LicenseStatusSelect,test.getTestData("Policyholder-details-2.LicenseStatus"));
+        	}
+        }
+        catch(Throwable e)
+        {
+        	// TODO: handle exception
+        }
         test.webFunctions().click(test,policyholderDetails2of2.btn_AgeFirstLicensed,test.getTestData("Policyholder-details-2.Agefirstlicensed"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_VehicleDriveMostOften,test.getTestData("Vehicle.V1.Model"));
         test.webFunctions().click(test,policyholderDetails2of2.btn_IncidentHistory,test.getTestData("Policyholder-details-2.IncidentHistory"));
