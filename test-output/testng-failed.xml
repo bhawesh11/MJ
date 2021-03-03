@@ -8,12 +8,12 @@
   <test name="testApparent(failed)" parallel="methods">
     <parameter name="ENV" value="QA6"/>
     <classes>
-      <class name="testApparent.TC_Apparent">
+      <class name="testApparent.TC_Regression">
         <methods>
-          <include name="TC001" invocation-numbers="0"/>
+          <include name="TC014" invocation-numbers="0"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- testApparent.TC_Apparent -->
+      </class> <!-- testApparent.TC_Regression -->
     </classes>
   </test> <!-- testApparent(failed) -->
 </suite> <!-- Failed suite [Suite] -->
