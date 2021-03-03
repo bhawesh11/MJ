@@ -21,11 +21,6 @@ public class GetInfo {
 
     @FindBy(xpath="//*[@id='quote-termination']/div[1]/div/div")
     public WebElement message_TerminationMessage;
-    
-    @FindBy(xpath="//*[@id=\"quote-termination\"]/div[1]/div/div/div/div")
-    public WebElement message_PHSuspendedLicense;
 
-    @FindBy(xpath="//*[@id=\"quote-termination\"]/div[1]/div/div/div")
-    public WebElement message_BrandedVin;
 }
 
