@@ -18,7 +18,7 @@ public class STC_DriverList {
     public void driverList_RemoveDriver(Testing test) {
         test.setPage(DriverList.class);
         DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test,driverList.btn_RemoveDriver,test.getTestData("Policyholder.Second_FirstName"));
+        test.webFunctions().click(test,driverList.btn_RemoveDriver,test.getTestData("Driver.D1.FirstName"));
         test.webFunctions().click(test,driverList.btn_RemoveDriverPopup);
         test.webFunctions().click(test,driverList.btn_DoneWithDrivers);
     }

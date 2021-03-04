@@ -35,6 +35,7 @@ public class STC_PolicyHolderDetails1of2 {
 		}
 		test.webFunctions().click(test, policyholderDetails1of2.btn_Continue);
 		test.getLogger().info("Policy holder Details 1of2 page: Success!");
+		ifStudent_Apparent(test);
 	}
 
 	// -------------------------------------------------------------------------------------------
@@ -47,6 +48,7 @@ public class STC_PolicyHolderDetails1of2 {
 		PolicyholderDetails1of2 policyholderDetails1of2 = (PolicyholderDetails1of2) PageFactory.initElements(test.driver, test.getPage());
 		try {
 			if (policyholderDetails1of2.radiobutton_Days.isDisplayed() == true) {
+				test.webFunctions().staticWait(3000);
 				test.webFunctions().click(test, policyholderDetails1of2.btn_DaysYouDrive,test.getTestData("PolicyholderDetails.DaysYouDriveToWork"));
 				test.webFunctions().click(test, policyholderDetails1of2.btn_WFHOrAttendClasses,test.getTestData("PolicyholderDetails.WFH"));
 				test.webFunctions().click(test, policyholderDetails1of2.btn_School,test.getTestData("PolicyholderDetails.School"));
@@ -106,6 +108,19 @@ public class STC_PolicyHolderDetails1of2 {
 
 	}
 	
+	public void ifStudent_Apparent(Testing test) {
+		test.setPage(PolicyholderDetails1of2.class);
+		PolicyholderDetails1of2 policyholderDetails1of2 = (PolicyholderDetails1of2) PageFactory.initElements(test.driver, test.getPage());
+		String employmentSelected= test.getTestData("PolicyholderDetails.Employment");
+		if(employmentSelected.equalsIgnoreCase("Full-Time Student"))
+		{
+				test.webFunctions().click(test,policyholderDetails1of2.btn_InSchoolYes);
+				test.webFunctions().click(test,policyholderDetails1of2.btn_AwayAtSchool);
+				test.webFunctions().click(test,policyholderDetails1of2.btn_StudenContinue);
+				test.getLogger().info("Student Page: Success!");
+			}
+		}
+	
 	public void occupation_Apparent(Testing test) {
 		test.setPage(PolicyholderDetails1of2.class);
 		PolicyholderDetails1of2 policyholderDetails1of2 = (PolicyholderDetails1of2) PageFactory.initElements(test.driver, test.getPage());
@@ -130,6 +145,8 @@ public class STC_PolicyHolderDetails1of2 {
 			break;
 
 		case "Full-Time Student":		
+			System.out.println(test.getTestData("PolicyholderDetails.School"));
+			test.webFunctions().staticWait(3000);
 			test.webFunctions().click(test,policyholderDetails1of2.btn_School,test.getTestData("PolicyholderDetails.School"));
 			break;
 			
