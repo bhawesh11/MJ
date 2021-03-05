@@ -317,7 +317,7 @@ public class TC_Regression {
 				PolicyHolder.policyholder(test);
 				Address.address(test);
 				test.webFunctions().staticWait(8000);
-				GetInfo.GetDUIMessage(test);
+				GetInfo.GetTerminationMessage(test);
 				test.markPassed();
 			} catch (Throwable e) {
 				test.markFailed(e.getMessage());
