@@ -310,6 +310,43 @@ public class TC_Regression {
 	}// closing TC015 method
 	
 	// ==============================================================================================
+	// TC016
+	@Test(enabled = true, priority = 5, description = "V2_D2_16_AdditionalDriver_Non-licensed")
+	@Parameters("ENV")
+	public void TC016(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V2_D2_16_AdditionalDriver_Non-licensed");
+		try {
+
+            PostalCode.postalCode(test);
+            Family.family(test);
+            Children.children(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(8000);
+			Quote.quote(test);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Apparent(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}// closing TC016 method
+	
+	// ==============================================================================================
 
 	// TC019
 		@Test(enabled = true, priority = 5, description = "V1_D1_019_MilitaryActive")
