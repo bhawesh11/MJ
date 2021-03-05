@@ -14,10 +14,15 @@ public class DriverInfo2of2 {
     @FindBy(id="driverLicenseStatus")
     public WebElement dropdown_LicenseStatus;
     
-    public String dropdownLicenseStatus_Select="//*[@id='driverLicenseStatus']/option[contains(text(),'{0}')]";
+    public String dropdown_LicenseStatusSelect="//*[@id='driverLicenseStatus']/option[contains(text(),'{0}')]";
+    
+    @FindBy(xpath="//*[@id='NonLicensedDriverFollowupNo']/parent::div[@Class='ng-scope']")
+    public WebElement btn_driveAnyYourVehicle;
     
     public String btn_AgeFirstLicensed = "//*[@identity='ageLicensedOption']/div/div/label[text()='{0}']";
+    
     public String btn_vehicleAssignment = "//*[@identity='driverPrimaryVehicle']/div/label[contains(text(),'{0}')]";
+    
     public String btn_IncidentHistory = "//*[@identity='HasIncidents']/div/div/label[contains(text(),'{0}')]";
 
     @FindBy(id="btnContinue")
