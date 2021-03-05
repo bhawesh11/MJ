@@ -56,5 +56,12 @@ public class STC_GetInfo {
 
     }
 
+    public void GetTerminationMessage(Testing test)
+    {
+        test.setPage(GetInfo.class);
+        GetInfo getInfo = (GetInfo) PageFactory.initElements(test.driver, test.getPage());
+        String ActivePolicymsg = test.webFunctions().readInfo(test,getInfo.message_TerminationMessage);
+        System.out.println("-------------"+ ActivePolicymsg +"=====================");
 
+    }
 }
