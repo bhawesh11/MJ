@@ -115,12 +115,18 @@ public class STC_PolicyHolderDetails1of2 {
 		if(employmentSelected.equalsIgnoreCase("Full-Time Student"))
 		{
 				test.webFunctions().click(test,policyholderDetails1of2.btn_InSchoolYes);
+				try {
+					if(policyholderDetails1of2.btn_GoodStudentYes.isDisplayed())
+					{
+						test.webFunctions().click(test,policyholderDetails1of2.btn_GoodStudentYes);
+					}
+				}catch (Exception e) {
+				}
 				test.webFunctions().click(test,policyholderDetails1of2.btn_AwayAtSchool);
 				test.webFunctions().click(test,policyholderDetails1of2.btn_StudenContinue);
 				test.getLogger().info("Student Page: Success!");
 			}
 		}
-	
 	public void occupation_Apparent(Testing test) {
 		test.setPage(PolicyholderDetails1of2.class);
 		PolicyholderDetails1of2 policyholderDetails1of2 = (PolicyholderDetails1of2) PageFactory.initElements(test.driver, test.getPage());
