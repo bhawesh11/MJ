@@ -58,6 +58,10 @@ public class PolicyholderDetails1of2 {
 	@FindBy(xpath="//label[contains(@for,'InSchoolYes')]")
 	public WebElement btn_InSchoolYes;
 	
+	
+	@FindBy(xpath="//label[contains(@for,'goodStudentYes')]")
+	public WebElement btn_GoodStudentYes;
+	
 	@FindBy(xpath="//label[contains(@for,'awayAtSchoolYes')]")
 	public WebElement btn_AwayAtSchool;
 	
