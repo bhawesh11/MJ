@@ -28,13 +28,6 @@ public class ConfirmVehicle {
 
     @FindBy(id="btnContinue")
     public WebElement btn_Next;
-  //------------------------------------------------------------------------------------------------------------------
-	  //  X-PATHS FOR VALIDATIONS
-		
-		@FindBy(xpath="//*[@ng-messages='vehicleForm.damage.$error']")
-		public WebElement vmsg_damage;
-		
-		@FindBy(xpath="//*[@ng-messages='vehicleForm.vin.$error']")
-		public WebElement vmsg_VIN;
-		
+
+
 }

@@ -58,33 +58,4 @@ public class VehicleDetails1of2 {
 	@FindBy(id="btnContinue")
 	public WebElement btn_Next;
 	
-//------------------------------------------------------------------------------------------------------------------
-  //  X-PATHS FOR VALIDATIONS
-	
-	@FindBy(xpath="//*[@ng-messages='form.vehicleYear.$error']")
-	public WebElement vmsg_Year;
-	
-	@FindBy(xpath="//*[@ng-messages='form.vehicleMake.$error']")
-	public WebElement vmsg_Make;
-	
-	@FindBy(xpath="//*[@ng-messages='form.vehicleModel.$error']")
-	public WebElement vmsg_Model;
-	
-	@FindBy(xpath="//*[@ng-messages='form.vehicleBodyStyle.$error']")
-	public WebElement vmsg_Body_Style;
-	
-	@FindBy(xpath="//*[@ng-messages='form.vehicleOwnership.$error']")
-	public WebElement vmsg_vehicle_Ownership;
-	
-	@FindBy(xpath="//*[@ng-messages='form.idvehicleUsage.$error']")
-	public WebElement vmsg_vehicle_Usage;
-	
-	@FindBy(xpath="//*[@ng-messages='form.vehicleEstMileage.$error']")
-	public WebElement vmsg_vehicle_Mileage;
-	
-	@FindBy(xpath="//*[@ng-messages='form.primarilyParked.$error']")
-	public WebElement vmsg_primary_park;
-	
-	@FindBy(xpath="//*[@ng-messages='$ctrl.form.rdCurrentZipcode.$error']")
-	public WebElement vmsg_zip_code;
 }
