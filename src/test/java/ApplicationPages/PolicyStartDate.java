@@ -25,6 +25,9 @@ public class PolicyStartDate {
 	@FindBy(id="btnContinue")
 	public WebElement btn_SeeMyQuote;
 	
+	@FindBy(xpath="(//li[contains(text(),'Good Student')])[2]")
+	public WebElement icon_GSD;
+	
 	//------------------------------------------------------------------------------------------------------------------
 	  //  X-PATHS FOR VALIDATIONS
 		
