@@ -58,11 +58,11 @@ public class TC_Regression {
 	// ***_TEST_CASES_***
 
 	// TC001
-	@Test(enabled = true, priority = 5, description = "V3_D1_001_TX_ACH")
+	@Test(enabled = true, priority = 5, description = "V3_D1_001_GSD")
 	@Parameters("ENV")
 	public void TC001(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D1_001_TX_ACH");
+		Testing test = new Testing(ENV, brandName, "V3_D1_001_GSD");
 		try {
 
 			PostalCode.postalCode(test);
@@ -73,7 +73,9 @@ public class TC_Regression {
 			VehicleDetails1of2.vehicleDetails(test);
 			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			test.webFunctions().staticWait(3000);
 			DriverList.driverList(test);
+			PolicyStatrDate.goodStudentDiscount(test);
 			InsuranceHistory.insuranceHistory_Yes(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -93,8 +95,8 @@ public class TC_Regression {
 		} finally {
 			// test.tearDown();
 		}
-	}// closing TC001 method
-		// -------------------------------------------------------------
+	}
+	// -------------------------------------------------------------
 
 	// TC004
 	@Test(enabled = true, priority = 5, description = "V1_D1_04_DUI/DWI")
@@ -121,7 +123,7 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}// closing TC004 method
-	// ==============================================================================================
+		// ==============================================================================================
 
 	// TC006
 	@Test(enabled = true, priority = 5, description = "V1_D2_06")
@@ -321,7 +323,7 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}// closing TC010 method
-	// --------------------------------------------------------------------------
+		// --------------------------------------------------------------------------
 
 	// TC012
 	@Test(enabled = true, priority = 5, description = "V1_D2_12_RemoveDriver")
@@ -401,7 +403,7 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}// closing TC013 method
-	// --------------------------------------------------------------------------
+		// --------------------------------------------------------------------------
 
 	// TC014
 	@Test(enabled = true, priority = 5, description = "V1_D1_14_BrandedVin")
@@ -580,8 +582,8 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}// closing TC019 method
-	// --------------------------------------------------------------------------
-	// TC020
+		// --------------------------------------------------------------------------
+		// TC020
 
 	@Test(enabled = true, priority = 5, description = "V1_D1_020_PIF")
 	@Parameters("ENV")
@@ -617,6 +619,48 @@ public class TC_Regression {
 			test.tearDown();
 		}
 	}// closing TC020 method
+		// --------------------------------------------------------------------------
+
+	// TC005
+	@Test(enabled = true, priority = 5, description = "V8_D8_005")
+	@Parameters("ENV")
+	public void TC005(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V8_D8_005");
+		try {
+
+			PostalCode.postalCode(test);
+			Family.family(test);
+			Children.children(test);
+			PolicyHolder.policyholder(test);
+			Address.address(test);
+			VehicleDetails1of2.vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			Spouse1of2.Spouse1of2(test);
+			Spouse2of2.Spouse2of2(test);
+			DriverInfo1of2.driverDetails(test);
+			InsuranceHistory.insuranceHistory_Yes(test);
+			Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+			Quote.quote(test);
+			test.webFunctions().staticWait(7000);
+			ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(8000);
+			ConfirmVehicle.confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			Billing.billing_Apparent(test);
+			GetInfo.GetPolicyNumber(test);
+			test.markPassed();
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			// test.tearDown();
+		}
+	}// closing TC005 method
+
 	// --------------------------------------------------------------------------
 	// ==============================================================================================
 
