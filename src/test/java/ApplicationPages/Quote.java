@@ -40,6 +40,8 @@ public class Quote {
 	
 	public String checkbox_RoadsideAssistance = "(//label[@for='Smart Roadside Assistance'])['{0}']" ;
 	
+	public String slider_RentalApparent = "(//input[contains(@id,'vehicleCoverageItemRentalCarMatch')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'{0}')]/ancestor::li[1]";
+	
 	//---------------------------Special Features-----------------------------------------------
 	
 	@FindBy(xpath="//label[contains(@for,'Legal Assistance')]")
