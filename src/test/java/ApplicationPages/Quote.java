@@ -36,6 +36,8 @@ public class Quote {
 	
 	public String slider_Rental = "(//input[contains(@id,'vehicleCoverageItemRentalReimbursement')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'{0}')]/ancestor::li[1])['{1}']" ;
 	
+	public String slider_RentalApparent = "(//input[contains(@id,'vehicleCoverageItemRentalCarMatch')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'$1,200')]/ancestor::li[1]"; 
+	
 	public String slider_Custom = "(//input[contains(@id,'vehicleCoverageItemCustomEquipmentCoverage')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'{0}')]/ancestor::li[1])['{1}']" ;
 	
 	public String checkbox_RoadsideAssistance = "(//label[@for='Smart Roadside Assistance'])['{0}']" ;

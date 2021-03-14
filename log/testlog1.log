@@ -514,3 +514,1629 @@ Session ID: 01a9338d47e40878ed791a6771f5ed57
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
+2021-03-03 16:20:11,824 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC015 | Priority: 5
+2021-03-03 16:20:34,691 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Beginning to Quote.
+2021-03-03 16:20:44,233 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Family page: Success!
+2021-03-03 16:20:55,633 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Policy Holder page: Success!
+2021-03-03 16:20:57,078 [pool-1-thread-1] ERROR Apparent-V1_D1_15_SuspendedLicense - NoSuchElement Exception
+2021-03-03 16:21:04,454 [pool-1-thread-1] ERROR Apparent-V1_D1_15_SuspendedLicense - WebDriver Exception
+2021-03-03 16:21:30,583 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Address page: Success!
+2021-03-03 16:22:20,412 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Vehicle Details 1of2 page: Success!
+2021-03-03 16:22:48,338 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Vehicle Details 2of2 page: Success!
+2021-03-03 16:22:54,891 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - VehicleList page: Success!
+2021-03-03 16:23:12,837 [pool-1-thread-1] ERROR Apparent-V1_D1_15_SuspendedLicense - NoSuchElement Exception
+2021-03-03 16:23:17,208 [pool-1-thread-1] ERROR Apparent-V1_D1_15_SuspendedLicense - NoSuchElement Exception
+2021-03-03 16:23:21,069 [pool-1-thread-1] ERROR Apparent-V1_D1_15_SuspendedLicense - NoSuchElement Exception
+2021-03-03 16:23:28,883 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Policy holder Details 1of2 page: Success!
+2021-03-03 16:23:55,871 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Policy Holder Details 2of2 page: Success!
+2021-03-03 16:23:55,876 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - No Incident added!
+2021-03-03 16:23:57,268 [pool-1-thread-1] INFO Apparent-V1_D1_15_SuspendedLicense - Test case is successful!
+2021-03-03 16:23:59,009 [pool-1-thread-1] INFO Test Suite - TC015 is Passed !
+2021-03-03 22:25:20,878 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-03 22:25:47,063 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-03 22:25:55,945 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-03 22:26:07,146 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-03 22:26:09,097 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:26:16,670 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:26:42,681 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-03 22:27:23,173 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:27:47,922 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-03 22:28:11,963 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-03 22:28:21,148 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-03 22:28:32,721 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-03 22:28:33,995 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:29:04,541 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-03 22:29:52,388 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 22:30:20,730 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 22:30:24,403 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 22:31:09,212 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 22:31:37,587 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 22:31:44,213 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 22:32:02,773 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:32:06,617 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:32:10,852 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:32:17,792 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-03 22:32:37,621 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-03 22:32:57,911 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-03 22:33:01,343 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 22:33:20,879 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-03 22:33:32,191 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:33:34,526 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:33:36,858 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:33:46,545 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-03 22:33:46,549 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-03 22:33:50,158 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 22:33:53,283 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case has failed!
+2021-03-03 22:33:53,288 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@identity='rdCurrentlyInsured']/div/div/label[contains(text(),'Yes')]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53400}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 0c6586c9d89bda4bf59a8d2d6a6e7e4a
+*** Element info: {Using=xpath, value=//*[@identity='rdCurrentlyInsured']/div/div/label[contains(text(),'Yes')]}
+2021-03-03 22:33:55,401 [pool-1-thread-1] ERROR Test Suite - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@identity='rdCurrentlyInsured']/div/div/label[contains(text(),'Yes')]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53400}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 0c6586c9d89bda4bf59a8d2d6a6e7e4a
+*** Element info: {Using=xpath, value=//*[@identity='rdCurrentlyInsured']/div/div/label[contains(text(),'Yes')]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at resources.WebFunctions.click(WebFunctions.java:164)
+	at SharedTC.STC_InsuranceHistory.insuranceHistory_Yes(STC_InsuranceHistory.java:19)
+	at testApparent.TC_Regression.TC016(TC_Regression.java:331)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-03 22:47:37,540 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-03 22:47:59,980 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-03 22:48:08,429 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-03 22:48:17,581 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-03 22:48:18,222 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:48:24,086 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:48:47,707 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-03 22:49:29,981 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 22:49:55,685 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 22:49:58,913 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 22:50:38,771 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 22:51:04,397 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 22:51:10,629 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 22:51:27,011 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:51:30,502 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:51:34,025 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:51:40,764 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-03 22:51:58,820 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-03 22:52:16,631 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-03 22:52:19,835 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 22:52:36,582 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-03 22:52:46,334 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:52:48,481 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:52:50,620 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:52:59,213 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-03 22:52:59,216 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-03 22:53:02,405 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 22:53:05,437 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case has failed!
+2021-03-03 22:53:05,437 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@identity='rdCurrentlyInsured']/div/div/label[contains(text(),'Yes')]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54044}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 9e1bb77a52b973c9203b1b9034d11bcf
+*** Element info: {Using=xpath, value=//*[@identity='rdCurrentlyInsured']/div/div/label[contains(text(),'Yes')]}
+2021-03-03 22:53:10,753 [pool-1-thread-1] ERROR Test Suite - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@identity='rdCurrentlyInsured']/div/div/label[contains(text(),'Yes')]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54044}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 9e1bb77a52b973c9203b1b9034d11bcf
+*** Element info: {Using=xpath, value=//*[@identity='rdCurrentlyInsured']/div/div/label[contains(text(),'Yes')]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at resources.WebFunctions.click(WebFunctions.java:164)
+	at SharedTC.STC_InsuranceHistory.insuranceHistory_Yes(STC_InsuranceHistory.java:19)
+	at testApparent.TC_Regression.TC016(TC_Regression.java:331)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-03 22:55:37,342 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-03 22:55:59,606 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-03 22:56:08,052 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-03 22:56:17,155 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-03 22:56:17,841 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:56:23,794 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 22:56:47,414 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-03 22:57:32,667 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 22:57:58,456 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 22:58:01,682 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 22:58:41,422 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 22:59:07,117 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 22:59:13,355 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 22:59:29,764 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:59:33,263 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:59:36,788 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 22:59:43,548 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-03 23:00:01,520 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-03 23:00:19,226 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-03 23:00:22,459 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 23:00:39,276 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-03 23:01:32,495 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 23:01:34,932 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 23:01:37,396 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 23:09:39,064 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-03 23:10:02,469 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-03 23:10:10,952 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-03 23:10:20,235 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-03 23:10:21,034 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:10:26,950 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 23:10:50,693 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-03 23:11:33,951 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 23:11:59,777 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 23:12:03,009 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 23:12:42,985 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 23:13:08,778 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 23:13:15,025 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 23:13:31,481 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:13:35,037 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:13:38,590 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:13:45,389 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-03 23:14:03,487 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-03 23:14:21,328 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-03 23:14:24,550 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 23:14:41,337 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-03 23:16:08,319 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-03 23:16:25,390 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-03 23:16:39,032 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 23:17:43,054 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Insurance History page: Success!
+2021-03-03 23:20:56,814 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-03 23:21:17,983 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-03 23:21:26,439 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-03 23:21:35,712 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-03 23:21:36,373 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:21:42,291 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 23:22:05,926 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-03 23:22:48,051 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 23:23:13,707 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 23:23:16,953 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 23:23:56,702 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 23:24:22,347 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 23:24:28,575 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 23:24:44,944 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:24:48,434 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:24:51,962 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:24:58,712 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-03 23:25:16,766 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-03 23:25:34,499 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-03 23:25:37,711 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 23:25:54,548 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-03 23:26:13,926 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-03 23:26:13,926 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-03 23:26:17,146 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 23:26:54,326 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Insurance History page: Success!
+2021-03-03 23:27:07,955 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Start page: Success!
+2021-03-03 23:27:28,295 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Quote Page: Success!
+2021-03-03 23:27:41,655 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case has failed!
+2021-03-03 23:27:41,655 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='driverLicense'])[2]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56290}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: f3a66d59c85b786dbec42143e1d089ca
+*** Element info: {Using=xpath, value=(//input[@name='driverLicense'])[2]}
+2021-03-03 23:27:47,122 [pool-1-thread-1] ERROR Test Suite - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='driverLicense'])[2]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56290}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: f3a66d59c85b786dbec42143e1d089ca
+*** Element info: {Using=xpath, value=(//input[@name='driverLicense'])[2]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at resources.WebFunctions.type(WebFunctions.java:87)
+	at SharedTC.STC_ConfirmDriver.confirmDriver(STC_ConfirmDriver.java:23)
+	at testApparent.TC_Regression.TC016(TC_Regression.java:335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-03 23:32:20,238 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-03 23:32:46,217 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-03 23:32:54,658 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-03 23:33:03,841 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-03 23:33:04,510 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:33:10,708 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-03 23:33:34,290 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-03 23:34:16,647 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 23:34:42,353 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 23:34:45,573 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 23:35:25,914 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-03 23:35:51,601 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-03 23:35:57,863 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-03 23:36:14,303 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:36:17,822 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:36:21,371 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-03 23:36:28,088 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-03 23:36:46,082 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-03 23:37:03,796 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-03 23:37:06,989 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 23:37:23,749 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-03 23:37:43,013 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-03 23:37:43,014 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-03 23:37:46,240 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-03 23:38:23,359 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Insurance History page: Success!
+2021-03-03 23:38:37,005 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Start page: Success!
+2021-03-03 23:40:30,072 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Quote Page: Success!
+2021-03-03 23:46:58,550 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2021-03-03 23:48:02,578 [pool-1-thread-1] ERROR Apparent-V1_D1_07 - WebDriver Exception
+2021-03-03 23:48:23,281 [pool-1-thread-1] INFO Apparent-V1_D1_07 - Beginning to Quote.
+2021-03-03 23:48:36,770 [pool-1-thread-1] INFO Apparent-V1_D1_07 - Family page: Success!
+2021-03-03 23:48:39,063 [pool-1-thread-1] ERROR Apparent-V1_D1_07 - WebDriver Exception
+2021-03-03 23:48:41,209 [pool-1-thread-1] ERROR Apparent-V1_D1_07 - WebDriver Exception
+2021-03-03 23:48:43,428 [pool-1-thread-1] ERROR Apparent-V1_D1_07 - WebDriver Exception
+2021-03-03 23:48:45,623 [pool-1-thread-1] INFO Apparent-V1_D1_07 - Test case has failed!
+2021-03-03 23:48:45,624 [pool-1-thread-1] INFO Apparent-V1_D1_07 - unknown error: keys should be a string
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57761}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 26d94aaa25fbef591103df9c052c068b
+2021-03-03 23:48:50,981 [pool-1-thread-1] ERROR Test Suite - TC007 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: unknown error: keys should be a string
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57761}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 26d94aaa25fbef591103df9c052c068b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at resources.WebFunctions.type(WebFunctions.java:37)
+	at SharedTC.STC_PolicyHolder.policyholder(STC_PolicyHolder.java:18)
+	at testApparent.TC_Regression.TC007(TC_Regression.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-03 23:51:58,042 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2021-03-03 23:53:00,106 [pool-1-thread-1] INFO Apparent-V1_D1_07 - Beginning to Quote.
+2021-03-03 23:53:08,531 [pool-1-thread-1] INFO Apparent-V1_D1_07 - Family page: Success!
+2021-03-03 23:53:10,777 [pool-1-thread-1] ERROR Apparent-V1_D1_07 - WebDriver Exception
+2021-03-03 23:53:12,935 [pool-1-thread-1] ERROR Apparent-V1_D1_07 - WebDriver Exception
+2021-03-03 23:53:15,092 [pool-1-thread-1] ERROR Apparent-V1_D1_07 - WebDriver Exception
+2021-03-03 23:53:17,242 [pool-1-thread-1] INFO Apparent-V1_D1_07 - Test case has failed!
+2021-03-03 23:53:17,242 [pool-1-thread-1] INFO Apparent-V1_D1_07 - unknown error: keys should be a string
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58052}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: a1bd1bc5eba5262ce9a34eb2a9a5aaf5
+2021-03-03 23:53:22,901 [pool-1-thread-1] ERROR Test Suite - TC007 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: unknown error: keys should be a string
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58052}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: a1bd1bc5eba5262ce9a34eb2a9a5aaf5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at resources.WebFunctions.type(WebFunctions.java:37)
+	at SharedTC.STC_PolicyHolder.policyholder(STC_PolicyHolder.java:18)
+	at testApparent.TC_Regression.TC007(TC_Regression.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-03 23:55:38,963 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2021-03-03 23:56:01,035 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Beginning to Quote.
+2021-03-03 23:57:35,669 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2021-03-03 23:58:04,862 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Beginning to Quote.
+2021-03-03 23:58:13,286 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Family page: Success!
+2021-03-03 23:58:22,618 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder page: Success!
+2021-03-03 23:58:23,398 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-03 23:58:29,450 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - WebDriver Exception
+2021-03-03 23:58:52,996 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Address page: Success!
+2021-03-03 23:59:35,678 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:00:01,312 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:00:04,540 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:00:44,377 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:01:10,012 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:01:16,241 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:01:32,904 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:01:36,559 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:01:40,407 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:01:47,239 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy holder Details 1of2 page: Success!
+2021-03-04 00:01:49,282 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Test case has failed!
+2021-03-04 00:01:49,282 [pool-1-thread-1] INFO Apparent-V2_D2_07 - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@identity='HasValidUSLicense']/div/div/label[contains(text(),'Yes')]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58287}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: de73766329812a2d848920d642f836b6
+*** Element info: {Using=xpath, value=//*[@identity='HasValidUSLicense']/div/div/label[contains(text(),'Yes')]}
+2021-03-04 00:01:54,811 [pool-1-thread-1] ERROR Test Suite - TC007 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@identity='HasValidUSLicense']/div/div/label[contains(text(),'Yes')]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58287}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: de73766329812a2d848920d642f836b6
+*** Element info: {Using=xpath, value=//*[@identity='HasValidUSLicense']/div/div/label[contains(text(),'Yes')]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at resources.WebFunctions.click(WebFunctions.java:164)
+	at SharedTC.STC_PolicyHolderDetails2of2.policyHolderDetails2of2(STC_PolicyHolderDetails2of2.java:21)
+	at testApparent.TC_Regression.TC007(TC_Regression.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-04 00:03:25,797 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2021-03-04 00:03:51,157 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Beginning to Quote.
+2021-03-04 00:03:59,536 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Family page: Success!
+2021-03-04 00:04:08,827 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder page: Success!
+2021-03-04 00:04:09,748 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:04:37,929 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Address page: Success!
+2021-03-04 00:06:13,662 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:06:47,372 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:06:50,923 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:07:34,472 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:08:02,500 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:08:09,019 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:09:19,012 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:09:33,073 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:09:47,210 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:10:09,905 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy holder Details 1of2 page: Success!
+2021-03-04 00:11:40,643 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder Details 2of2 page: Success!
+2021-03-04 00:11:40,683 [pool-1-thread-1] INFO Apparent-V2_D2_07 - No Incident added!
+2021-03-04 00:12:05,814 [pool-1-thread-1] INFO Apparent-V2_D2_07 - DriverList page: Success!
+2021-03-04 00:12:44,684 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Additional Driver 1of2 page: Success!
+2021-03-04 00:12:55,226 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Additional Driver 2of2 page: Success!
+2021-03-04 00:12:55,245 [pool-1-thread-1] INFO Apparent-V2_D2_07 - No Incident added!
+2021-03-04 00:12:58,799 [pool-1-thread-1] INFO Apparent-V2_D2_07 - DriverList page: Success!
+2021-03-04 00:23:50,040 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2021-03-04 00:24:15,180 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Beginning to Quote.
+2021-03-04 00:24:23,640 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Family page: Success!
+2021-03-04 00:24:32,800 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder page: Success!
+2021-03-04 00:24:33,442 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:24:39,391 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - WebDriver Exception
+2021-03-04 00:25:03,094 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Address page: Success!
+2021-03-04 00:25:47,374 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:26:13,084 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:26:16,289 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:26:56,764 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:27:22,360 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:27:28,614 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:27:45,006 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:27:48,498 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:27:52,002 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:27:58,793 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy holder Details 1of2 page: Success!
+2021-03-04 00:28:16,818 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder Details 2of2 page: Success!
+2021-03-04 00:28:16,820 [pool-1-thread-1] INFO Apparent-V2_D2_07 - No Incident added!
+2021-03-04 00:28:20,001 [pool-1-thread-1] INFO Apparent-V2_D2_07 - DriverList page: Success!
+2021-03-04 00:28:36,875 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Additional Driver 1of2 page: Success!
+2021-03-04 00:32:37,218 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2021-03-04 00:33:01,724 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Beginning to Quote.
+2021-03-04 00:33:10,152 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Family page: Success!
+2021-03-04 00:33:19,308 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder page: Success!
+2021-03-04 00:33:19,954 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:33:25,858 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - WebDriver Exception
+2021-03-04 00:33:49,486 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Address page: Success!
+2021-03-04 00:34:33,573 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:34:59,234 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:35:02,442 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:35:42,272 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:36:08,021 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:36:14,255 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:36:30,653 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:36:34,223 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:36:37,788 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:36:44,465 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy holder Details 1of2 page: Success!
+2021-03-04 00:37:02,529 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder Details 2of2 page: Success!
+2021-03-04 00:37:02,537 [pool-1-thread-1] INFO Apparent-V2_D2_07 - No Incident added!
+2021-03-04 00:37:05,787 [pool-1-thread-1] INFO Apparent-V2_D2_07 - DriverList page: Success!
+2021-03-04 00:37:22,532 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Additional Driver 1of2 page: Success!
+2021-03-04 00:42:06,247 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2021-03-04 00:42:27,195 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Beginning to Quote.
+2021-03-04 00:42:35,667 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Family page: Success!
+2021-03-04 00:42:44,752 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder page: Success!
+2021-03-04 00:42:45,418 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:42:51,375 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - WebDriver Exception
+2021-03-04 00:43:15,023 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Address page: Success!
+2021-03-04 00:43:57,200 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:44:22,827 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:44:26,051 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:45:06,354 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 1of2 page: Success!
+2021-03-04 00:45:31,992 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Vehicle Details 2of2 page: Success!
+2021-03-04 00:45:38,243 [pool-1-thread-1] INFO Apparent-V2_D2_07 - VehicleList page: Success!
+2021-03-04 00:45:54,716 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:45:58,193 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:46:01,717 [pool-1-thread-1] ERROR Apparent-V2_D2_07 - NoSuchElement Exception
+2021-03-04 00:46:08,462 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy holder Details 1of2 page: Success!
+2021-03-04 00:46:26,530 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Policy Holder Details 2of2 page: Success!
+2021-03-04 00:46:26,537 [pool-1-thread-1] INFO Apparent-V2_D2_07 - No Incident added!
+2021-03-04 00:46:29,766 [pool-1-thread-1] INFO Apparent-V2_D2_07 - DriverList page: Success!
+2021-03-04 00:46:46,616 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Additional Driver 1of2 page: Success!
+2021-03-04 00:47:41,484 [pool-1-thread-1] INFO Apparent-V2_D2_07 - Additional Driver 2of2 page: Success!
+2021-03-04 00:47:41,961 [pool-1-thread-1] INFO Apparent-V2_D2_07 - No Incident added!
+2021-03-04 00:47:50,309 [pool-1-thread-1] INFO Apparent-V2_D2_07 - DriverList page: Success!
+2021-03-04 00:48:21,022 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-04 00:48:43,489 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-04 00:48:51,986 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-04 00:49:01,146 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-04 00:49:01,830 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 00:49:07,795 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-04 00:49:31,297 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-04 00:50:14,069 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-04 00:50:39,726 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-04 00:50:42,934 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-04 00:51:23,269 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-04 00:51:48,895 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-04 00:51:55,141 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-04 00:52:11,567 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 00:52:15,052 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 00:52:18,576 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 00:52:25,316 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-04 00:52:43,315 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-04 00:53:01,007 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-04 00:53:04,236 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-04 00:53:20,960 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-04 17:02:32,908 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-04 17:03:06,154 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-04 17:03:15,573 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-04 17:03:26,302 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-04 17:03:27,941 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 17:03:35,208 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-04 17:04:01,051 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-04 17:04:48,419 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-04 17:05:16,259 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-04 17:05:19,912 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-04 17:06:06,807 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-04 17:06:44,767 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-04 17:06:51,304 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-04 17:07:09,318 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 17:07:13,699 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 17:07:18,114 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 17:07:25,561 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-04 17:07:44,821 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-04 17:08:04,862 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-04 17:08:08,456 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-04 17:08:28,059 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-04 17:08:49,316 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-04 17:08:49,322 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-04 17:08:53,040 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-04 17:09:33,819 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Insurance History page: Success!
+2021-03-04 17:09:49,429 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Start page: Success!
+2021-03-04 17:10:11,020 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Quote Page: Success!
+2021-03-04 17:10:17,214 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case has failed!
+2021-03-04 17:10:17,217 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='driverLicense'])[1]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60209}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: a6263e6a7c3df3e8596dcf276425af4e
+*** Element info: {Using=xpath, value=(//input[@name='driverLicense'])[1]}
+2021-03-04 17:10:19,487 [pool-1-thread-1] ERROR Test Suite - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='driverLicense'])[1]"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60209}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: a6263e6a7c3df3e8596dcf276425af4e
+*** Element info: {Using=xpath, value=(//input[@name='driverLicense'])[1]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at resources.WebFunctions.type(WebFunctions.java:87)
+	at SharedTC.STC_ConfirmDriver.confirmDriver(STC_ConfirmDriver.java:23)
+	at testApparent.TC_Regression.TC016(TC_Regression.java:338)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-04 17:21:42,632 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-04 17:22:08,534 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-04 17:22:17,908 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-04 17:22:33,257 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-04 17:22:44,407 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 17:23:50,674 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-04 17:24:38,257 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-04 17:25:11,754 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-04 17:25:15,305 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-04 17:25:59,858 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-04 17:26:28,225 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-04 17:26:34,850 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-04 17:26:53,513 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 17:26:57,509 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 17:27:02,161 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-04 17:27:10,466 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-04 17:27:29,927 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-04 17:27:49,516 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-04 17:27:53,087 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-04 17:28:12,651 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-04 17:28:30,365 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-04 17:28:30,373 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-04 17:28:34,011 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-05 01:09:25,097 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-05 01:09:51,642 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-05 01:10:00,840 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-05 01:10:12,345 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-05 01:10:13,998 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:10:44,872 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-05 01:11:32,390 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-05 01:12:00,933 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-05 01:12:04,585 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-05 01:12:49,792 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-05 01:13:17,933 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-05 01:13:24,507 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-05 01:13:43,415 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:13:47,524 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:13:51,812 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:13:59,377 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-05 01:14:19,339 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-05 01:14:40,315 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Incident added Successfully !
+2021-03-05 01:14:43,982 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-05 01:15:03,366 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-05 01:15:27,804 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-05 01:15:27,809 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-05 01:15:31,493 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-05 01:18:25,612 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-05 01:18:47,825 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-05 01:18:56,533 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-05 01:19:07,472 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-05 01:19:09,552 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:19:40,711 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-05 01:20:28,071 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-05 01:20:56,251 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-05 01:21:02,805 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-05 01:21:21,805 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:21:26,217 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:21:30,636 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:21:38,188 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-05 01:21:58,129 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-05 01:21:58,138 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-05 01:22:01,813 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-05 01:22:21,362 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-05 01:26:05,335 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-05 01:26:40,039 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-05 01:26:49,518 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-05 01:27:00,139 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-05 01:27:01,587 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:27:08,496 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-05 01:27:34,478 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-05 01:28:21,031 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-05 01:28:49,547 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-05 01:28:56,072 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-05 01:29:14,563 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:29:18,612 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:29:22,942 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:29:30,095 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-05 01:29:49,859 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-05 01:29:49,867 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-05 01:29:53,534 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-05 01:30:12,895 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-05 01:32:17,729 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-05 01:32:47,573 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-05 01:33:30,072 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-05 01:34:12,636 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-05 01:34:38,207 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-05 01:34:54,076 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-05 01:34:56,294 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:35:03,276 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-05 01:35:44,189 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-05 01:36:53,256 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-05 01:37:21,223 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-05 01:37:27,894 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-05 01:37:46,366 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:37:50,176 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:37:54,609 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:38:02,733 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-05 01:38:22,289 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-05 01:38:22,298 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-05 01:38:25,706 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-05 01:38:44,941 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-05 01:40:26,006 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-05 01:40:26,871 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-05 01:43:35,021 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-05 01:43:56,102 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-05 01:44:05,314 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-05 01:44:16,500 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-05 01:44:18,191 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-05 01:44:25,318 [pool-1-thread-1] ERROR Apparent-V1_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-05 01:44:51,400 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-05 01:45:38,901 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-05 01:46:06,490 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-05 01:46:13,042 [pool-1-thread-1] INFO Apparent-V1_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-08 20:06:48,657 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-08 20:08:00,294 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:08:36,107 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-08 20:08:45,497 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-08 20:08:58,465 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-08 20:09:09,776 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:09:32,466 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:10:18,486 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-08 20:11:27,099 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-08 20:12:25,586 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-08 20:12:34,187 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-08 20:13:34,779 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-08 20:14:02,363 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-08 20:14:14,114 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-08 20:14:32,956 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:14:37,270 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:14:41,340 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:14:48,850 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-08 20:15:08,359 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-08 20:15:08,367 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-08 20:15:12,069 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-08 20:15:31,252 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-08 20:16:07,433 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-08 20:16:07,435 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-08 20:16:15,882 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-08 20:17:09,860 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:17:52,593 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:18:35,327 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:19:17,704 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case has failed!
+2021-03-08 20:19:17,706 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (3516e930ff356275e5a2c3d6e59d2353)] -> xpath: //*[@id='insuranceProvider']] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50749}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 3516e930ff356275e5a2c3d6e59d2353
+2021-03-08 20:19:23,937 [pool-1-thread-1] ERROR Test Suite - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (3516e930ff356275e5a2c3d6e59d2353)] -> xpath: //*[@id='insuranceProvider']] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50749}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 3516e930ff356275e5a2c3d6e59d2353
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at resources.WebFunctions.click(WebFunctions.java:118)
+	at SharedTC.STC_InsuranceHistory.insuranceHistory_Yes(STC_InsuranceHistory.java:21)
+	at testApparent.TC_Regression.TC016(TC_Regression.java:488)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-08 20:20:05,117 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-08 20:20:33,648 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-08 20:20:42,795 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-08 20:20:53,425 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-08 20:21:33,788 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:22:16,243 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:22:58,601 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:23:03,450 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case has failed!
+2021-03-08 20:23:03,453 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - unexpected alert open: {Alert text : }
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds: null
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51093}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 7bf13ad3998c873923fad2d8e1bbb2d5
+*** Element info: {Using=id, value=customerAddress}
+2021-03-08 20:23:05,544 [pool-1-thread-1] ERROR Test Suite - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds: null
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51093}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: 7bf13ad3998c873923fad2d8e1bbb2d5
+*** Element info: {Using=id, value=customerAddress}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at resources.WebFunctions.dropdownMelissaJS(WebFunctions.java:521)
+	at SharedTC.STC_Address.address(STC_Address.java:14)
+	at testApparent.TC_Regression.TC016(TC_Regression.java:483)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-08 20:23:13,751 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-08 20:23:46,059 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-08 20:23:55,311 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-08 20:24:05,747 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-08 20:24:07,159 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:24:14,400 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-08 20:24:40,579 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-08 20:25:29,574 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-08 20:25:57,634 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-08 20:26:01,172 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-08 20:26:46,136 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-08 20:27:14,514 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-08 20:27:21,121 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-08 20:27:39,612 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:27:43,716 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:27:48,058 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:27:55,375 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-08 20:28:14,186 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-08 20:28:14,196 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-08 20:28:17,861 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-08 20:28:37,943 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-08 20:29:39,056 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-08 20:29:39,058 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-08 20:29:42,532 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-08 20:30:23,815 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Insurance History page: Success!
+2021-03-08 20:30:39,780 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Start page: Success!
+2021-03-08 20:31:15,662 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Quote Page: Success!
+2021-03-08 20:32:06,910 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Confirm Driver page: Success!
+2021-03-08 20:32:28,361 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:32:32,057 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:32:36,203 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:32:50,971 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:32:55,089 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:32:58,930 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-08 20:33:12,802 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - ConfirmVehicle page: Success!
+2021-03-08 20:34:12,132 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Billing page: Success!
+2021-03-08 20:34:40,689 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Number :244-000-000-98
+2021-03-08 20:34:40,690 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case is successful!
+2021-03-08 20:34:46,720 [pool-1-thread-1] INFO Test Suite - TC016 is Passed !
+2021-03-09 14:20:04,400 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-09 14:21:18,123 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-09 14:21:26,564 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-09 14:21:35,652 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-09 14:21:36,285 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:21:42,196 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-09 14:22:05,655 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-09 14:22:47,614 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-09 14:23:13,324 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-09 14:23:16,568 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-09 14:23:56,223 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-09 14:24:21,921 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-09 14:24:28,142 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-09 14:24:44,852 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:24:48,541 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:24:52,233 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:25:01,460 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-09 14:25:19,491 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-09 14:25:19,498 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-09 14:25:22,716 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-09 14:25:39,403 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-09 14:25:58,747 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-09 14:25:58,751 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-09 14:26:01,994 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-09 14:26:39,174 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Insurance History page: Success!
+2021-03-09 14:26:52,645 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Start page: Success!
+2021-03-09 14:27:13,201 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Quote Page: Success!
+2021-03-09 14:27:19,315 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case has failed!
+2021-03-09 14:27:19,316 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='driverLicense'])[1]"}
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63629}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 3bb13ec52ec703c13b914b07188cbb30
+*** Element info: {Using=xpath, value=(//input[@name='driverLicense'])[1]}
+2021-03-09 14:27:20,870 [pool-1-thread-1] ERROR Test Suite - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='driverLicense'])[1]"}
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63629}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 3bb13ec52ec703c13b914b07188cbb30
+*** Element info: {Using=xpath, value=(//input[@name='driverLicense'])[1]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at resources.WebFunctions.type(WebFunctions.java:87)
+	at SharedTC.STC_ConfirmDriver.confirmDriver(STC_ConfirmDriver.java:20)
+	at testApparent.TC_Regression.TC016(TC_Regression.java:492)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-09 14:28:01,320 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-09 14:28:22,294 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-09 14:28:30,753 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-09 14:28:39,940 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-09 14:28:40,605 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:28:46,583 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-09 14:29:10,073 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-09 14:29:52,078 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-09 14:30:17,682 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-09 14:30:20,899 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-09 14:31:00,756 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-09 14:31:26,440 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-09 14:31:32,664 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-09 14:31:49,121 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:31:52,643 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:31:56,152 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:32:02,870 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-09 14:32:20,901 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-09 14:32:20,904 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-09 14:32:24,593 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-09 14:32:41,500 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-09 14:33:00,797 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-09 14:33:00,798 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-09 14:33:04,002 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-09 14:33:41,151 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Insurance History page: Success!
+2021-03-09 14:33:54,770 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Start page: Success!
+2021-03-09 14:34:15,241 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Quote Page: Success!
+2021-03-09 14:34:25,699 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Confirm Driver page: Success!
+2021-03-09 14:34:36,217 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:34:39,511 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:34:42,820 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:34:55,013 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:34:58,317 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:35:01,629 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:35:13,663 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - ConfirmVehicle page: Success!
+2021-03-09 14:36:08,407 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Billing page: Success!
+2021-03-09 14:36:30,423 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Number :244-000-001-03
+2021-03-09 14:37:10,545 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Test case has failed!
+2021-03-09 14:37:10,558 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - no such alert
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63767}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: dd352303dee6f461c5e0894d259a4b08
+2021-03-09 14:39:29,024 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2021-03-09 14:39:49,294 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-09 14:39:57,683 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Family page: Success!
+2021-03-09 14:40:06,906 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder page: Success!
+2021-03-09 14:40:07,842 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:40:13,803 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - WebDriver Exception
+2021-03-09 14:40:37,284 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Address page: Success!
+2021-03-09 14:41:19,780 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-09 14:41:45,522 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-09 14:41:48,741 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-09 14:42:28,754 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 1of2 page: Success!
+2021-03-09 14:42:54,470 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Vehicle Details 2of2 page: Success!
+2021-03-09 14:43:00,683 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - VehicleList page: Success!
+2021-03-09 14:43:17,428 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:43:21,067 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:43:24,736 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:43:31,517 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy holder Details 1of2 page: Success!
+2021-03-09 14:43:49,410 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Holder Details 2of2 page: Success!
+2021-03-09 14:43:49,412 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-09 14:43:52,667 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-09 14:44:09,429 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 1of2 page: Success!
+2021-03-09 14:44:28,780 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Additional Driver 2of2 page: Success!
+2021-03-09 14:44:28,782 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - No Incident added!
+2021-03-09 14:44:32,018 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - DriverList page: Success!
+2021-03-09 14:45:09,240 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Insurance History page: Success!
+2021-03-09 14:45:22,919 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Start page: Success!
+2021-03-09 14:51:56,944 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Quote Page: Success!
+2021-03-09 14:52:31,450 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Confirm Driver page: Success!
+2021-03-09 14:52:46,982 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:52:50,980 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:52:54,733 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:53:08,333 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:53:12,056 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:53:15,729 [pool-1-thread-1] ERROR Apparent-V2_D2_16_AdditionalDriver_Non-licensed - NoSuchElement Exception
+2021-03-09 14:53:28,894 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - ConfirmVehicle page: Success!
+2021-03-09 14:54:37,125 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Billing page: Success!
+2021-03-09 14:55:33,334 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Policy Number :244-000-001-04
+2021-03-09 14:56:01,050 [pool-1-thread-1] INFO Apparent-V2_D2_16_AdditionalDriver_Non-licensed - Beginning to Quote.
+2021-03-09 19:16:26,659 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-09 19:16:49,637 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Beginning to Quote.
+2021-03-09 19:16:58,347 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Family page: Success!
+2021-03-09 19:17:09,240 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder page: Success!
+2021-03-09 19:17:11,169 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:17:42,151 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Address page: Success!
+2021-03-09 19:18:30,983 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 1of2 page: Success!
+2021-03-09 19:18:59,971 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 2of2 page: Success!
+2021-03-09 19:19:06,614 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - VehicleList page: Success!
+2021-03-09 19:19:25,967 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:19:30,778 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:19:34,676 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:19:42,634 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy holder Details 1of2 page: Success!
+2021-03-09 19:20:02,954 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder Details 2of2 page: Success!
+2021-03-09 19:20:02,969 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - No Incident added!
+2021-03-09 19:20:43,515 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:21:25,851 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:22:08,302 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:22:50,859 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Test case has failed!
+2021-03-09 19:22:50,860 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: customerFname' (tried for 40 second(s) with 500 milliseconds interval)
+2021-03-09 19:22:53,018 [pool-1-thread-1] ERROR Test Suite - TC021 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: customerFname' (tried for 40 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at resources.WebFunctions.type(WebFunctions.java:35)
+	at SharedTC.STC_Spouse1of2.Spouse1of2(STC_Spouse1of2.java:18)
+	at testApparent.TC_Regression.TC021(TC_Regression.java:638)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"customerFname"}
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51098}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: aa3c5050a5521c700617141f65cb85b7
+*** Element info: {Using=id, value=customerFname}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 16 more
+
+2021-03-09 19:24:15,169 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-09 19:24:37,798 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Beginning to Quote.
+2021-03-09 19:24:47,201 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Family page: Success!
+2021-03-09 19:24:58,387 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder page: Success!
+2021-03-09 19:24:59,695 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:25:07,202 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:25:32,776 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Address page: Success!
+2021-03-09 19:26:20,102 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 1of2 page: Success!
+2021-03-09 19:26:49,059 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 2of2 page: Success!
+2021-03-09 19:26:55,574 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - VehicleList page: Success!
+2021-03-09 19:27:14,863 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:27:19,025 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:27:23,350 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:27:30,802 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy holder Details 1of2 page: Success!
+2021-03-09 19:27:51,011 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder Details 2of2 page: Success!
+2021-03-09 19:27:51,020 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - No Incident added!
+2021-03-09 19:28:31,664 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:29:13,763 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:29:56,201 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:30:38,637 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Test case has failed!
+2021-03-09 19:30:38,639 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: customerFname' (tried for 40 second(s) with 500 milliseconds interval)
+2021-03-09 19:30:40,773 [pool-1-thread-1] ERROR Test Suite - TC021 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: customerFname' (tried for 40 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at resources.WebFunctions.type(WebFunctions.java:35)
+	at SharedTC.STC_Spouse1of2.Spouse1of2(STC_Spouse1of2.java:18)
+	at testApparent.TC_Regression.TC021(TC_Regression.java:638)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"customerFname"}
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51213}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 24c45b3f574176a5c67169d38329518f
+*** Element info: {Using=id, value=customerFname}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 16 more
+
+2021-03-09 19:31:40,500 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-09 19:32:06,921 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Beginning to Quote.
+2021-03-09 19:32:15,791 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Family page: Success!
+2021-03-09 19:32:26,766 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder page: Success!
+2021-03-09 19:32:28,898 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:33:00,238 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Address page: Success!
+2021-03-09 19:33:47,243 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 1of2 page: Success!
+2021-03-09 19:34:16,154 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 2of2 page: Success!
+2021-03-09 19:34:22,837 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - VehicleList page: Success!
+2021-03-09 19:34:42,430 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:34:46,812 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:34:51,079 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:34:59,061 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy holder Details 1of2 page: Success!
+2021-03-09 19:35:19,062 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder Details 2of2 page: Success!
+2021-03-09 19:35:19,071 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - No Incident added!
+2021-03-09 19:35:22,701 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - DriverList page: Success!
+2021-03-09 19:36:03,300 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Insurance History page: Success!
+2021-03-09 19:36:18,766 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Start page: Success!
+2021-03-09 19:47:10,189 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-09 19:47:32,939 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Beginning to Quote.
+2021-03-09 19:47:42,463 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Family page: Success!
+2021-03-09 19:47:53,317 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder page: Success!
+2021-03-09 19:47:54,621 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:48:26,071 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Address page: Success!
+2021-03-09 19:49:14,017 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 1of2 page: Success!
+2021-03-09 19:49:43,027 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 2of2 page: Success!
+2021-03-09 19:49:49,659 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - VehicleList page: Success!
+2021-03-09 19:50:08,761 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:50:13,321 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:50:17,608 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 19:50:25,866 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy holder Details 1of2 page: Success!
+2021-03-09 19:50:45,800 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder Details 2of2 page: Success!
+2021-03-09 19:50:45,811 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - No Incident added!
+2021-03-09 19:50:49,220 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - DriverList page: Success!
+2021-03-09 19:51:29,654 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Insurance History page: Success!
+2021-03-09 19:51:45,390 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Start page: Success!
+2021-03-09 19:54:40,556 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Test case has failed!
+2021-03-09 19:54:40,611 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - no such element: Unable to locate element: {"method":"xpath","selector":"(//input[contains(@id,'vehicleCoverageItemRentalReimbursement')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'Pickup / $50 per day / $1,500 max')]/ancestor::li[1])['1']"}
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51500}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 4657e1c739b2fc2f6c6c947bcf65a3b8
+*** Element info: {Using=xpath, value=(//input[contains(@id,'vehicleCoverageItemRentalReimbursement')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'Pickup / $50 per day / $1,500 max')]/ancestor::li[1])['1']}
+2021-03-09 19:55:30,306 [pool-1-thread-1] ERROR Test Suite - TC021 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[contains(@id,'vehicleCoverageItemRentalReimbursement')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'Pickup / $50 per day / $1,500 max')]/ancestor::li[1])['1']"}
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51500}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 4657e1c739b2fc2f6c6c947bcf65a3b8
+*** Element info: {Using=xpath, value=(//input[contains(@id,'vehicleCoverageItemRentalReimbursement')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'Pickup / $50 per day / $1,500 max')]/ancestor::li[1])['1']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at resources.WebFunctions.clickUsingAction(WebFunctions.java:339)
+	at SharedTC.STC_Quote.editCoverages(STC_Quote.java:89)
+	at testApparent.TC_Regression.TC021(TC_Regression.java:642)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-09 19:56:48,461 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-09 19:57:49,986 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:58:32,589 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:59:14,700 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 19:59:56,860 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Test case has failed!
+2021-03-09 19:59:56,884 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (237c8e533ae8679afc630ecf9688ec52)] -> id: btnPostalCode] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51670}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 237c8e533ae8679afc630ecf9688ec52
+2021-03-09 19:59:58,850 [pool-1-thread-1] ERROR Test Suite - TC021 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (237c8e533ae8679afc630ecf9688ec52)] -> id: btnPostalCode] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51670}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 237c8e533ae8679afc630ecf9688ec52
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at resources.WebFunctions.click(WebFunctions.java:118)
+	at SharedTC.STC_PostalCode.postalCode(STC_PostalCode.java:19)
+	at testApparent.TC_Regression.TC021(TC_Regression.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-09 20:38:51,406 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-09 20:39:14,596 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Beginning to Quote.
+2021-03-09 20:39:23,831 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Family page: Success!
+2021-03-09 20:39:34,800 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder page: Success!
+2021-03-09 20:39:36,346 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 20:39:43,789 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-09 20:40:09,881 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Address page: Success!
+2021-03-09 20:40:57,381 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 1of2 page: Success!
+2021-03-09 20:41:26,508 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 2of2 page: Success!
+2021-03-09 20:41:33,152 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - VehicleList page: Success!
+2021-03-09 20:41:52,410 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 20:41:56,468 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 20:42:00,973 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-09 20:42:09,023 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy holder Details 1of2 page: Success!
+2021-03-09 20:42:28,363 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder Details 2of2 page: Success!
+2021-03-09 20:42:28,374 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - No Incident added!
+2021-03-09 20:42:31,988 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - DriverList page: Success!
+2021-03-09 20:43:12,980 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Insurance History page: Success!
+2021-03-09 20:43:29,251 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Start page: Success!
+2021-03-09 20:46:13,774 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Test case has failed!
+2021-03-09 20:46:13,850 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - no such element: Unable to locate element: {"method":"xpath","selector":"(//input[contains(@id,'vehicleCoverageItemRentalReimbursement')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'$900')]/ancestor::li[1])['1']"}
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51871}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: eeb19c88111ddefcb82ef6a54f7e0cba
+*** Element info: {Using=xpath, value=(//input[contains(@id,'vehicleCoverageItemRentalReimbursement')]/ancestor::div[1]//ul[@id='rz-ticks']//span[contains(text(),'$900')]/ancestor::li[1])['1']}
+2021-03-10 21:51:51,669 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-10 21:52:15,933 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Beginning to Quote.
+2021-03-10 21:52:25,493 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Family page: Success!
+2021-03-10 21:52:28,231 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-10 21:52:30,638 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-10 21:52:33,068 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-10 21:52:35,487 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Test case has failed!
+2021-03-10 21:52:35,493 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - unknown error: keys should be a string
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58220}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 7b22b3a9230437c393a57f8638afa18e
+2021-03-10 21:52:37,236 [pool-1-thread-1] ERROR Test Suite - TC021 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: unknown error: keys should be a string
+  (Session info: chrome=89.0.4389.82)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-RL948I0', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58220}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.82, webStorageEnabled: true}
+Session ID: 7b22b3a9230437c393a57f8638afa18e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at resources.WebFunctions.type(WebFunctions.java:37)
+	at SharedTC.STC_PolicyHolder.policyholder(STC_PolicyHolder.java:18)
+	at testApparent.TC_Regression.TC021(TC_Regression.java:633)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-10 21:55:09,716 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-10 21:55:32,447 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Beginning to Quote.
+2021-03-10 21:55:41,504 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Family page: Success!
+2021-03-10 21:55:52,624 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder page: Success!
+2021-03-10 21:55:53,957 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 21:56:24,874 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Address page: Success!
+2021-03-10 21:57:14,604 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 1of2 page: Success!
+2021-03-10 21:57:43,200 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 2of2 page: Success!
+2021-03-10 21:57:49,725 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - VehicleList page: Success!
+2021-03-10 21:58:08,415 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 21:58:12,830 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 21:58:17,094 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 21:58:24,524 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy holder Details 1of2 page: Success!
+2021-03-10 21:58:44,526 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder Details 2of2 page: Success!
+2021-03-10 21:58:44,543 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - No Incident added!
+2021-03-10 21:58:48,116 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - DriverList page: Success!
+2021-03-10 21:59:29,118 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Insurance History page: Success!
+2021-03-10 21:59:44,904 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Start page: Success!
+2021-03-10 22:03:29,247 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Quote Page: Success!
+2021-03-10 22:04:47,183 [pool-1-thread-1] INFO Test Suite - TEST CASE: TC021 | Priority: 5
+2021-03-10 22:05:13,960 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Beginning to Quote.
+2021-03-10 22:05:23,092 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Family page: Success!
+2021-03-10 22:05:34,048 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder page: Success!
+2021-03-10 22:05:35,794 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 22:05:43,482 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-10 22:06:09,478 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Address page: Success!
+2021-03-10 22:06:56,756 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 1of2 page: Success!
+2021-03-10 22:07:25,556 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Vehicle Details 2of2 page: Success!
+2021-03-10 22:07:32,063 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - VehicleList page: Success!
+2021-03-10 22:07:50,947 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 22:07:54,944 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 22:07:59,173 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 22:08:06,780 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy holder Details 1of2 page: Success!
+2021-03-10 22:08:26,534 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Holder Details 2of2 page: Success!
+2021-03-10 22:08:26,540 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - No Incident added!
+2021-03-10 22:08:30,071 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - DriverList page: Success!
+2021-03-10 22:09:10,133 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Insurance History page: Success!
+2021-03-10 22:09:26,298 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Start page: Success!
+2021-03-10 22:10:39,050 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - WebDriver Exception
+2021-03-10 22:10:44,534 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Quote Page: Success!
+2021-03-10 22:10:55,929 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Confirm Driver page: Success!
+2021-03-10 22:11:07,304 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 22:11:11,283 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 22:11:14,990 [pool-1-thread-1] ERROR Apparent-V1_D1_21_CustomCoverage - NoSuchElement Exception
+2021-03-10 22:11:28,559 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - ConfirmVehicle page: Success!
+2021-03-10 22:12:27,308 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Billing page: Success!
+2021-03-10 22:12:46,277 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Policy Number :244-000-001-05
+2021-03-10 22:12:46,280 [pool-1-thread-1] INFO Apparent-V1_D1_21_CustomCoverage - Test case is successful!
+2021-03-10 22:12:48,397 [pool-1-thread-1] INFO Test Suite - TC021 is Passed !
