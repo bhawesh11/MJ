@@ -86,22 +86,8 @@ public class STC_Quote {
 					test.getTestData("Coverage.V" + i + ".Comprehensive"), String.valueOf(i));
 			test.webFunctions().clickUsingAction(test, quote.slider_Collision,
 					test.getTestData("Coverage.V" + i + ".Collision"), String.valueOf(i));
-			try {
-				if(test.getBrandName().equalsIgnoreCase("Elephant"))
-				{
-					test.webFunctions().clickUsingAction(test, quote.slider_Rental,
-							test.getTestData("Coverage.V" + i + ".Rental"), String.valueOf(i));
-				}
-				else
-				{
-					test.webFunctions().clickUsingAction(test, quote.slider_RentalApparent,
-							test.getTestData("Coverage.V" + i + ".Rental"), String.valueOf(i));
-				}
-			}
-			catch(Exception e)
-			{
-				//TODO : 
-			}
+			test.webFunctions().clickUsingAction(test, quote.slider_Rental,
+					test.getTestData("Coverage.V" + i + ".Rental"), String.valueOf(i));
 
 			if (test.getTestData("Coverage.V" + i + ".RoadsideAssistance").equalsIgnoreCase("Yes")) {
 				test.webFunctions().clickUsingAction(test, quote.checkbox_RoadsideAssistance, String.valueOf(i));
