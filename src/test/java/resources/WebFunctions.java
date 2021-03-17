@@ -2,6 +2,7 @@ package resources;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriverException;
@@ -503,7 +504,7 @@ public void clickUsingAction(Testing test, String webElement, String value1) {
 		} catch (Exception e2) {
 		}
 		;
-		test.driver.findElement(By.id("ext-element-1")).click();
+		//test.driver.findElement(By.id("ext-element-1")).click();
 		PageFactory.initElements(test.driver, test.getPage());
 	}
 
@@ -522,7 +523,7 @@ public void clickUsingAction(Testing test, String webElement, String value1) {
 				element.clear();
 				action.click(element).build().perform();
 				action.sendKeys(value).build().perform();
-				WebElement option = test.driver.findElement(By.xpath("(//*[@id='customerAddress']/ancestor::div[@class='dropdown']//a)[1]"));
+				WebElement option = test.driver.findElement(By.xpath("(//li/a/strong)[1]"));
 				action.moveToElement(option).click().build().perform();
 
 //				jse.executeScript("arguments[0].value='"+value+"';", element);
@@ -608,7 +609,11 @@ public void clickUsingAction(Testing test, String webElement, String value1) {
 	public void refresh(Testing test) {
 		test.driver.navigate().refresh();
 		staticWait(2000);
+		try {
 		test.driver.switchTo().alert().accept();
+		}
+		catch (NoAlertPresentException Ex) {     
+	    }
 		staticWait(4000);
 		test.getLogger().info("Page Refreshed..");
 	}

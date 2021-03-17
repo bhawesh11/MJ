@@ -35,7 +35,8 @@ public class STC_PolicyHolderDetails1of2 {
 		}
 		test.webFunctions().click(test, policyholderDetails1of2.btn_Continue);
 		test.getLogger().info("Policy holder Details 1of2 page: Success!");
-		ifStudent_Apparent(test);
+		if (test.getBrandName().equalsIgnoreCase("Apparent")) {
+		ifStudent_Apparent(test);}
 	}
 
 	// -------------------------------------------------------------------------------------------
@@ -82,7 +83,7 @@ public class STC_PolicyHolderDetails1of2 {
 			test.webFunctions().click(test,policyholderDetails1of2.btn_School,test.getTestData("PolicyholderDetails.School"));
 			break;
 			
-		case "Military – Active":
+		case "Military â€“ Active":
 			test.webFunctions().click(test,policyholderDetails1of2.btn_DaysYouDrive,test.getTestData("PolicyholderDetails.DaysYouDriveToWork"));
 			test.webFunctions().click(test,policyholderDetails1of2.btn_WFHOrAttendClasses,test.getTestData("PolicyholderDetails.WFH"));
 			test.webFunctions().click(test,policyholderDetails1of2.btn_MilitaryBranch,test.getTestData("PolicyholderDetails.MilitaryBranch"));
@@ -92,7 +93,7 @@ public class STC_PolicyHolderDetails1of2 {
 			test.webFunctions().click(test,policyholderDetails1of2.dropdown_SelectRank,test.getTestData("PolicyholderDetails.Rank"));
 			break;
 			
-		case "Military – Retired":
+		case "Military â€“ Retired":
 			test.webFunctions().click(test,policyholderDetails1of2.btn_MilitaryBranch,test.getTestData("PolicyholderDetails.MilitaryBranch"));
 			test.webFunctions().click(test,policyholderDetails1of2.dropdown_militaryStatus);
 			test.webFunctions().click(test,policyholderDetails1of2.dropdown_SelectRank,test.getTestData("PolicyholderDetails.Rank"));
@@ -115,12 +116,18 @@ public class STC_PolicyHolderDetails1of2 {
 		if(employmentSelected.equalsIgnoreCase("Full-Time Student"))
 		{
 				test.webFunctions().click(test,policyholderDetails1of2.btn_InSchoolYes);
+				try {
+					if(policyholderDetails1of2.btn_GoodStudentYes.isDisplayed())
+					{
+						test.webFunctions().click(test,policyholderDetails1of2.btn_GoodStudentYes);
+					}
+				}catch (Exception e) {
+				}
 				test.webFunctions().click(test,policyholderDetails1of2.btn_AwayAtSchool);
 				test.webFunctions().click(test,policyholderDetails1of2.btn_StudenContinue);
 				test.getLogger().info("Student Page: Success!");
 			}
 		}
-	
 	public void occupation_Apparent(Testing test) {
 		test.setPage(PolicyholderDetails1of2.class);
 		PolicyholderDetails1of2 policyholderDetails1of2 = (PolicyholderDetails1of2) PageFactory.initElements(test.driver, test.getPage());
