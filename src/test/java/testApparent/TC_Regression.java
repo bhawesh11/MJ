@@ -78,14 +78,14 @@ public class TC_Regression {
 			policyStatrDate.goodStudentDiscount(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			policyStatrDate.policyStartDate(test);
-			test.webFunctions().staticWait(8000);
+			test.webFunctions().staticWait(9000);
 			quote.quote(test);
+			test.webFunctions().staticWait(8000);
 			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
 			billing.billing_Apparent(test);
-			billing.fillFutureACHDetails_Apparent(test);
 			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 
@@ -93,7 +93,7 @@ public class TC_Regression {
 			test.markFailed(e.getMessage());
 			throw (e);
 		} finally {
-			// test.tearDown();
+			 test.tearDown();
 		}
 	}
 
@@ -135,7 +135,7 @@ public class TC_Regression {
 			test.markFailed(e.getMessage());
 			throw (e);
 		} finally {
-			// test.tearDown();
+			 test.tearDown();
 		}
 	}// closing TC002 method
 		// -------------------------------------------------------------
@@ -175,7 +175,7 @@ public class TC_Regression {
 			test.markFailed(e.getMessage());
 			throw (e);
 		} finally {
-			// test.tearDown();
+			 test.tearDown();
 		}
 	}// closing TC003 method
 		// -------------------------------------------------------------
@@ -243,7 +243,7 @@ public class TC_Regression {
 			test.markFailed(e.getMessage());
 			throw (e);
 		} finally {
-			// test.tearDown();
+			 test.tearDown();
 		}
 	}// closing TC005 method
 
@@ -364,7 +364,7 @@ public class TC_Regression {
 			test.markFailed(e.getMessage());
 			throw (e);
 		} finally {
-			// test.tearDown();
+			 test.tearDown();
 		}
 	}// closing TC008 method
 
@@ -705,7 +705,7 @@ public class TC_Regression {
 			test.markFailed(e.getMessage());
 			throw (e);
 		} finally {
-			// test.tearDown();
+			 test.tearDown();
 		}
 	}// closing TC018 method
 

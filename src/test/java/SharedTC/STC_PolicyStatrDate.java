@@ -31,7 +31,7 @@ public class STC_PolicyStatrDate {
   	  test.setPage(PolicyStartDate.class);
         PolicyStartDate policyStartDate = (PolicyStartDate) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().staticWait(2000);
-        Assert.assertEquals(test,policyStartDate.icon_GSD.getText(),"Good Student");
+        Assert.assertEquals(policyStartDate.icon_GSD.getText(),"Good Student");
   	}
 
 }

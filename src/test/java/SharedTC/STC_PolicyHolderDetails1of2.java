@@ -35,7 +35,8 @@ public class STC_PolicyHolderDetails1of2 {
 		}
 		test.webFunctions().click(test, policyholderDetails1of2.btn_Continue);
 		test.getLogger().info("Policy holder Details 1of2 page: Success!");
-		ifStudent_Apparent(test);
+		if (test.getBrandName().equalsIgnoreCase("Apparent")) {
+		ifStudent_Apparent(test);}
 	}
 
 	// -------------------------------------------------------------------------------------------
@@ -82,7 +83,7 @@ public class STC_PolicyHolderDetails1of2 {
 			test.webFunctions().click(test,policyholderDetails1of2.btn_School,test.getTestData("PolicyholderDetails.School"));
 			break;
 			
-		case "Military – Active":
+		case "Military â€“ Active":
 			test.webFunctions().click(test,policyholderDetails1of2.btn_DaysYouDrive,test.getTestData("PolicyholderDetails.DaysYouDriveToWork"));
 			test.webFunctions().click(test,policyholderDetails1of2.btn_WFHOrAttendClasses,test.getTestData("PolicyholderDetails.WFH"));
 			test.webFunctions().click(test,policyholderDetails1of2.btn_MilitaryBranch,test.getTestData("PolicyholderDetails.MilitaryBranch"));
@@ -92,7 +93,7 @@ public class STC_PolicyHolderDetails1of2 {
 			test.webFunctions().click(test,policyholderDetails1of2.dropdown_SelectRank,test.getTestData("PolicyholderDetails.Rank"));
 			break;
 			
-		case "Military – Retired":
+		case "Military â€“ Retired":
 			test.webFunctions().click(test,policyholderDetails1of2.btn_MilitaryBranch,test.getTestData("PolicyholderDetails.MilitaryBranch"));
 			test.webFunctions().click(test,policyholderDetails1of2.dropdown_militaryStatus);
 			test.webFunctions().click(test,policyholderDetails1of2.dropdown_SelectRank,test.getTestData("PolicyholderDetails.Rank"));
