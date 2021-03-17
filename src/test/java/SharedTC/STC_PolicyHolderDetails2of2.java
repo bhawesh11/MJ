@@ -17,7 +17,7 @@ public class STC_PolicyHolderDetails2of2 {
     public void policyHolderDetails2of2(Testing test) {
         test.setPage(PolicyHolderDetails2of2.class);
         PolicyHolderDetails2of2 policyholderDetails2of2 = (PolicyHolderDetails2of2) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().staticWait(2000);
+        test.webFunctions().staticWait(7000);
         test.webFunctions().click(test,policyholderDetails2of2.btn_ValidLicense, test.getTestData("Policyholder-details-2.ValidLicense"));
         try {
         	if(policyholderDetails2of2.dropdown_DriverLicenseStatus.isDisplayed())

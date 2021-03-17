@@ -41,6 +41,12 @@ public class VehicleDetails1of2 {
 
 	
 	public String btn_vehicleUse = "//*[text()='{0}']";
+	
+	@FindBy(id="vehicleUsage")
+	public WebElement dropDownvehicleUsage_Elephant;
+	
+	public String dropDownvehicleUsage_Select_Elephant = "//*[@id='vehicleUsage']/option[contains(text(),'{0}')]";
+	
 
 	@FindBy(id="vehicleEstMileage")
 	public WebElement dropDownMileage;
