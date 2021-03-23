@@ -123,6 +123,7 @@ public class STC_Quote {
 
 		// Click Update
 		test.webFunctions().click(test, quote.btn_Continue);
+		test.webFunctions().staticWait(11000);
 		// Click Continue
 		test.webFunctions().click(test, quote.btn_Continue);
 
