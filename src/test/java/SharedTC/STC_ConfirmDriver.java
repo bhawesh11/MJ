@@ -21,6 +21,7 @@ public class STC_ConfirmDriver {
 					test.getTestData("ConfirmDriver.D" + count + ".Licenseno"));
 		}
 		}
+		test.webFunctions().staticWait(3000);
 		test.webFunctions().click(test, confirmDriver.btn_Next);
 		test.getLogger().info("Confirm Driver page: Success!");
 	}
