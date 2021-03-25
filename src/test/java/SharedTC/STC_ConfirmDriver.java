@@ -16,11 +16,12 @@ public class STC_ConfirmDriver {
 
 		for (int count = 1; count <= test.driverCount; count++) {
 			if(!test.getTestData("ConfirmDriver.D" + count + ".Licenseno").equalsIgnoreCase("Null")) {
-			test.webFunctions().staticWait(5000);
+			test.webFunctions().staticWait(10000);
 			test.webFunctions().type(test, confirmDriver.textBox_licenseNumber, String.valueOf(count),
 					test.getTestData("ConfirmDriver.D" + count + ".Licenseno"));
 		}
 		}
+		test.webFunctions().staticWait(3000);
 		test.webFunctions().click(test, confirmDriver.btn_Next);
 		test.getLogger().info("Confirm Driver page: Success!");
 	}

@@ -25,26 +25,77 @@ public class STC_VehicleDetails1of2 {
         test.webFunctions().click(test,vehicleDetails1of2.dropDownModel);
         test.webFunctions().click(test,vehicleDetails1of2.dropDownModel_Select,test.getTestData("Vehicle.V"+count+".Model"));
         test.webFunctions().click(test,vehicleDetails1of2.btn_FinanceOrLease,test.getTestData("Vehicle.V"+count+".Financeorlease"));
-        try {
-            if(vehicleDetails1of2.btn_rideSharing.isDisplayed()==true){
-                test.webFunctions().click(test,vehicleDetails1of2.btn_rideSharingOption,test.getTestData("Vehicle.V"+count+".RideSharing"));
-                if(vehicleDetails1of2.dropDownRidesharingHrs.isDisplayed()==true) {
-                test.webFunctions().click(test,vehicleDetails1of2.dropDownRidesharingHrs);
-                test.webFunctions().click(test,vehicleDetails1of2.dropDownRidesharingHrs_Select,test.getTestData("Vehicle.V"+count+".RideSharingHrs"));
-                }
-                else {
-                	test.webFunctions().click(test,vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V"+count+".Use"));
-                }
-            }
-            else
-            {
-            	test.webFunctions().click(test,vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V"+count+".Use"));
-                
-            }
-            }
-        catch (Exception e) {
-        	test.webFunctions().click(test,vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V"+count+".Use"));
-        	}
+     /*  if (test.getBrandName().equals("Apparent")) {
+			try {
+				if (vehicleDetails1of2.btn_rideSharing.isDisplayed() == true) {
+					test.webFunctions().click(test, vehicleDetails1of2.btn_rideSharingOption,
+							test.getTestData("Vehicle.V" + count + ".RideSharing"));
+					if (vehicleDetails1of2.dropDownRidesharingHrs.isDisplayed() == true) {
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs);
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs_Select,
+								test.getTestData("Vehicle.V" + count + ".RideSharingHrs"));
+					} else {
+						test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,
+								test.getTestData("Vehicle.V" + count + ".Use"));
+					}
+				} else {
+					test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,
+							test.getTestData("Vehicle.V" + count + ".Use"));
+
+				}
+			} catch (Exception e) {
+				test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,
+						test.getTestData("Vehicle.V" + count + ".Use"));
+			}
+		} else {
+			test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Elephant);
+			test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Select_Elephant,
+					test.getTestData("Vehicle.V" + count + ".Use"));
+
+		}*/
+        
+        if (test.getBrandName().equals("Apparent")) {
+			try {
+				if (vehicleDetails1of2.btn_rideSharing.isDisplayed() == true) {
+					test.webFunctions().click(test, vehicleDetails1of2.btn_rideSharingOption,test.getTestData("Vehicle.V" + count + ".RideSharing"));
+					if (vehicleDetails1of2.dropDownRidesharingHrs.isDisplayed() == true) {
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs);
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs_Select,test.getTestData("Vehicle.V" + count + ".RideSharingHrs"));
+					} else {
+						test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V" + count + ".Use"));
+					}
+				} else {
+					test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V" + count + ".Use"));
+
+				}
+			} catch (Exception e) {
+				test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V" + count + ".Use"));
+			}
+		} else {
+		try {
+				if (vehicleDetails1of2.btn_rideSharing.isDisplayed() == true) {
+					test.webFunctions().click(test, vehicleDetails1of2.btn_rideSharingOption,test.getTestData("Vehicle.V" + count + ".RideSharing"));
+					if (vehicleDetails1of2.dropDownRidesharingHrs.isDisplayed() == true) {
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs);
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs_Select,test.getTestData("Vehicle.V" + count + ".RideSharingHrs"));
+					} else {
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Elephant);
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Select_Elephant,test.getTestData("Vehicle.V" + count + ".Use"));
+					}
+				} else {
+					test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Elephant);
+					test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Select_Elephant,test.getTestData("Vehicle.V" + count + ".Use"));
+
+				}
+			} catch (Exception e) {
+				test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Elephant);
+				test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Select_Elephant,test.getTestData("Vehicle.V" + count + ".Use"));
+			}
+			
+
+		}
+		
+
         test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage);
         test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage_Select,test.getTestData("Vehicle.V"+count+".Mileage"));
         test.webFunctions().click(test,vehicleDetails1of2.dropDownParked);

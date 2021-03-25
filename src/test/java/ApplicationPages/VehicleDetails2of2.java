@@ -42,4 +42,14 @@ public class VehicleDetails2of2 {
 
 	@FindBy(id="btnContinue")
 	public WebElement btn_Next;
+	
+	//------------------------------------------------------------------------------------------------------------------
+	  //  X-PATHS FOR VALIDATIONS
+		
+		@FindBy(xpath="//*[@ng-messages='form.yearSelection_ddl.$error']")
+		public WebElement vmsg_buy_year;
+		
+		@FindBy(xpath="//*[@ng-messages='form.originalOwner.$error']")
+		public WebElement vmsg_original_owner;
+		
 }

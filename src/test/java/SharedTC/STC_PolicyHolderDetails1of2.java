@@ -35,7 +35,8 @@ public class STC_PolicyHolderDetails1of2 {
 		}
 		test.webFunctions().click(test, policyholderDetails1of2.btn_Continue);
 		test.getLogger().info("Policy holder Details 1of2 page: Success!");
-		ifStudent_Apparent(test);
+		if (test.getBrandName().equalsIgnoreCase("Apparent")) {
+		ifStudent_Apparent(test);}
 	}
 
 	// -------------------------------------------------------------------------------------------
