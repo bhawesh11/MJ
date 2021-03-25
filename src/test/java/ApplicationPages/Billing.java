@@ -121,7 +121,7 @@ public class Billing {
   @FindBy(xpath="(//input[contains(@id,'CardholderLastname')])[2]")
   public WebElement textBox_FutureCardHolderLastName_Apparent;
 
-  @FindBy(xpath="(//input[contains(@id,'billingCardNumber')])[2]")
+  @FindBy(xpath="//input[contains(@name,'billingNewCCNumber')]")
   public WebElement textBox_FutureCardNumber_Apparent;
 
   @FindBy(id="newCardExpiryMonth")

@@ -107,8 +107,10 @@ public class STC_Billing {
 				test.getTestData("Billing.FutureACHFirstName"));
 		test.webFunctions().type(test, billing.textBox_FutureACHLastName_Elephant,
 				test.getTestData("Billing.FutureACHLastName"));
+		test.webFunctions().staticWait(2000);
 		test.webFunctions().type(test, billing.textBox_FutureACHRoutingNumber_Elephant,
 				test.getTestData("Billing.ACHRoutingNumber"));
+		test.webFunctions().staticWait(2000);
 		test.webFunctions().type(test, billing.textBox_FutureAccountNumber_Elephant,
 				test.getTestData("Billing.ACHAccountNumber"));
 		test.webFunctions().dropdown(test, billing.dropDown_FutureAccountType_Elephant,

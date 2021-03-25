@@ -7,6 +7,7 @@ import resources.Testing;
 import resources.WebFunctions;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 
 
@@ -25,5 +26,12 @@ public class STC_PolicyStatrDate {
         test.webFunctions().click(test,policyStartDate.btn_SeeMyQuote);
         test.getLogger().info("Policy Start page: Success!");
     }
+    
+    public void goodStudentDiscount(Testing test) {
+  	  test.setPage(PolicyStartDate.class);
+        PolicyStartDate policyStartDate = (PolicyStartDate) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().staticWait(2000);
+        Assert.assertEquals(policyStartDate.icon_GSD.getText(),"Good Student");
+  	}
 
 }

@@ -25,4 +25,22 @@ public class PolicyStartDate {
 	@FindBy(id="btnContinue")
 	public WebElement btn_SeeMyQuote;
 	
+	@FindBy(xpath="(//li[contains(text(),'Good Student')])[2]")
+	public WebElement icon_GSD;
+	
+	//------------------------------------------------------------------------------------------------------------------
+	  //  X-PATHS FOR VALIDATIONS
+		
+		@FindBy(xpath="//*[@ng-messages='discountsForm.discountEmail.$error']")
+		public WebElement vmsg_email;
+		
+		@FindBy(xpath="//*[@ng-messages='$ctrl.form.rdPaperlessDiscount.$error']")
+		public WebElement vmsg_paperless_discount;
+		
+		@FindBy(xpath="//*[@ng-messages='discountsForm.policyStartDate.$error']")
+		public WebElement vmsg_policy_startdate;
+		
+		@FindBy(xpath="//*[@ng-messages='$ctrl.form.phone.$error']")
+		public WebElement vmsg_phone_number;
+	
 }

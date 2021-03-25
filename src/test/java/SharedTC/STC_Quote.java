@@ -13,9 +13,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class STC_Quote {
 
 	public void quote(Testing test) {
+		test.webFunctions().staticWait(18000);
 		test.setPage(Quote.class);
 		Quote quote = (Quote) PageFactory.initElements(test.driver, test.getPage());
-		test.webFunctions().staticWait(9000);
+		
 		try {
 			if (quote.checkbox_PIPWaiverForm.isDisplayed()) {
 				test.webFunctions().staticWait(1000);
@@ -86,8 +87,22 @@ public class STC_Quote {
 					test.getTestData("Coverage.V" + i + ".Comprehensive"), String.valueOf(i));
 			test.webFunctions().clickUsingAction(test, quote.slider_Collision,
 					test.getTestData("Coverage.V" + i + ".Collision"), String.valueOf(i));
-			test.webFunctions().clickUsingAction(test, quote.slider_Rental,
-					test.getTestData("Coverage.V" + i + ".Rental"), String.valueOf(i));
+			try {
+				if(test.getBrandName().equalsIgnoreCase("Elephant"))
+				{
+					test.webFunctions().clickUsingAction(test, quote.slider_Rental,
+							test.getTestData("Coverage.V" + i + ".Rental"), String.valueOf(i));
+				}
+				else
+				{
+					test.webFunctions().clickUsingAction(test, quote.slider_RentalApparent,
+							test.getTestData("Coverage.V" + i + ".Rental"), String.valueOf(i));
+				}
+			}
+			catch(Exception e)
+			{
+				//TODO : 
+			}
 
 			if (test.getTestData("Coverage.V" + i + ".RoadsideAssistance").equalsIgnoreCase("Yes")) {
 				test.webFunctions().clickUsingAction(test, quote.checkbox_RoadsideAssistance, String.valueOf(i));
@@ -109,6 +124,7 @@ public class STC_Quote {
 
 		// Click Update
 		test.webFunctions().click(test, quote.btn_Continue);
+		test.webFunctions().staticWait(11000);
 		// Click Continue
 		test.webFunctions().click(test, quote.btn_Continue);
 
