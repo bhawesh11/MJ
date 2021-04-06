@@ -27,7 +27,7 @@ public void confirmVehicle(Testing test) {
 		test.webFunctions().type(test,confirmVehicle.textBox_VIN,test.getTestData("Vehicle.V" + i + ".Model").replace(" ", ""),test.getTestData("Vehicle.V" +i+ ".VIN"));  
 	
     }
-	test.webFunctions().staticWait(3000);
+	test.webFunctions().staticWait(5000);
 	test.webFunctions().click(test,confirmVehicle.btn_Next);
 	test.getLogger().info("ConfirmVehicle page: Success!");
 	test.webFunctions().staticWait(5000);
