@@ -80,9 +80,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(9000);
 			quote.quote(test);
-			test.webFunctions().staticWait(8000);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
 			billing.billing_Apparent(test);
@@ -122,12 +122,13 @@ public class TC_Regression {
 			retrieveQuote.clickRetrieveQuote(test);
 			retrieveQuote.RetrieveQuote(test);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
 			billing.billing_Apparent(test);
-			// billing.fillFutureACHDetails_Apparent(test);
+			
 			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 
@@ -161,9 +162,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
-			test.webFunctions().staticWait(9000);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
 			billing.billing_Apparent(test);
@@ -229,14 +230,15 @@ public class TC_Regression {
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStatrDate.policyStartDate(test);
-			test.webFunctions().staticWait(10000);
+			test.webFunctions().staticWait(15000);
 			quote.quote(test);
-			test.webFunctions().staticWait(7000);
+			test.webFunctions().staticWait(25000);
 			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
-			test.webFunctions().staticWait(9000);
+			test.webFunctions().staticWait(35000);
 			billing.billing_Apparent(test);
+			test.webFunctions().staticWait(15000);
 			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
@@ -273,6 +275,7 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
 			confirmVehicle.confirmVehicle(test);
@@ -310,10 +313,11 @@ public class TC_Regression {
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStatrDate.policyStartDate(test);
-			test.webFunctions().staticWait(8000);
+			test.webFunctions().staticWait(15000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			billing.billing_Apparent(test);
@@ -353,6 +357,7 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(6000);
 			confirmVehicle.confirmVehicle(test);
@@ -392,9 +397,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
-			test.webFunctions().staticWait(8000);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			billing.billing_Apparent(test);
@@ -432,9 +437,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
-			test.webFunctions().staticWait(8000);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			billing.billing_Apparent(test);
@@ -504,8 +509,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
 			billing.billing_Apparent(test);
@@ -550,8 +556,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(2000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(3000);
 			getInfo.GetBrandedVinMessage(test);
@@ -615,8 +622,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			billing.billing_Apparent(test);
@@ -653,9 +661,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.editCoverages(test);
-			;
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			billing.billing_Apparent(test);
@@ -693,12 +701,13 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(6000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			billing.billing_Apparent(test);
-			billing.fillFutureACHDetails_Apparent(test);
+			
 			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
@@ -731,8 +740,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			billing.billing_Apparent(test);
@@ -768,8 +778,9 @@ public class TC_Regression {
 			policyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
+			test.webFunctions().staticWait(22000);
 			confirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
 			billing.billing_Apparent(test);

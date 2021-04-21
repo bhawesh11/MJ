@@ -21,5 +21,15 @@ public class STC_VehicleList  {
         test.webFunctions().click(test,vehicleList.btn_Next);
         test.getLogger().info("VehicleList page: Success!");
     }
+    
+    public void DPF_selectVehicle(Testing test)
+    {
+        test.setPage(VehicleList.class);
+        VehicleList vehicleList = (VehicleList) PageFactory.initElements(test.driver, test.getPage());
+
+        test.webFunctions().click(test,vehicleList.checkboxDPF_SelectFirstVehicle);
+        test.webFunctions().click(test,vehicleList.btn_Next);
+        test.getLogger().info("First DPF Vehicle Selected!");
+    }
 
  }

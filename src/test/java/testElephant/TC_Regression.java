@@ -184,7 +184,7 @@ public class TC_Regression {
 			// Quote.quote(test);
 			Quote.editCoverages(test);
 			ConfirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(5000);
 			ConfirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			Billing.billing_Elephant(test);
@@ -878,7 +878,7 @@ public class TC_Regression {
 				ConfirmDriver.confirmDriver(test);
 				test.webFunctions().staticWait(4000);
 				ConfirmVehicle.confirmVehicle(test);
-				test.webFunctions().staticWait(9000);
+				test.webFunctions().staticWait(12000);
 				Billing.billing_Elephant(test);
 				GetInfo.GetPolicyNumber(test);
 				test.markPassed();
@@ -1022,8 +1022,9 @@ public class TC_Regression {
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			Quote.quote(test);
+			test.webFunctions().staticWait(8000);
 			ConfirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
+			test.webFunctions().staticWait(8000);
 			ConfirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			Billing.billing_Elephant(test);

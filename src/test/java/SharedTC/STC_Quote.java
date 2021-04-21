@@ -13,9 +13,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class STC_Quote {
 
 	public void quote(Testing test) {
+		test.webFunctions().staticWait(18000);
 		test.setPage(Quote.class);
 		Quote quote = (Quote) PageFactory.initElements(test.driver, test.getPage());
-		test.webFunctions().staticWait(9000);
+		
 		try {
 			if (quote.checkbox_PIPWaiverForm.isDisplayed()) {
 				test.webFunctions().staticWait(1000);
@@ -123,6 +124,7 @@ public class STC_Quote {
 
 		// Click Update
 		test.webFunctions().click(test, quote.btn_Continue);
+		test.webFunctions().staticWait(11000);
 		// Click Continue
 		test.webFunctions().click(test, quote.btn_Continue);
 
