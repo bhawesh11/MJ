@@ -56,12 +56,15 @@ public class STC_InsuranceHistory {
         else {
         	test.webFunctions().click(test,insuranceHistory.btn_Next);	
             test.getLogger().info("Insurance History page: Success!");
-        }
-       
-        
+        }      
     }
 
-    // -------------------------------------------------------------------------------------------
+    public void DPF_insuranceHistory_No(Testing test) {
+        test.setPage(InsuranceHistory.class);
+        InsuranceHistory insuranceHistory = (InsuranceHistory) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test,insuranceHistory.btn_Next);	
+        test.getLogger().info("Insurance History page: Success!");
+    }
 
 
 

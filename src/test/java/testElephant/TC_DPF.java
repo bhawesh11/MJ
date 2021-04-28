@@ -85,7 +85,7 @@ public class TC_DPF {
 	@Parameters("ENV")
 	public void TC001(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V3_D3_DPF");
+		Testing test = new Testing(ENV, brandName, "V1_D1_DPF");
 		/*try {
 
 			PostalCode.postalCode_Elephant(test);
@@ -116,7 +116,22 @@ public class TC_DPF {
 			PostalCode.postalCode_Elephant(test);
 			PolicyHolder.DPF_policyholder(test);
 			Address.address(test);
-			VehicleList.DPF_selectVehicle(test);
+			test.webFunctions().staticWait(4000);
+			VehicleDetails1of2.DPF_vehicleDetails(test);
+			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+			DriverInfo1of2.DPF_driverDetails(test);
+			//InsuranceHistory.DPF_insuranceHistory_No(test);
+			//Assignment.driverVehicleAssignmentPage(test);
+			PolicyStatrDate.policyStartDate(test);
+			test.webFunctions().staticWait(10000);
+			Quote.quote(test);
+			// Quote.editCoverages(test);
+			//ConfirmDriver.confirmDriver(test);
+			test.webFunctions().staticWait(4000);
+			ConfirmVehicle.DPF_confirmVehicle(test);
+			test.webFunctions().staticWait(9000);
+			test.markPassed();
 		}
 		catch (Throwable e) {
 			test.markFailed(e.getMessage());
