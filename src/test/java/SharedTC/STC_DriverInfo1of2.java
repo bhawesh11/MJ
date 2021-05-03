@@ -80,6 +80,7 @@ public class STC_DriverInfo1of2 {
 						test.getTestData("Driver.D" + count + ".Agefirstlicensed"));
 				test.webFunctions().click(test, driverInfo2of2.btn_vehicleAssignment,
 						test.getTestData("Vehicle.V" + count + ".Model"));
+				
 			}
 		} catch (Throwable e) {
 			// TODO: handle exception
@@ -104,7 +105,7 @@ public class STC_DriverInfo1of2 {
 		}
 
 	}
-
+	
 	public void driverDetails(Testing test) {
 		int count_init;
 		if (test.getTestData("PolicyholderDetails.MaritalStatus").equalsIgnoreCase("Married")) {
@@ -150,4 +151,46 @@ public class STC_DriverInfo1of2 {
 		}
 	}
 
-}
+	public void DPF_driverList(Testing test) {
+		test.setPage(DriverList.class);
+		DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
+		//if (count == test.driverCount)
+		for(int count=2;count<=test.driverCount;count++){
+			test.webFunctions().staticWait(3000);
+	        test.webFunctions().click(test, driverList.checkboxDPF_SelectDrivers,test.getTestData("Driver.D"+count+".DriverName"));
+	        }
+		test.webFunctions().click(test, driverList.btn_DoneWithDrivers);
+			test.getLogger().info("DriverList page: Success!");
+		}
+	
+	public void DPF_driverInfo_1of2(Testing test, int count) {
+
+		test.setPage(DriverInfo1of2.class);
+		DriverInfo1of2 driverInfo1of2 = (DriverInfo1of2) PageFactory.initElements(test.driver, test.getPage());
+		//test.webFunctions().type(test, driverInfo1of2.textBox_FirstName,
+				//test.getTestData("Driver.D" + count + ".FirstName"));
+		//test.webFunctions().type(test, driverInfo1of2.textBox_LastName,
+				//test.getTestData("Driver.D" + count + ".LastName"));
+		test.webFunctions().type(test, driverInfo1of2.textBox_DOB, test.getTestData("Driver.D" + count + ".DOB"));
+		test.webFunctions().click(test, driverInfo1of2.btn_Gender, test.getTestData("Driver.D" + count + ".Gender"));
+		test.webFunctions().click(test, driverInfo1of2.btn_Relationship,
+				test.getTestData("Driver.D" + count + ".Relationship"));
+		test.webFunctions().click(test, driverInfo1of2.btn_MaritalStatus,
+				test.getTestData("Driver.D" + count + ".MaritalStatus"));
+		test.webFunctions().click(test, driverInfo1of2.btn_Continue);
+		currentlyInSchool(test);
+		test.getLogger().info("Additional Driver 1of2 page: Success!");
+	}
+	
+	
+	public void DPF_driverDetails(Testing test) {
+    DPF_driverList(test);
+    for (int count = 2; count <= test.driverCount; count++) {
+    DPF_driverInfo_1of2(test,count);
+    driverInfo_2of2(test,count);
+	}
+    test.setPage(DriverList.class);
+	DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
+    test.webFunctions().click(test, driverList.btn_DoneWithDrivers);
+	test.getLogger().info("DriverList page: Success!");
+}}

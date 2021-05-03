@@ -161,4 +161,86 @@ public class STC_VehicleDetails1of2 {
 			vehicleList(test,count);
 		}
     }
+    
+    public void DPF_vehicleList(Testing test, int count)
+    {
+        test.setPage(VehicleList.class);
+        VehicleList vehicleList = (VehicleList) PageFactory.initElements(test.driver, test.getPage());
+        //if(count==test.vehicleCount) 
+        for(count=1;count<=test.vehicleCount;count++){
+        test.webFunctions().staticWait(3000);
+        test.webFunctions().click(test, vehicleList.checkboxDPF_SelectVehicles,test.getTestData("Vehicle.V"+count+".VehicleName"));
+        }
+        test.webFunctions().click(test,vehicleList.btn_Next);
+                test.getLogger().info("DPF VehicleList page: Success!");
+    //}
+    }
+        
+    public void DPF_vehicleDetails_1of2(Testing test,int count) {
+        test.setPage(VehicleDetails1of2.class);
+        VehicleDetails1of2 vehicleDetails1of2 = (VehicleDetails1of2) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test,vehicleDetails1of2.btn_FinanceOrLease,test.getTestData("Vehicle.V"+count+".Financeorlease"));
+        if (test.getBrandName().equals("Apparent")) {
+			try {
+				if (vehicleDetails1of2.btn_rideSharing.isDisplayed() == true) {
+					test.webFunctions().click(test, vehicleDetails1of2.btn_rideSharingOption,test.getTestData("Vehicle.V" + count + ".RideSharing"));
+					if (vehicleDetails1of2.dropDownRidesharingHrs.isDisplayed() == true) {
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs);
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs_Select,test.getTestData("Vehicle.V" + count + ".RideSharingHrs"));
+					} else {
+						test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V" + count + ".Use"));
+					}
+				} else {
+					test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V" + count + ".Use"));
+
+				}
+			} catch (Exception e) {
+				test.webFunctions().click(test, vehicleDetails1of2.btn_vehicleUse,test.getTestData("Vehicle.V" + count + ".Use"));
+			}
+		} else {
+		try {
+				if (vehicleDetails1of2.btn_rideSharing.isDisplayed() == true) {
+					test.webFunctions().click(test, vehicleDetails1of2.btn_rideSharingOption,test.getTestData("Vehicle.V" + count + ".RideSharing"));
+					if (vehicleDetails1of2.dropDownRidesharingHrs.isDisplayed() == true) {
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs);
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownRidesharingHrs_Select,test.getTestData("Vehicle.V" + count + ".RideSharingHrs"));
+					} else {
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Elephant);
+						test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Select_Elephant,test.getTestData("Vehicle.V" + count + ".Use"));
+					}
+				} else {
+					test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Elephant);
+					test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Select_Elephant,test.getTestData("Vehicle.V" + count + ".Use"));
+
+				}
+			} catch (Exception e) {
+				test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Elephant);
+				test.webFunctions().click(test, vehicleDetails1of2.dropDownvehicleUsage_Select_Elephant,test.getTestData("Vehicle.V" + count + ".Use"));
+			}
+			
+
+		}
+		
+
+        test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage);
+        test.webFunctions().click(test,vehicleDetails1of2.dropDownMileage_Select,test.getTestData("Vehicle.V"+count+".Mileage"));
+        test.webFunctions().click(test,vehicleDetails1of2.dropDownParked);
+        test.webFunctions().click(test,vehicleDetails1of2.dropDownParked_Select,test.getTestData("Vehicle.V"+count+".Parked"));
+        test.webFunctions().click(test,vehicleDetails1of2.btn_KeptInZIP,test.getTestData("Vehicle.V"+count+".KeptinZip"));
+        test.webFunctions().click(test,vehicleDetails1of2.btn_Next);
+        test.getLogger().info("Vehicle Details 1of2 page: Success!");
+        
+       
+    }
+    
+    
+    public void DPF_vehicleDetails(Testing test) {
+        int count=1;
+        DPF_vehicleList(test,count);
+        for (count = 1; count <= test.vehicleCount; count++) {
+		DPF_vehicleDetails_1of2(test,count);
+		vehicleDetails_2of2(test,count);
+		}
+		vehicleList(test,test.vehicleCount);
+    }
 }
