@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="ENV" value="QA6"/>
   <listeners>
     <listener class-name="testNGListners.ITestAnnotation"/>
   </listeners>
-  <test name="testApparent(failed)" parallel="methods">
+  <test parallel="methods" name="testElephant(failed)">
     <parameter name="ENV" value="QA6"/>
     <classes>
-      <class name="testApparent.TC_Apparent">
+      <class name="testElephant.TC_Elephant">
         <methods>
-          <include name="TC001" invocation-numbers="0"/>
+          <include name="TC009" invocation-numbers="0"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- testApparent.TC_Apparent -->
+      </class> <!-- testElephant.TC_Elephant -->
     </classes>
-  </test> <!-- testApparent(failed) -->
+  </test> <!-- testElephant(failed) -->
 </suite> <!-- Failed suite [Suite] -->
