@@ -154,23 +154,19 @@ public class STC_DriverInfo1of2 {
 	public void DPF_driverList(Testing test) {
 		test.setPage(DriverList.class);
 		DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
-		//if (count == test.driverCount)
-		for(int count=2;count<=test.driverCount;count++){
+		for(int count=1;count<test.driverCount;count++){
 			test.webFunctions().staticWait(3000);
 	        test.webFunctions().click(test, driverList.checkboxDPF_SelectDrivers,test.getTestData("Driver.D"+count+".DriverName"));
 	        }
+		if(test.driverCount != 1) {
 		test.webFunctions().click(test, driverList.btn_DoneWithDrivers);
-			test.getLogger().info("DriverList page: Success!");
+		}
 		}
 	
 	public void DPF_driverInfo_1of2(Testing test, int count) {
 
 		test.setPage(DriverInfo1of2.class);
 		DriverInfo1of2 driverInfo1of2 = (DriverInfo1of2) PageFactory.initElements(test.driver, test.getPage());
-		//test.webFunctions().type(test, driverInfo1of2.textBox_FirstName,
-				//test.getTestData("Driver.D" + count + ".FirstName"));
-		//test.webFunctions().type(test, driverInfo1of2.textBox_LastName,
-				//test.getTestData("Driver.D" + count + ".LastName"));
 		test.webFunctions().type(test, driverInfo1of2.textBox_DOB, test.getTestData("Driver.D" + count + ".DOB"));
 		test.webFunctions().click(test, driverInfo1of2.btn_Gender, test.getTestData("Driver.D" + count + ".Gender"));
 		test.webFunctions().click(test, driverInfo1of2.btn_Relationship,
@@ -185,7 +181,7 @@ public class STC_DriverInfo1of2 {
 	
 	public void DPF_driverDetails(Testing test) {
     DPF_driverList(test);
-    for (int count = 2; count <= test.driverCount; count++) {
+    for (int count = 1; count < test.driverCount; count++) {
     DPF_driverInfo_1of2(test,count);
     driverInfo_2of2(test,count);
 	}
