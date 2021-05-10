@@ -86,32 +86,7 @@ public class TC_DPF {
 	public void TC001(String ENV) throws Throwable {
 
 		Testing test = new Testing(ENV, brandName, "V2_D1_001_DPF");
-		/*try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
-			test.webFunctions().staticWait(10000);
-
-			Quote.quote(test);
-			// Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
-			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
-			test.webFunctions().staticWait(9000);
-			Billing.billing_GAOH(test);
-			GetInfo.GetPolicyNumber(test);
-			test.markPassed();
-		}*/
 		try {
 			PostalCode.postalCode_Elephant(test);
 			PolicyHolder.DPF_policyholder(test);
@@ -121,13 +96,9 @@ public class TC_DPF {
 			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
 			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
 			DriverInfo1of2.DPF_driverDetails(test);
-			//InsuranceHistory.DPF_insuranceHistory_No(test);
-			//Assignment.driverVehicleAssignmentPage(test);
 			PolicyStatrDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			Quote.quote(test);
-			// Quote.editCoverages(test);
-			//ConfirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
 			ConfirmVehicle.DPF_confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
@@ -149,6 +120,37 @@ public class TC_DPF {
 
 
         Testing test = new Testing(ENV, brandName, "V2_D2_003_DPF");
+        try {
+            PostalCode.postalCode_Elephant(test);
+            PolicyHolder.DPF_policyholder(test); 
+            Address.address(test);
+            test.webFunctions().staticWait(4000);
+            VehicleDetails1of2.DPF_vehicleDetails(test);
+            PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+            PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+            DriverInfo1of2.DPF_driverDetails(test);
+            Assignment.driverVehicleAssignmentPage(test);
+            PolicyStatrDate.policyStartDate(test);
+            test.webFunctions().staticWait(10000);
+            Quote.quote(test);
+            test.webFunctions().staticWait(4000);
+            ConfirmVehicle.DPF_confirmVehicle(test);
+            test.webFunctions().staticWait(9000);
+            test.markPassed();
+        }
+        catch (Throwable e) {
+            test.markFailed(e.getMessage());
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }// closing TC003 method
+//--------------------------------------------------------------------------------------------
+ 	// TC009
+    @Test(enabled = true, priority = 5, description = "V7_D3_009_DPF")
+    @Parameters("ENV")
+    public void TC009(String ENV) throws Throwable {
+        Testing test = new Testing(ENV, brandName, "V6_D3_009_DPF");
         try {
             PostalCode.postalCode_Elephant(test);
             PolicyHolder.DPF_policyholder(test);
@@ -173,7 +175,7 @@ public class TC_DPF {
         } finally {
             test.tearDown();
         }
-    }// closing TC003 method
+    }// closing TC009 method
 //--------------------------------------------------------------------------------------------
-	
+    
 }
