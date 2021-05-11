@@ -81,7 +81,7 @@ public class TC_DPF {
 	// ***_TEST_CASES_***
 
 	// TC001
-	@Test(enabled = true, priority = 5, description = "V1_D1_001_DPF")
+	@Test(enabled = false, priority = 5, description = "V1_D1_001_DPF")
 	@Parameters("ENV")
 	public void TC001(String ENV) throws Throwable {
 
@@ -145,6 +145,7 @@ public class TC_DPF {
 
 //--------------------------------------------------------------------------------------------
 
+
 	// TC006
 	@Test(enabled = true, priority = 5, description = "DPF Test")
 	@Parameters("ENV")
@@ -167,38 +168,75 @@ public class TC_DPF {
 			test.tearDown();
 		}
 	}// closing TC006 method
+//---------------------------------------------------------------------------------------------------
+	
+ // TC008
+    @Test(enabled = true, priority = 5, description = "V1_D2_009_DPF")
+    @Parameters("ENV")
+    public void TC008(String ENV) throws Throwable {
+        Testing test = new Testing(ENV, brandName, "V1_D2_008_RemoveDriver_DPF");
+        try {
+            PostalCode.postalCode_Elephant(test);
+            PolicyHolder.DPF_policyholder(test);
+            Address.address(test);
+            test.webFunctions().staticWait(4000);
+            VehicleDetails1of2.DPF_vehicleDetails(test);
+            PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+            PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+            DriverInfo1of2.DPF_driverDetails(test);
+            Assignment.driverVehicleAssignmentPage(test);
+            PolicyStatrDate.policyStartDate(test);
+            
+            test.webFunctions().staticWait(12000);
+            misc.clickDriversOnBreadCrumb(test);
+            DriverList.driverList_RemoveDriver_DPF(test);
+            PolicyStatrDate.clickSeeMyQuote(test);
+            test.webFunctions().staticWait(12000);
+            Quote.quote(test);
+            test.webFunctions().staticWait(4000);
+            ConfirmVehicle.DPF_confirmVehicle(test);
+            test.webFunctions().staticWait(9000);
+            test.markPassed();
+        }
+        catch (Throwable e) {
+            test.markFailed(e.getMessage());
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }// closing TC008 method
 //--------------------------------------------------------------------------------------------
+ 	// TC009
+    @Test(enabled = true, priority = 5, description = "V7_D3_009_DPF")
+    @Parameters("ENV")
+    public void TC009(String ENV) throws Throwable {
+        Testing test = new Testing(ENV, brandName, "V6_D3_009_DPF");
+        try {
+            PostalCode.postalCode_Elephant(test);
+            PolicyHolder.DPF_policyholder(test);
+            Address.address(test);
+            test.webFunctions().staticWait(4000);
+            VehicleDetails1of2.DPF_vehicleDetails(test);
+            PolicyHolderDetails1of2.policyHolderDetails1of2(test);
+            PolicyHolderDetails2of2.policyHolderDetails2of2(test);
+            DriverInfo1of2.DPF_driverDetails(test);
+            Assignment.driverVehicleAssignmentPage(test);
+            PolicyStatrDate.policyStartDate(test);
+            test.webFunctions().staticWait(10000);
+            Quote.quote(test);
+            test.webFunctions().staticWait(4000);
+            ConfirmVehicle.DPF_confirmVehicle(test);
+            test.webFunctions().staticWait(9000);
+            test.markPassed();
+        }
+        catch (Throwable e) {
+            test.markFailed(e.getMessage());
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }// closing TC009 method
 
-	// TC009
-	@Test(enabled = true, priority = 5, description = "V7_D3_009_DPF")
-	@Parameters("ENV")
-	public void TC009(String ENV) throws Throwable {
-		Testing test = new Testing(ENV, brandName, "V6_D3_009_DPF");
-		try {
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.DPF_policyholder(test);
-			Address.address(test);
-			test.webFunctions().staticWait(4000);
-			VehicleDetails1of2.DPF_vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.DPF_driverDetails(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
-			test.webFunctions().staticWait(10000);
-			Quote.quote(test);
-			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.DPF_confirmVehicle(test);
-			test.webFunctions().staticWait(9000);
-			test.markPassed();
-		} catch (Throwable e) {
-			test.markFailed(e.getMessage());
-			throw (e);
-		} finally {
-
-			test.tearDown();
-		}
-	}// closing TC009 method
 // --------------------------------------------------------------------------------------------
 
 }
