@@ -21,4 +21,11 @@ public class VehicleList {
 	String checkboxDPF_SelectVehicle = "(//div[@ng-repeat='vehicle in vehicleList.prefillVehicles']/div/label)[{0}]";
     public String checkboxDPF_SelectVehicles = "//div[@ng-repeat='vehicle in vehicleList.prefillVehicles']/div/label/div/div/div[contains(text(),'{0}')]";
 	//public String checkboxDPF_SelectVehicles = "//div[@class='vehicle-info-wrap']/div[contains(text(),'{0}')]";
+    
+    @FindBy(xpath="(//span[text()='Remove'])[1]")
+	public WebElement btn_RemoveFirstAdditionalDriver;
+    
+    @FindBy(id="btnCancel")
+	public WebElement btn_PopUp_Remove;
+
 }
