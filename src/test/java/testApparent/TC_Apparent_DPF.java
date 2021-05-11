@@ -85,7 +85,7 @@ public class TC_Apparent_DPF {
 	//    ***_TEST_CASES_***
 
 	// TC001
-	@Test(enabled = true, priority = 5, description = "V1_D1_01_DPF_apparent")
+	@Test(enabled = true, priority = 5, description = "V1_D1_001_DPF_apparent")
 	@Parameters("ENV")
 	public void TC001(String ENV) throws Throwable {
 
@@ -117,7 +117,7 @@ public class TC_Apparent_DPF {
 	}// closing TC001 method
 //--------------------------------------------------------------------------------------------
 	// TC002
-		@Test(enabled = true, priority = 5, description = "V3_D2_02_with_insurance_DPF_apparent")
+		@Test(enabled = true, priority = 5, description = "V3_D2_002_with_insurance_DPF_apparent")
 		@Parameters("ENV")
 		public void TC002(String ENV) throws Throwable {
 
@@ -151,7 +151,7 @@ public class TC_Apparent_DPF {
 		}// closing TC002 method
 //--------------------------------------------------------------------------------------------
 		// TC003
-			@Test(enabled = true, priority = 5, description = "V2_D2_03_with_insurance_DPF_apparent")
+			@Test(enabled = true, priority = 5, description = "V2_D2_003_with_insurance_DPF_apparent")
 			@Parameters("ENV")
 			public void TC003(String ENV) throws Throwable {
 
