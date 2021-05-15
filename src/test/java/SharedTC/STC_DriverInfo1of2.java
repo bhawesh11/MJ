@@ -159,6 +159,7 @@ public class STC_DriverInfo1of2 {
 	        test.webFunctions().click(test, driverList.checkboxDPF_SelectDrivers,test.getTestData("Driver.D"+count+".DriverName"));
 	        }
 		if(test.driverCount != 1) {
+			test.webFunctions().staticWait(3000);
 		test.webFunctions().click(test, driverList.btn_DoneWithDrivers);
 		}
 		}
