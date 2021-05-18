@@ -8,7 +8,7 @@ public class Database {
 		if (con == null) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/qat", "root", "Passw0rd");
+				con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/qat", "root", "P@ssw0rd");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
