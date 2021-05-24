@@ -73,9 +73,18 @@ public class STC_Billing {
 				test.getTestData("Billing.ExpiryMonth"));
 		test.webFunctions().dropdown(test, billing.dropDown_CreditCardExpiryYear_Apparent,
 				test.getTestData("Billing.ExpiryYear"));
-		if (test.getTestData("Billing.EditCurrentInstrumentAddress").equals("Yes")) {
+		try {
+		if (test.getTestData("Billing.EditCurrentInstrumentAddress").equals("Yes")) 
+		{
 			editCurrentCardAddress(test);
 		}
+		}
+		catch(Throwable e)
+		{
+			test.markFailed(e.getMessage());
+		}
+		
+		
 	}
 
 	// -------------------------------------------------------
