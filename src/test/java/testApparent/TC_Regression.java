@@ -43,7 +43,7 @@ public class TC_Regression {
 	STC_DriverList driverList = new STC_DriverList();
 	STC_Assignment assignment = new STC_Assignment();
 	STC_InsuranceHistory insuranceHistory = new STC_InsuranceHistory();
-	STC_PolicyStatrDate policyStatrDate = new STC_PolicyStatrDate();
+	STC_PolicyStartDate policyStartDate = new STC_PolicyStartDate();
 	STC_Quote quote = new STC_Quote();
 	STC_RetrieveQuote retrieveQuote = new STC_RetrieveQuote();
 	STC_RightPanel rightPanel = new STC_RightPanel();
@@ -75,9 +75,9 @@ public class TC_Regression {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			test.webFunctions().staticWait(3000);
 			driverList.driverList(test);
-			policyStatrDate.goodStudentDiscount(test);
+			policyStartDate.goodStudentDiscount(test);
 			insuranceHistory.insuranceHistory_Yes(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(9000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -115,7 +115,7 @@ public class TC_Regression {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
 			test.webFunctions().refresh(test);
@@ -159,7 +159,7 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -229,7 +229,7 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(15000);
 			quote.quote(test);
 			test.webFunctions().staticWait(25000);
@@ -272,7 +272,7 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -312,7 +312,7 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(15000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -354,7 +354,7 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -394,7 +394,7 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -434,7 +434,7 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -473,11 +473,11 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			breadCrumb.navigate2driver(test);
 			driverList.driverList_RemoveDriver(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -506,7 +506,7 @@ public class TC_Regression {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverList.driverList(test);
 			insuranceHistory.insuranceHistory_Yes(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -553,7 +553,7 @@ public class TC_Regression {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -619,7 +619,7 @@ public class TC_Regression {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -658,7 +658,7 @@ public class TC_Regression {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.editCoverages(test);
 			test.webFunctions().staticWait(22000);
@@ -698,7 +698,7 @@ public class TC_Regression {
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -737,7 +737,7 @@ public class TC_Regression {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
 			insuranceHistory.insuranceHistory_Yes(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(22000);
@@ -776,7 +776,7 @@ public class TC_Regression {
 				policyHolderDetails2of2.policyHolderDetails2of2(test);
 				driverList.driverList(test);
 				insuranceHistory.insuranceHistory_Yes(test);
-				policyStatrDate.policyStartDate(test);
+				policyStartDate.policyStartDate(test);
 				test.webFunctions().staticWait(8000);
 				quote.quote(test);
 				test.webFunctions().staticWait(22000);
