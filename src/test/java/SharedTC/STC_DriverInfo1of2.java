@@ -14,23 +14,9 @@ public class STC_DriverInfo1of2 {
 
 	// Creating SharedTestCases_Incidents class object to call its method
 	STC_Incidents incident_MethodCall = new STC_Incidents();
+	STC_DriverInfo2of2 driverInfo_MethodCall = new STC_DriverInfo2of2();
+	STC_DriverList driverlist_MethodCall = new STC_DriverList();
 
-	public void driverInfo1of2(Testing test) {
-
-		test.setPage(DriverInfo1of2.class);
-		DriverInfo1of2 driverInfo1of2 = (DriverInfo1of2) PageFactory.initElements(test.driver, test.getPage());
-		test.webFunctions().type(test, driverInfo1of2.textBox_FirstName,
-				test.getTestData("SecondDriver.Second_FirstName"));
-		test.webFunctions().type(test, driverInfo1of2.textBox_LastName,
-				test.getTestData("SecondDriver.Second_LastName"));
-		test.webFunctions().type(test, driverInfo1of2.textBox_DOB, test.getTestData("SecondDriver.Second_DOB"));
-		test.webFunctions().click(test, driverInfo1of2.btn_Gender, test.getTestData("SecondDriver.Second_Gender"));
-		test.webFunctions().click(test, driverInfo1of2.btn_Relationship, test.getTestData("SecondDriver.RelationShip"));
-		test.webFunctions().click(test, driverInfo1of2.btn_MaritalStatus,
-				test.getTestData("SecondDriver.Second_MaritalStatus"));
-		test.webFunctions().click(test, driverInfo1of2.btn_Continue);
-		test.getLogger().info("Additional Driver 1of2 page: Success!");
-	}
 
 	public void driverInfo_1of2(Testing test, int count) {
 
@@ -51,61 +37,7 @@ public class STC_DriverInfo1of2 {
 		test.getLogger().info("Additional Driver 1of2 page: Success!");
 	}
 
-	public void driverInfo_2of2(Testing test, int count) {
-		test.setPage(DriverInfo2of2.class);
-		DriverInfo2of2 driverInfo2of2 = (DriverInfo2of2) PageFactory.initElements(test.driver, test.getPage());
-		test.webFunctions().click(test, driverInfo2of2.btn_ValidLicense,
-				test.getTestData("Driver.D" + count + ".ValidLicense"));
-		try {
-			if (test.getTestData("Driver.D" + count + ".ValidLicense").equalsIgnoreCase("No")) {
-				test.webFunctions().click(test, driverInfo2of2.dropdown_LicenseStatus);
-				test.webFunctions().click(test, driverInfo2of2.dropdown_LicenseStatusSelect,
-						test.getTestData("Driver.D" + count + ".LicenseStatus"));
-				try {
-					if (driverInfo2of2.btn_driveAnyYourVehicle.isDisplayed()) {
-						test.webFunctions().click(test, driverInfo2of2.btn_driveAnyYourVehicle);
 
-					}
-				} catch (Throwable e) {
-					test.webFunctions().click(test, driverInfo2of2.btn_AgeFirstLicensed,
-							test.getTestData("Driver.D" + count + ".Agefirstlicensed"));
-					test.webFunctions().click(test, driverInfo2of2.btn_vehicleAssignment,
-							test.getTestData("Vehicle.V" + count + ".Model"));
-				}
-
-			}
-
-			else {
-				test.webFunctions().click(test, driverInfo2of2.btn_AgeFirstLicensed,
-						test.getTestData("Driver.D" + count + ".Agefirstlicensed"));
-				test.webFunctions().click(test, driverInfo2of2.btn_vehicleAssignment,
-						test.getTestData("Vehicle.V" + count + ".Model"));
-				
-			}
-		} catch (Throwable e) {
-			// TODO: handle exception
-		}
-
-		test.webFunctions().click(test, driverInfo2of2.btn_IncidentHistory,
-				test.getTestData("Driver.D" + count + ".IncidentHistory"));
-		test.webFunctions().click(test, driverInfo2of2.btn_Next);
-		test.getLogger().info("Additional Driver 2of2 page: Success!");
-		incident_MethodCall.incident_Driver(test, count);
-	}
-
-	public void driverList(Testing test, int count) {
-		test.setPage(DriverList.class);
-		DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
-		if (count == test.driverCount) {
-			test.webFunctions().click(test, driverList.btn_DoneWithDrivers);
-			test.getLogger().info("DriverList page: Success!");
-		} else {
-			test.webFunctions().click(test, driverList.btn_AddAnotherDriver);
-			test.getLogger().info("DriverList page: Success!");
-		}
-
-	}
-	
 	public void driverDetails(Testing test) {
 		int count_init;
 		if (test.getTestData("PolicyholderDetails.MaritalStatus").equalsIgnoreCase("Married")) {
@@ -114,16 +46,16 @@ public class STC_DriverInfo1of2 {
 			count_init = 1;
 		}
 		for (int count = count_init; count <= test.driverCount; count++) {
-			driverList(test, count);
+			driverlist_MethodCall.driverList(test, count);
 			if (count == test.driverCount) {
 				break;
 			} else {
 				if (test.getTestData("PolicyholderDetails.MaritalStatus").equalsIgnoreCase("Married")) {
 					driverInfo_1of2(test, count - 1);
-					driverInfo_2of2(test, count - 1);
+					driverInfo_MethodCall.driverInfo_2of2(test, count - 1);
 				} else {
 					driverInfo_1of2(test, count);
-					driverInfo_2of2(test, count);
+					driverInfo_MethodCall.driverInfo_2of2(test, count);
 				}
 			}
 
@@ -151,19 +83,7 @@ public class STC_DriverInfo1of2 {
 		}
 	}
 
-	public void DPF_driverList(Testing test) {
-		test.setPage(DriverList.class);
-		DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
-		for(int count=1;count<test.driverCount;count++){
-			test.webFunctions().staticWait(3000);
-	        test.webFunctions().click(test, driverList.checkboxDPF_SelectDrivers,test.getTestData("Driver.D"+count+".DriverName"));
-	        }
-		if(test.driverCount != 1) {
-			test.webFunctions().staticWait(3000);
-		test.webFunctions().click(test, driverList.btn_DoneWithDrivers);
-		}
-		}
-	
+
 	public void DPF_driverInfo_1of2(Testing test, int count) {
 
 		test.setPage(DriverInfo1of2.class);
@@ -181,10 +101,10 @@ public class STC_DriverInfo1of2 {
 	
 	
 	public void DPF_driverDetails(Testing test) {
-    DPF_driverList(test);
+		driverlist_MethodCall.DPF_driverList(test);
     for (int count = 1; count < test.driverCount; count++) {
     DPF_driverInfo_1of2(test,count);
-    driverInfo_2of2(test,count);
+    driverInfo_MethodCall.driverInfo_2of2(test,count);
 	}
     test.setPage(DriverList.class);
 	DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
