@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 
 
-public class STC_PolicyStatrDate {
+public class STC_PolicyStartDate {
     
     
 

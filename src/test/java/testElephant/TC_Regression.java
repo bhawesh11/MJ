@@ -23,7 +23,7 @@ import SharedTC.STC_Misc;
 import SharedTC.STC_PolicyHolder;
 import SharedTC.STC_PolicyHolderDetails1of2;
 import SharedTC.STC_PolicyHolderDetails2of2;
-import SharedTC.STC_PolicyStatrDate;
+import SharedTC.STC_PolicyStartDate;
 import SharedTC.STC_PostalCode;
 import SharedTC.STC_Quote;
 import SharedTC.STC_RetrieveQuote;
@@ -51,30 +51,30 @@ public class TC_Regression {
 	// ==============================================================================================
 	// Creating Objects :
 
-	STC_PostalCode PostalCode = new STC_PostalCode();
-	STC_PolicyHolder PolicyHolder = new STC_PolicyHolder();
-	STC_Address Address = new STC_Address();
-	STC_VehicleDetails1of2 VehicleDetails1of2 = new STC_VehicleDetails1of2();
-	STC_VehicleDetails2of2 VehicleDetails2of2 = new STC_VehicleDetails2of2();
+	STC_PostalCode postalCode = new STC_PostalCode();
+	STC_PolicyHolder policyHolder = new STC_PolicyHolder();
+	STC_Address address = new STC_Address();
+	STC_VehicleDetails1of2 vehicleDetails1of2 = new STC_VehicleDetails1of2();
+	STC_VehicleDetails2of2 vehicleDetails2of2 = new STC_VehicleDetails2of2();
 	STC_VehicleList VehicleList = new STC_VehicleList();
-	STC_PolicyHolderDetails1of2 PolicyHolderDetails1of2 = new STC_PolicyHolderDetails1of2();
-	STC_PolicyHolderDetails2of2 PolicyHolderDetails2of2 = new STC_PolicyHolderDetails2of2();
-	STC_Spouse1of2 Spouse1of2 = new STC_Spouse1of2();
-	STC_Spouse2of2 Spouse2of2 = new STC_Spouse2of2();
-	STC_DriverInfo1of2 DriverInfo1of2 = new STC_DriverInfo1of2();
-	STC_DriverInfo2of2 DriverInfo2of2 = new STC_DriverInfo2of2();
+	STC_PolicyHolderDetails1of2 policyHolderDetails1of2 = new STC_PolicyHolderDetails1of2();
+	STC_PolicyHolderDetails2of2 policyHolderDetails2of2 = new STC_PolicyHolderDetails2of2();
+	STC_Spouse1of2 spouse1of2 = new STC_Spouse1of2();
+	STC_Spouse2of2 spouse2of2 = new STC_Spouse2of2();
+	STC_DriverInfo1of2 driverInfo1of2 = new STC_DriverInfo1of2();
+	STC_DriverInfo2of2 driverInfo2of2 = new STC_DriverInfo2of2();
 	STC_Incidents incidents = new STC_Incidents();
-	STC_DriverList DriverList = new STC_DriverList();
-	STC_Assignment Assignment = new STC_Assignment();
-	STC_InsuranceHistory InsuranceHistory = new STC_InsuranceHistory();
-	STC_PolicyStatrDate PolicyStatrDate = new STC_PolicyStatrDate();
-	STC_Quote Quote = new STC_Quote();
-	STC_RetrieveQuote RetrieveQuote = new STC_RetrieveQuote();
-	STC_RightPanel RightPanel = new STC_RightPanel();
-	STC_ConfirmDriver ConfirmDriver = new STC_ConfirmDriver();
-	STC_ConfirmVehicle ConfirmVehicle = new STC_ConfirmVehicle();
-	STC_Billing Billing = new STC_Billing();
-	STC_GetInfo GetInfo = new STC_GetInfo();
+	STC_DriverList driverList = new STC_DriverList();
+	STC_Assignment assignment = new STC_Assignment();
+	STC_InsuranceHistory insuranceHistory = new STC_InsuranceHistory();
+	STC_PolicyStartDate policyStartDate = new STC_PolicyStartDate();
+	STC_Quote quote = new STC_Quote();
+	STC_RetrieveQuote retrieveQuote = new STC_RetrieveQuote();
+	STC_RightPanel rightPanel = new STC_RightPanel();
+	STC_ConfirmDriver confirmDriver = new STC_ConfirmDriver();
+	STC_ConfirmVehicle confirmVehicle = new STC_ConfirmVehicle();
+	STC_Billing billing = new STC_Billing();
+	STC_GetInfo getInfo = new STC_GetInfo();
 	STC_Misc misc = new STC_Misc();
 
 	// ==============================================================================================
@@ -88,28 +88,28 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_01_GA_Bind");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
-			Quote.quote(test);
+			quote.quote(test);
 			// Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_GAOH(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_GAOH(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -128,26 +128,26 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_02_GA_Bind");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
 			// Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
-			Quote.quote(test);
+			quote.quote(test);
 			// Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_GAOH(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_GAOH(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -167,28 +167,28 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_03_RetrieveQuote_Bind");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
 			test.webFunctions().refresh(test);
-			RetrieveQuote.clickRetrieveQuote(test);
-			RetrieveQuote.RetrieveQuote(test);
+			retrieveQuote.clickRetrieveQuote(test);
+			retrieveQuote.RetrieveQuote(test);
 			// Quote.quote(test);
-			Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.editCoverages(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(5000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -207,28 +207,28 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_04_IL_Bind");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
-			Quote.quote(test);
+			quote.quote(test);
 			// Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -248,26 +248,26 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_05_OH_ACH");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_GAOH(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_GAOH(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -287,26 +287,26 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_06_IN_CC");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -325,28 +325,28 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_07_TN_Bind");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
-			Quote.quote(test);
+			quote.quote(test);
 			// Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -366,28 +366,28 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_08_MD_Bind");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
-			Quote.quote(test);
+			quote.quote(test);
 			// Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -407,22 +407,22 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_09_OH_CustomCov");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
-			ConfirmVehicle.confirmVehicle(test);
+			quote.editCoverages(test);
+			confirmDriver.confirmDriver(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
-			Billing.billing_GAOH(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_GAOH(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 
 		} catch (Throwable e) {
@@ -444,23 +444,23 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_010_IN");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverList.driverList(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverList.driverList(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 
 		} catch (Throwable e) {
@@ -482,23 +482,23 @@ public class TC_Regression {
 
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverList.driverList(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverList.driverList(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -520,23 +520,23 @@ public class TC_Regression {
 
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverList.driverList(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverList.driverList(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -558,23 +558,23 @@ public class TC_Regression {
 
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverList.driverList(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverList.driverList(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -595,27 +595,27 @@ public class TC_Regression {
 
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			Billing.fillFutureACHDetails_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			billing.fillFutureACHDetails_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -636,26 +636,26 @@ public class TC_Regression {
 
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -675,23 +675,23 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_016_TX_CustomCov");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.editCoverages(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -711,23 +711,23 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_017_VA_CC");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -747,28 +747,28 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_018_OH_Bind");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
-			Quote.quote(test);
+			quote.quote(test);
 			// Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_GAOH(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_GAOH(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -789,23 +789,23 @@ public class TC_Regression {
 
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverList.driverList(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverList.driverList(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_GAOH(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_GAOH(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -826,25 +826,25 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_020_MD_Bind");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
-			Quote.quote(test);
+			quote.quote(test);
 			// Quote.editCoverages(test);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -864,23 +864,23 @@ public class TC_Regression {
 			Testing test = new Testing(ENV, brandName, "V1_D1_021_TX");
 			try {
 
-				PostalCode.postalCode_Elephant(test);
-				PolicyHolder.policyholder(test);
-				Address.address(test);
-				VehicleDetails1of2.vehicleDetails(test);
-				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-				DriverList.driverList(test);
-				InsuranceHistory.insuranceHistory_Yes(test);
-				PolicyStatrDate.policyStartDate(test);
+				postalCode.postalCode_Elephant(test);
+				policyHolder.policyholder(test);
+				address.address(test);
+				vehicleDetails1of2.vehicleDetails(test);
+				policyHolderDetails1of2.policyHolderDetails1of2(test);
+				policyHolderDetails2of2.policyHolderDetails2of2(test);
+				driverList.driverList(test);
+				insuranceHistory.insuranceHistory_Yes(test);
+				policyStartDate.policyStartDate(test);
 				test.webFunctions().staticWait(8000);
-				Quote.quote(test);
-				ConfirmDriver.confirmDriver(test);
+				quote.quote(test);
+				confirmDriver.confirmDriver(test);
 				test.webFunctions().staticWait(4000);
-				ConfirmVehicle.confirmVehicle(test);
+				confirmVehicle.confirmVehicle(test);
 				test.webFunctions().staticWait(12000);
-				Billing.billing_Elephant(test);
-				GetInfo.GetPolicyNumber(test);
+				billing.billing_Elephant(test);
+				getInfo.GetPolicyNumber(test);
 				test.markPassed();
 			} catch (Throwable e) {
 				test.markFailed(e.getMessage());
@@ -900,23 +900,23 @@ public class TC_Regression {
 			Testing test = new Testing(ENV, brandName, "V1_D1_022_VA_CC");
 			try {
 
-				PostalCode.postalCode_Elephant(test);
-				PolicyHolder.policyholder(test);
-				Address.address(test);
-				VehicleDetails1of2.vehicleDetails(test);
-				PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-				PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-				DriverList.driverList(test);
-				InsuranceHistory.insuranceHistory_Yes(test);
-				PolicyStatrDate.policyStartDate(test);
+				postalCode.postalCode_Elephant(test);
+				policyHolder.policyholder(test);
+				address.address(test);
+				vehicleDetails1of2.vehicleDetails(test);
+				policyHolderDetails1of2.policyHolderDetails1of2(test);
+				policyHolderDetails2of2.policyHolderDetails2of2(test);
+				driverList.driverList(test);
+				insuranceHistory.insuranceHistory_Yes(test);
+				policyStartDate.policyStartDate(test);
 				test.webFunctions().staticWait(8000);
-				Quote.quote(test);
-				ConfirmDriver.confirmDriver(test);
+				quote.quote(test);
+				confirmDriver.confirmDriver(test);
 				test.webFunctions().staticWait(4000);
-				ConfirmVehicle.confirmVehicle(test);
+				confirmVehicle.confirmVehicle(test);
 				test.webFunctions().staticWait(9000);
-				Billing.billing_Elephant(test);
-				GetInfo.GetPolicyNumber(test);
+				billing.billing_Elephant(test);
+				getInfo.GetPolicyNumber(test);
 				test.markPassed();
 			} catch (Throwable e) {
 				test.markFailed(e.getMessage());
@@ -937,23 +937,23 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_023_TN_ACH");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -973,26 +973,26 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_024_MD_CC");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_No(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_No(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -1011,24 +1011,24 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V1_D1_025_IN_ACH");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
+			quote.quote(test);
 			test.webFunctions().staticWait(8000);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(8000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -1047,26 +1047,26 @@ public class TC_Regression {
 		Testing test = new Testing(ENV, brandName, "V3_D3_026_IL_ACH");
 		try {
 
-			PostalCode.postalCode_Elephant(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			Spouse1of2.Spouse1of2(test);
-			Spouse2of2.Spouse2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			Assignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode_Elephant(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			spouse1of2.Spouse1of2(test);
+			spouse2of2.Spouse2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			assignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Elephant(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Elephant(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
