@@ -26,33 +26,33 @@ public class TC_Apparent {
 	// ==============================================================================================
 	// Creating Objects :
 
-	STC_PostalCode PostalCode = new STC_PostalCode();
-	STC_Family Family = new STC_Family();
-	STC_Children Children = new STC_Children();
-	STC_PolicyHolder PolicyHolder = new STC_PolicyHolder();
-	STC_Address Address = new STC_Address();
-	STC_VehicleDetails1of2 VehicleDetails1of2 = new STC_VehicleDetails1of2();
-	STC_VehicleDetails2of2 VehicleDetails2of2 = new STC_VehicleDetails2of2();
-	STC_VehicleList VehicleList = new STC_VehicleList();
-	STC_PolicyHolderDetails1of2 PolicyHolderDetails1of2 = new STC_PolicyHolderDetails1of2();
-	STC_PolicyHolderDetails2of2 PolicyHolderDetails2of2 = new STC_PolicyHolderDetails2of2();
-	STC_Spouse1of2 Spouse1of2 = new STC_Spouse1of2();
-	STC_Spouse2of2 Spouse2of2 = new STC_Spouse2of2();
-	STC_DriverInfo1of2 DriverInfo1of2 = new STC_DriverInfo1of2();
-	STC_DriverInfo2of2 DriverInfo2of2 = new STC_DriverInfo2of2();
+	STC_PostalCode postalCode = new STC_PostalCode();
+	STC_Family family = new STC_Family();
+	STC_Children children = new STC_Children();
+	STC_PolicyHolder policyHolder = new STC_PolicyHolder();
+	STC_Address address = new STC_Address();
+	STC_VehicleDetails1of2 vehicleDetails1of2 = new STC_VehicleDetails1of2();
+	STC_VehicleDetails2of2 vehicleDetails2of2 = new STC_VehicleDetails2of2();
+	STC_VehicleList vehicleList = new STC_VehicleList();
+	STC_PolicyHolderDetails1of2 policyHolderDetails1of2 = new STC_PolicyHolderDetails1of2();
+	STC_PolicyHolderDetails2of2 policyHolderDetails2of2 = new STC_PolicyHolderDetails2of2();
+	STC_Spouse1of2 spouse1of2 = new STC_Spouse1of2();
+	STC_Spouse2of2 spouse2of2 = new STC_Spouse2of2();
+	STC_DriverInfo1of2 driverInfo1of2 = new STC_DriverInfo1of2();
+	STC_DriverInfo2of2 driverInfo2of2 = new STC_DriverInfo2of2();
 	STC_Incidents incidents = new STC_Incidents();
-	STC_DriverList DriverList = new STC_DriverList();
-	STC_Assignment DriverAssignment = new STC_Assignment();
-	STC_InsuranceHistory InsuranceHistory = new STC_InsuranceHistory();
-	STC_PolicyStatrDate PolicyStatrDate = new STC_PolicyStatrDate();
-	STC_Quote Quote = new STC_Quote();
-	STC_RetrieveQuote RetrieveQuote = new STC_RetrieveQuote();
-	STC_RightPanel RightPanel = new STC_RightPanel();
-	STC_ConfirmDriver ConfirmDriver = new STC_ConfirmDriver();
-	STC_ConfirmVehicle ConfirmVehicle = new STC_ConfirmVehicle();
-	STC_PaymentPlan PaymentPlan = new STC_PaymentPlan();
-	STC_Billing Billing = new STC_Billing();
-	STC_GetInfo GetInfo = new STC_GetInfo();
+	STC_DriverList driverList = new STC_DriverList();
+	STC_Assignment driverAssignment = new STC_Assignment();
+	STC_InsuranceHistory insuranceHistory = new STC_InsuranceHistory();
+	STC_PolicyStartDate policyStartDate = new STC_PolicyStartDate();
+	STC_Quote quote = new STC_Quote();
+	STC_RetrieveQuote retrieveQuote = new STC_RetrieveQuote();
+	STC_RightPanel rightPanel = new STC_RightPanel();
+	STC_ConfirmDriver confirmDriver = new STC_ConfirmDriver();
+	STC_ConfirmVehicle confirmVehicle = new STC_ConfirmVehicle();
+	STC_PaymentPlan paymentPlan = new STC_PaymentPlan();
+	STC_Billing billing = new STC_Billing();
+	STC_GetInfo getInfo = new STC_GetInfo();
 
 	// ==============================================================================================
 //	***_TEST_CASES_***
@@ -65,25 +65,25 @@ public class TC_Apparent {
 		Testing test = new Testing(ENV, brandName, "V1_D1_Bind");
 		try {
 
-			PostalCode.postalCode(test);
-			Family.family(test);
-			Children.children(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverList.driverList(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode(test);
+			family.family(test);
+			children.children(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverList.driverList(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
-			Quote.quote(test);
-			ConfirmDriver.confirmDriver(test);
+			quote.quote(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(8000);
-			Billing.billing_Apparent(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Apparent(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -101,29 +101,29 @@ public class TC_Apparent {
 		Testing test = new Testing(ENV, brandName, "V1_D1_RetrieveQuote_Bind");
 		try {
 
-			PostalCode.postalCode(test);
-			Family.family(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode(test);
+			family.family(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
 			test.webFunctions().refresh(test);
-			RetrieveQuote.clickRetrieveQuote(test);
-			RetrieveQuote.RetrieveQuote(test);
-			Quote.quote(test);
+			retrieveQuote.clickRetrieveQuote(test);
+			retrieveQuote.RetrieveQuote(test);
+			quote.quote(test);
 
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Apparent(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Apparent(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -142,27 +142,27 @@ public class TC_Apparent {
 		Testing test = new Testing(ENV, brandName, "V3_D3_Bind");
 		try {
 
-			PostalCode.postalCode(test);
-			Family.family(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			DriverAssignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode(test);
+			family.family(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			driverAssignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
-			Quote.quote(test);
+			quote.quote(test);
 
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(9000);
-			Billing.billing_Apparent(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Apparent(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -179,27 +179,27 @@ public class TC_Apparent {
 
 		Testing test = new Testing(ENV, brandName, "V2_D2_Bind");
 		try {
-			PostalCode.postalCode(test);
-			Family.family(test);
+			postalCode.postalCode(test);
+			family.family(test);
 			// Children.children(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			DriverAssignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			driverAssignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(12000);
-			Quote.quote(test);
+			quote.quote(test);
 			test.webFunctions().staticWait(8000);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(2000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(3000);
-			Billing.billing_Apparent(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Apparent(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -220,26 +220,26 @@ public class TC_Apparent {
 		Testing test = new Testing(ENV, brandName, "V2_D3_Bind");
 		try {
 
-			PostalCode.postalCode(test);
-			Family.family(test);
-			PolicyHolder.policyholder(test);
-			Address.address(test);
-			VehicleDetails1of2.vehicleDetails(test);
-			PolicyHolderDetails1of2.policyHolderDetails1of2(test);
-			PolicyHolderDetails2of2.policyHolderDetails2of2(test);
-			DriverInfo1of2.driverDetails(test);
-			InsuranceHistory.insuranceHistory_Yes(test);
-			DriverAssignment.driverVehicleAssignmentPage(test);
-			PolicyStatrDate.policyStartDate(test);
+			postalCode.postalCode(test);
+			family.family(test);
+			policyHolder.policyholder(test);
+			address.address(test);
+			vehicleDetails1of2.vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			driverInfo1of2.driverDetails(test);
+			insuranceHistory.insuranceHistory_Yes(test);
+			driverAssignment.driverVehicleAssignmentPage(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(12000);
-			Quote.quote(test);
+			quote.quote(test);
 			test.webFunctions().staticWait(8000);
-			ConfirmDriver.confirmDriver(test);
+			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(2000);
-			ConfirmVehicle.confirmVehicle(test);
+			confirmVehicle.confirmVehicle(test);
 			test.webFunctions().staticWait(3000);
-			Billing.billing_Apparent(test);
-			GetInfo.GetPolicyNumber(test);
+			billing.billing_Apparent(test);
+			getInfo.GetPolicyNumber(test);
 			test.markPassed();
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
