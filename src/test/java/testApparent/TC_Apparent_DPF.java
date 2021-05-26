@@ -26,7 +26,7 @@ import SharedTC.STC_Misc;
 import SharedTC.STC_PolicyHolder;
 import SharedTC.STC_PolicyHolderDetails1of2;
 import SharedTC.STC_PolicyHolderDetails2of2;
-import SharedTC.STC_PolicyStatrDate;
+import SharedTC.STC_PolicyStartDate;
 import SharedTC.STC_PostalCode;
 import SharedTC.STC_Quote;
 import SharedTC.STC_RetrieveQuote;
@@ -72,7 +72,7 @@ public class TC_Apparent_DPF {
 	STC_DriverList driverList = new STC_DriverList();
 	STC_Assignment assignment = new STC_Assignment();
 	STC_InsuranceHistory insuranceHistory = new STC_InsuranceHistory();
-	STC_PolicyStatrDate policyStatrDate = new STC_PolicyStatrDate();
+	STC_PolicyStartDate policyStartDate = new STC_PolicyStartDate();
 	STC_Quote quote = new STC_Quote();
 	STC_RetrieveQuote retrieveQuote = new STC_RetrieveQuote();
 	STC_RightPanel rightPanel = new STC_RightPanel();
@@ -101,7 +101,7 @@ public class TC_Apparent_DPF {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.DPF_driverDetails(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
@@ -135,7 +135,7 @@ public class TC_Apparent_DPF {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.DPF_driverDetails(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
@@ -169,7 +169,7 @@ public class TC_Apparent_DPF {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.DPF_driverDetails(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
@@ -184,6 +184,42 @@ public class TC_Apparent_DPF {
 		}
 	}// closing TC003 method
 //--------------------------------------------------------------------------------------------
+	// TC004 
+
+	@Test(enabled = true, priority = 5, description = "V1_D1_004_WithoutInsurance")
+	@Parameters("ENV")
+	public void TC004(String ENV) throws Throwable {
+
+		Testing test = new Testing(ENV, brandName, "V1_D1_004_WithoutInsurance");
+		try {
+
+			postalCode.postalCode(test);
+			family.family(test);
+			children.children(test);
+			policyHolder.DPF_policyholder(test);
+			address.address(test);
+			test.webFunctions().staticWait(4000);
+			vehicleDetails1of2.DPF_vehicleDetails(test);
+			policyHolderDetails1of2.policyHolderDetails1of2(test);
+			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			test.webFunctions().staticWait(3000);
+			driverInfo1of2.DPF_driverDetails(test);
+			insuranceHistory.DPF_insuranceHistory_No(test);
+			policyStartDate.policyStartDate(test);
+			test.webFunctions().staticWait(9000);
+			quote.quote(test);
+			test.webFunctions().staticWait(8000);
+			test.markPassed();
+
+		} catch (Throwable e) {
+			test.markFailed(e.getMessage());
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}
+
+	// --------------------------------------------------------------------------------------------
 	// TC005
 
 	@Test(enabled = true, priority = 5, description = "V1_D1_005_SuspendedLicense")
@@ -227,11 +263,11 @@ public class TC_Apparent_DPF {
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.DPF_driverDetails(test);
 			assignment.driverVehicleAssignmentPage(test);
-			policyStatrDate.policyStartDate(test);
+			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(12000);
 			misc.clickDriversOnBreadCrumb(test);
 			driverList.driverList_RemoveDriver_DPF(test);
-			policyStatrDate.clickSeeMyQuote(test);
+			policyStartDate.clickSeeMyQuote(test);
 			test.webFunctions().staticWait(12000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
