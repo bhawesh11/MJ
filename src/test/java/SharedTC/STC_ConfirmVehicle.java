@@ -33,7 +33,7 @@ public void confirmVehicle(Testing test) {
 	test.webFunctions().staticWait(5000);
 }
 
-public void DPF_confirmVehicle(Testing test) {
+public void dpfConfirmVehicle(Testing test) {
 	test.setPage(ConfirmVehicle.class);
 	ConfirmVehicle confirmVehicle = (ConfirmVehicle) PageFactory.initElements(test.driver,test.getPage());
 	//test.webFunctions().staticWait(5000);

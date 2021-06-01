@@ -27,5 +27,8 @@ public class VehicleList {
     
     @FindBy(id="btnCancel")
 	public WebElement btn_PopUp_Remove;
+    
+    @FindBy(xpath="//div[@ng-if='vehicleList.showPrefillVehicle']/div")
+    public WebElement DPF_vehicle;
 
 }

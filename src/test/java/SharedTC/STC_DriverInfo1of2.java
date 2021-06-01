@@ -83,8 +83,7 @@ public class STC_DriverInfo1of2 {
 		}
 	}
 
-
-	public void DPF_driverInfo_1of2(Testing test, int count) {
+	public void dpfDriverInfo_1of2(Testing test, int count) {
 
 		test.setPage(DriverInfo1of2.class);
 		DriverInfo1of2 driverInfo1of2 = (DriverInfo1of2) PageFactory.initElements(test.driver, test.getPage());
@@ -100,14 +99,14 @@ public class STC_DriverInfo1of2 {
 	}
 	
 	
-	public void DPF_driverDetails(Testing test) {
-		driverlist_MethodCall.DPF_driverList(test);
-    for (int count = 1; count < test.driverCount; count++) {
-    DPF_driverInfo_1of2(test,count);
-    driverInfo_MethodCall.driverInfo_2of2(test,count);
-	}
-    test.setPage(DriverList.class);
-	DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
-    test.webFunctions().click(test, driverList.btn_DoneWithDrivers);
-	test.getLogger().info("DriverList page: Success!");
+	public void dpfDriverDetails(Testing test) {
+		for (int count = 1; count < test.driverCount; count++) {
+		 driverlist_MethodCall.DPF_driverList(test, count);
+   		 dpfDriverInfo_1of2(test,count);
+   		 driverInfo_MethodCall.dpfDriverInfo_2of2(test,count);
+   			}
+   	    test.setPage(DriverList.class);
+   		DriverList driverList = (DriverList) PageFactory.initElements(test.driver, test.getPage());
+   	    test.webFunctions().click(test, driverList.btn_DoneWithDrivers);
+   		test.getLogger().info("DriverList page: Success!");
 }}

@@ -104,10 +104,9 @@ public class STC_VehicleDetails1of2 {
 		}
 	}
 
-	public void DPF_vehicleDetails_1of2(Testing test, int count) {
+	public void dpfVehicleDetails_1of2(Testing test, int count) {
 		test.setPage(VehicleDetails1of2.class);
-		VehicleDetails1of2 vehicleDetails1of2 = (VehicleDetails1of2) PageFactory.initElements(test.driver,
-				test.getPage());
+		VehicleDetails1of2 vehicleDetails1of2 = (VehicleDetails1of2) PageFactory.initElements(test.driver,test.getPage());
 		test.webFunctions().click(test, vehicleDetails1of2.btn_FinanceOrLease,
 				test.getTestData("Vehicle.V" + count + ".Financeorlease"));
 		if (test.getBrandName().equals("Apparent")) {
@@ -172,13 +171,28 @@ public class STC_VehicleDetails1of2 {
 		test.getLogger().info("Vehicle Details 1of2 page: Success!");
 
 	}
+	
+	public void vehicleList_DPFnext(Testing test, int count)
+    {
+        test.setPage(VehicleList.class);
+        VehicleList vehicleList = (VehicleList) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test,vehicleList.btn_Next);
+    }
 
-	public void DPF_vehicleDetails(Testing test) {
-		vehicleList_MethodCall.DPF_vehicleList(test);
+	public void dpfVehicleDetails(Testing test) {
+		
 		for (int count = 1; count <= test.vehicleCount; count++) {
-			DPF_vehicleDetails_1of2(test, count);
-			vehicleDetails2_MethodCall.vehicleDetails_2of2(test, count);
-		}
-		vehicleList_MethodCall.vehicleList(test, test.vehicleCount);
+			if(count==test.vehicleCount) {
+				vehicleList_MethodCall.DPF_vehicleList(test, count);
+				dpfVehicleDetails_1of2(test, count);
+				vehicleDetails2_MethodCall.vehicleDetails_2of2(test, count);
+                vehicleList_DPFnext(test,count);
+            }
+             else {                   
+            	 vehicleList_MethodCall.DPF_vehicleList(test, count);
+            	 dpfVehicleDetails_1of2(test, count);
+            	 vehicleDetails2_MethodCall.vehicleDetails_2of2(test, count);
+	}
+}
 	}
 }
