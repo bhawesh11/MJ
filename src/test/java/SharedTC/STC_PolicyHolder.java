@@ -24,7 +24,7 @@ public class STC_PolicyHolder {
 
     // -------------------------------------------------------------------------------------------
     
-    public void DPF_policyholder(Testing test) {
+    public void dpfPolicyholder(Testing test) {
         test.setPage(PolicyHolder.class);
 
         PolicyHolder policyHolder = (PolicyHolder) PageFactory.initElements(test.driver, test.getPage());
