@@ -74,7 +74,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverList.driverList(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
 			quote.quote(test);
@@ -109,7 +109,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
@@ -150,7 +150,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -185,7 +185,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_No(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -220,7 +220,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -255,7 +255,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -289,7 +289,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -324,7 +324,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -359,7 +359,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -394,7 +394,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_No(test);
+			insuranceHistory.insuranceHistory(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 
@@ -433,7 +433,7 @@ public class TC_Elephant {
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
 			policyHolderDetails2of2.policyHolderDetails2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -471,7 +471,7 @@ public class TC_Elephant {
 			spouse1of2.Spouse1of2(test);
 			spouse2of2.Spouse2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
@@ -509,7 +509,7 @@ public class TC_Elephant {
 			spouse1of2.Spouse1of2(test);
 			spouse2of2.Spouse2of2(test);
 			driverInfo1of2.driverDetails(test);
-			insuranceHistory.insuranceHistory_Yes(test);
+			insuranceHistory.insuranceHistory(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(8000);
