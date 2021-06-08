@@ -14,7 +14,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.io.FileHandler;
@@ -300,45 +303,45 @@ public class WebFunctions {
 		clickJS(test, element);
 
 	}// Closing METHOD
-	
+
 //	-------------------------------------------------------------------------------
 
 // CLICK Quote Page Elements using Actions
-public void clickUsingAction(Testing test, WebElement webElement) {
-	staticWait(2000);		
-	String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);"
-			+ "var elementTop = arguments[0].getBoundingClientRect().top;"
-			+ "window.scrollBy(0, elementTop-(viewPortHeight/2));";
+	public void clickUsingAction(Testing test, WebElement webElement) {
+		staticWait(2000);
+		String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);"
+				+ "var elementTop = arguments[0].getBoundingClientRect().top;"
+				+ "window.scrollBy(0, elementTop-(viewPortHeight/2));";
 
-	((JavascriptExecutor) test.driver).executeScript(scrollElementIntoMiddle, webElement);
-	staticWait(2000);
-	Actions builder = new Actions(test.driver);
-	builder.click(webElement);
-	builder.perform();
+		((JavascriptExecutor) test.driver).executeScript(scrollElementIntoMiddle, webElement);
+		staticWait(2000);
+		Actions builder = new Actions(test.driver);
+		builder.click(webElement);
+		builder.perform();
 
-}// Closing METHOD
+	}// Closing METHOD
 
 //		-------------------------------------------------------------------------------
 
 // CLICK Quote Page Sliders using Action DYNAMIC-1
-public void clickUsingAction(Testing test, String webElement, String value1) {
-	
-	webElement = webElement.replace("{0}", value1);
-	
-	WebElement element = test.driver.findElement(By.xpath(webElement));
-	
-	clickUsingAction(test, element);
+	public void clickUsingAction(Testing test, String webElement, String value1) {
 
-}// Closing METHOD
+		webElement = webElement.replace("{0}", value1);
+
+		WebElement element = test.driver.findElement(By.xpath(webElement));
+
+		clickUsingAction(test, element);
+
+	}// Closing METHOD
 
 //======================================================================
 	// CLICK Quote Page Sliders using Action DYNAMIC-2
 	public void clickUsingAction(Testing test, String webElement, String value1, String value2) {
-		
+
 		webElement = webElement.replace("{0}", value1);
 		webElement = webElement.replace("{1}", value2);
 		WebElement element = test.driver.findElement(By.xpath(webElement));
-		
+
 		clickUsingAction(test, element);
 
 	}// Closing METHOD
@@ -504,7 +507,7 @@ public void clickUsingAction(Testing test, String webElement, String value1) {
 		} catch (Exception e2) {
 		}
 		;
-		//test.driver.findElement(By.id("ext-element-1")).click();
+		// test.driver.findElement(By.id("ext-element-1")).click();
 		PageFactory.initElements(test.driver, test.getPage());
 	}
 
@@ -610,10 +613,9 @@ public void clickUsingAction(Testing test, String webElement, String value1) {
 		test.driver.navigate().refresh();
 		staticWait(2000);
 		try {
-		test.driver.switchTo().alert().accept();
+			test.driver.switchTo().alert().accept();
+		} catch (NoAlertPresentException Ex) {
 		}
-		catch (NoAlertPresentException Ex) {     
-	    }
 		staticWait(4000);
 		test.getLogger().info("Page Refreshed..");
 	}
@@ -624,4 +626,30 @@ public void clickUsingAction(Testing test, String webElement, String value1) {
 		jse2.executeScript("arguments[0].scrollIntoView()", element);
 		test.getLogger().info("Scrolling into view...");
 	}
+
+	// ============================================================================
+	public String generateGUID(Testing test) {
+		UUID uuid = UUID.randomUUID();
+        String guid = uuid.toString();
+        return guid;
+	}
+	
+	//============================================================================
+    // GET DATE AS REQUIRED specifically for LEADS API:
+
+    public String getDate(int offSet) {
+
+        // NO. OF MILLI-SECONDS IN A DAY
+        long DAY_IN_MS = 1000 * 60 * 60 * 24;
+
+        // GETTING DATE ACCORDING TO OFFSET
+        Date myDate = new Date(System.currentTimeMillis()
+                + (offSet * DAY_IN_MS));
+
+        // CHANGING THE FORMAT OF THE DATE
+        SimpleDateFormat leadDate = new SimpleDateFormat("yyyy-MM-dd");
+
+        // RETURNING DATE IN STRING
+        return leadDate.format(myDate);
+    }
 }
