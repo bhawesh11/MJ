@@ -11,7 +11,7 @@
 		<classes>
 				<class name="testElephant.TC_Elephant">
 				<methods>
-					<include name="TC001" />
+					<include name="TC009" />
 				</methods>
 			</class>
 		</classes>

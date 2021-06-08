@@ -14,7 +14,8 @@ public class Testing {
     private TestData td;
     private BrowserFactory bf;
     private WebFunctions webFunctions;
-    private Logger logger;
+    //private Logger logger;
+    private Reporter reporter;
     public int vehicleCount ;
     public int driverCount ;
     
@@ -26,11 +27,13 @@ public class Testing {
 //		1. INITIALIZING ATTRIBUTES:
         db = new Database();
         td = new TestData(db, brandName, scriptName);
+        reporter = new Reporter(brandName, scriptName);
         output = new Output(td);
         webFunctions = new WebFunctions();
         address = new URL(brandName);
         this.brandName = brandName;
-        logger = Logger.getLogger(brandName+"-"+scriptName);
+        //logger = Logger.getLogger(brandName+"-"+scriptName);
+        this.scriptName = scriptName;
 
 //		2. INITIALIZING DRIVER
         String url = address.getURL(environment);
@@ -75,6 +78,7 @@ public class Testing {
 //	TEAR DOWN FOR TESTCASE:
     public void tearDown() {
         bf.closeBrowser();
+        reporter.flush();
 //        db.insertRecordInDatabase(scriptName, "Elephant");
         //logger.info(output.getOutputs());
         
@@ -100,11 +104,16 @@ public class Testing {
     }
 
     //	---------------------------------------------------------------------
-//    public Database db() {
-//        return db;
-//    }
+    public Database getDb() {
+        return db;
+    }
     //	---------------------------------------------------------------------
-    public String getTestData(String key) {
+    public String getScriptName() {
+        return scriptName;
+    }
+    //	---------------------------------------------------------------------
+    
+   public String getTestData(String key) {
         return td.getTestData(key);
     }
 
@@ -116,7 +125,22 @@ public class Testing {
         return td.createRandomString(length);
     }
 //	---------------------------------------------------------------------
-    public Logger getLogger() {
-        return logger;
+    public Reporter getLogger() {
+        return reporter;
+    }
+// -----------------------------------------------------------------------
+    public void markPassed() {
+        reporter.pass("Test case is successful!");
+        String result = output.getOutputs().toString()
+        		.replace("{","")
+        		.replaceAll(","," | ")
+        		.replaceAll("\"", "")
+        		.replace("}", "");
+        //reporter.info(result);
+       }
+//----------------------------------------------------------------------------
+    public void markFailed(String message) {
+    	reporter.fail("Test case has failed!");
+    	reporter.fail(message);
     }
 }

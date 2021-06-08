@@ -20,6 +20,10 @@ public class ConfirmDriver {
 
     @FindBy(name="driverLicense")
     public WebElement btn_LINO;
-
-
+  //------------------------------------------------------------------------------------------------------------------
+	  //  X-PATHS FOR VALIDATIONS
+		
+		@FindBy(xpath="//*[@ng-messages='driverForm.driverLicense.$error']")
+		public WebElement vmsg_license_number;
+		
 }
