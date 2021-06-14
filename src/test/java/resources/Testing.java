@@ -33,6 +33,7 @@ public class Testing {
         address = new URL(brandName);
         this.brandName = brandName;
         //logger = Logger.getLogger(brandName+"-"+scriptName);
+        this.scriptName = scriptName;
 
 //		2. INITIALIZING DRIVER
         String url = address.getURL(environment);
@@ -103,11 +104,16 @@ public class Testing {
     }
 
     //	---------------------------------------------------------------------
-//    public Database db() {
-//        return db;
-//    }
+    public Database getDb() {
+        return db;
+    }
     //	---------------------------------------------------------------------
-    public String getTestData(String key) {
+    public String getScriptName() {
+        return scriptName;
+    }
+    //	---------------------------------------------------------------------
+    
+   public String getTestData(String key) {
         return td.getTestData(key);
     }
 
