@@ -30,4 +30,7 @@ public class DriverInfo2of2 {
 
     @FindBy(xpath="//*[@id=\"lnkBtnAddNewVehicle\"]")
     public WebElement btn_AddAnotherDriver;
+    
+    @FindBy(xpath="//input[@name=\"driverPrimaryVehicle\"]/following::label")
+    public WebElement DPF_btn_VehicleDriveMostOften;
 }

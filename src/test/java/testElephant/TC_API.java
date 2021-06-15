@@ -1,4 +1,5 @@
 package testElephant;
+
 import SharedTC.*;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -12,7 +13,7 @@ import resources.Testing;
 import java.io.IOException;
 
 public class TC_API {
-	
+
 	Logger log = Logger.getLogger("Test Suite");
 	private final String brandName = "Elephant";
 
@@ -26,13 +27,13 @@ public class TC_API {
 
 	// ==============================================================================================
 	// Creating Objects :
-	
+
 	STC_PostalCode postalCode = new STC_PostalCode();
 	STC_Family family = new STC_Family();
 	STC_Children children = new STC_Children();
 	STC_PolicyHolder policyHolder = new STC_PolicyHolder();
 	STC_Address address = new STC_Address();
-	STC_Assignment assignment =  new STC_Assignment();
+	STC_Assignment assignment = new STC_Assignment();
 	STC_VehicleDetails1of2 vehicleDetails1of2 = new STC_VehicleDetails1of2();
 	STC_VehicleDetails2of2 vehicleDetails2of2 = new STC_VehicleDetails2of2();
 	STC_VehicleList vehicleList = new STC_VehicleList();
@@ -66,19 +67,19 @@ public class TC_API {
 	@Parameters("ENV")
 	public void TC001(String ENV) throws Throwable {
 
-		Testing test = new Testing(ENV, brandName, "V1_D1_CompareLeads");
+		Testing test = new Testing(ENV, brandName, "V1_D1_001_Compare");
 		try {
 
-			String leadURL = api.compareTest(test);
-			System.out.println(leadURL);
+			String leadURL = api.apiTest(test, brandName, "V1_D1_001_Compare");
+
 			test.driver.get(leadURL);
-			
+
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
-			
+
 			throw (e);
 		} finally {
-			//test.tearDown();
+			// test.tearDown();
 		}
 	}
 

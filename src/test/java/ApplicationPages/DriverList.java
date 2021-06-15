@@ -20,7 +20,7 @@ public class DriverList {
 
 	//-------DPF Elements-------------------------------------------
 	
-	@FindBy(xpath="(//div[@ng-repeat='driver in driverList.prefillDrivers']/div/label)[1]")
+	@FindBy(xpath="(//div[@ng-repeat='driver in driverList.prefillDrivers']/div/input/following::label)")
 	public WebElement checkboxDPF_SelectFirstDriver;
 		
 	String checkboxDPF_SelectDriver = "(//div[@ng-repeat='driver in driverList.prefillDrivers']/div/label)[{0}]";
