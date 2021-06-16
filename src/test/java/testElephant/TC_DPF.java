@@ -89,18 +89,18 @@ public class TC_DPF {
 
 		try {
 			postalCode.postalCode_Elephant(test);
-			policyHolder.DPF_policyholder(test);
+			policyHolder.dpfPolicyholder(test);
 			address.address(test);
 			test.webFunctions().staticWait(4000);
-			vehicleDetails1of2.DPF_vehicleDetails(test);
+			vehicleDetails1of2.dpfVehicleDetails(test);
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
-			policyHolderDetails2of2.policyHolderDetails2of2(test);
-			driverInfo1of2.DPF_driverDetails(test);
+			policyHolderDetails2of2.dpfPolicyHolderDetails2of2(test);
+			driverInfo1of2.dpfDriverDetails(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
-			confirmVehicle.DPF_confirmVehicle(test);
+			confirmVehicle.dpfConfirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			test.markPassed();
 		} catch (Throwable e) {
@@ -120,13 +120,13 @@ public class TC_DPF {
 		Testing test = new Testing(ENV, brandName, "V3_D2_002_DPF_with_insurance");
 		try {
 			postalCode.postalCode_Elephant(test);
-			policyHolder.DPF_policyholder(test);
+			policyHolder.dpfPolicyholder(test);
 			address.address(test);
 			test.webFunctions().staticWait(4000);
-			vehicleDetails1of2.DPF_vehicleDetails(test);
+			vehicleDetails1of2.dpfVehicleDetails(test);
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
-			policyHolderDetails2of2.policyHolderDetails2of2(test);
-			driverInfo1of2.DPF_driverDetails(test);
+			policyHolderDetails2of2.dpfPolicyHolderDetails2of2(test);
+			driverInfo1of2.dpfDriverDetails(test);
 			insuranceHistory.DPF_insuranceHistory_No(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
@@ -153,19 +153,19 @@ public class TC_DPF {
 		Testing test = new Testing(ENV, brandName, "V2_D2_003_DPF");
 		try {
 			postalCode.postalCode_Elephant(test);
-			policyHolder.DPF_policyholder(test);
+			policyHolder.dpfPolicyholder(test);
 			address.address(test);
 			test.webFunctions().staticWait(4000);
-			vehicleDetails1of2.DPF_vehicleDetails(test);
+			vehicleDetails1of2.dpfVehicleDetails(test);
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
-			policyHolderDetails2of2.policyHolderDetails2of2(test);
-			driverInfo1of2.DPF_driverDetails(test);
+			policyHolderDetails2of2.dpfPolicyHolderDetails2of2(test);
+			driverInfo1of2.dpfDriverDetails(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
-			confirmVehicle.DPF_confirmVehicle(test);
+			confirmVehicle.dpfConfirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			test.markPassed();
 		} catch (Throwable e) {
@@ -185,13 +185,13 @@ public class TC_DPF {
 		Testing test = new Testing(ENV, brandName, "V2_D2_004_WithoutInsurance");
 		try {
 			postalCode.postalCode_Elephant(test);
-			policyHolder.DPF_policyholder(test);
+			policyHolder.dpfPolicyholder(test);
 			address.address(test);
 			test.webFunctions().staticWait(4000);
-			vehicleDetails1of2.DPF_vehicleDetails(test);
+			vehicleDetails1of2.dpfVehicleDetails(test);
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
-			policyHolderDetails2of2.policyHolderDetails2of2(test);
-			driverInfo1of2.DPF_driverDetails(test);
+			policyHolderDetails2of2.dpfPolicyHolderDetails2of2(test);
+			driverInfo1of2.dpfDriverDetails(test);
 			insuranceHistory.DPF_insuranceHistory_No(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
@@ -200,7 +200,7 @@ public class TC_DPF {
 			// Quote.editCoverages(test);
 			confirmDriver.confirmDriver(test);
 			test.webFunctions().staticWait(4000);
-			confirmVehicle.DPF_confirmVehicle(test);
+			confirmVehicle.dpfConfirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			test.markPassed();
 		} catch (Throwable e) {
@@ -220,12 +220,12 @@ public class TC_DPF {
 		Testing test = new Testing(ENV, brandName, "V1_D1_006_SuspendedLicense");
 		try {
 			postalCode.postalCode_Elephant(test);
-			policyHolder.DPF_policyholder(test);
+			policyHolder.dpfPolicyholder(test);
 			address.address(test);
 			test.webFunctions().staticWait(6000);
-			vehicleDetails1of2.DPF_vehicleDetails(test);
+			vehicleDetails1of2.dpfVehicleDetails(test);
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
-			policyHolderDetails2of2.policyHolderDetails2of2(test);
+			policyHolderDetails2of2.dpfPolicyHolderDetails2of2(test);
 			getInfo.GetPhSuspendedLicenseMessage(test);
 		} catch (Throwable e) {
 			test.markFailed(e.getMessage());
@@ -245,19 +245,19 @@ public class TC_DPF {
 		Testing test = new Testing(ENV, brandName, "V1_D1_007_GA");
 		try {
 			postalCode.postalCode_Elephant(test);
-			policyHolder.DPF_policyholder(test);
+			policyHolder.dpfPolicyholder(test);
 			address.address(test);
 			test.webFunctions().staticWait(4000);
-			vehicleDetails1of2.DPF_vehicleDetails(test);
+			vehicleDetails1of2.dpfVehicleDetails(test);
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
-			policyHolderDetails2of2.policyHolderDetails2of2(test);
-			driverInfo1of2.DPF_driverDetails(test);
+			policyHolderDetails2of2.dpfPolicyHolderDetails2of2(test);
+			driverInfo1of2.dpfDriverDetails(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
 			confirmDriver.confirmDriver(test);
-			confirmVehicle.DPF_confirmVehicle(test);
+			confirmVehicle.dpfConfirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			test.markPassed();
 		} catch (Throwable e) {
@@ -277,16 +277,15 @@ public class TC_DPF {
 		Testing test = new Testing(ENV, brandName, "V1_D2_008_RemoveDriver_DPF");
 		try {
 			postalCode.postalCode_Elephant(test);
-			policyHolder.DPF_policyholder(test);
+			policyHolder.dpfPolicyholder(test);
 			address.address(test);
 			test.webFunctions().staticWait(4000);
-			vehicleDetails1of2.DPF_vehicleDetails(test);
+			vehicleDetails1of2.dpfVehicleDetails(test);
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
-			policyHolderDetails2of2.policyHolderDetails2of2(test);
-			driverInfo1of2.DPF_driverDetails(test);
+			policyHolderDetails2of2.dpfPolicyHolderDetails2of2(test);
+			driverInfo1of2.dpfDriverDetails(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
-
 			test.webFunctions().staticWait(12000);
 			misc.clickDriversOnBreadCrumb(test);
 			driverList.driverList_RemoveDriver_DPF(test);
@@ -294,7 +293,7 @@ public class TC_DPF {
 			test.webFunctions().staticWait(12000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
-			confirmVehicle.DPF_confirmVehicle(test);
+			confirmVehicle.dpfConfirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			test.markPassed();
 		} catch (Throwable e) {
@@ -313,19 +312,19 @@ public class TC_DPF {
 		Testing test = new Testing(ENV, brandName, "V6_D3_009_DPF");
 		try {
 			postalCode.postalCode_Elephant(test);
-			policyHolder.DPF_policyholder(test);
+			policyHolder.dpfPolicyholder(test);
 			address.address(test);
 			test.webFunctions().staticWait(4000);
-			vehicleDetails1of2.DPF_vehicleDetails(test);
+			vehicleDetails1of2.dpfVehicleDetails(test);
 			policyHolderDetails1of2.policyHolderDetails1of2(test);
-			policyHolderDetails2of2.policyHolderDetails2of2(test);
-			driverInfo1of2.DPF_driverDetails(test);
+			policyHolderDetails2of2.dpfPolicyHolderDetails2of2(test);
+			driverInfo1of2.dpfDriverDetails(test);
 			assignment.driverVehicleAssignmentPage(test);
 			policyStartDate.policyStartDate(test);
 			test.webFunctions().staticWait(10000);
 			quote.quote(test);
 			test.webFunctions().staticWait(4000);
-			confirmVehicle.DPF_confirmVehicle(test);
+			confirmVehicle.dpfConfirmVehicle(test);
 			test.webFunctions().staticWait(9000);
 			test.markPassed();
 		} catch (Throwable e) {

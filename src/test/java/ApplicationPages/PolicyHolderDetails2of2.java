@@ -27,6 +27,9 @@ public class PolicyHolderDetails2of2 {
 	@FindBy(id="btnContinue")
 	public WebElement btn_Next;
 	
+	@FindBy(xpath="//input[@name=\"driverPrimaryVehicle\"]/following::label")
+    public WebElement DPF_btn_VehicleDriveMostOften;
+	
 }
 
 //
