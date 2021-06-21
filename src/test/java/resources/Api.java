@@ -62,7 +62,7 @@ public class Api {
 				.body(xmlString).when().post(endURL).then().using().extract().response();
 		
 		String body = response.getBody().asString();
-		
+		test.getLogger().info("Response : "+body);
 		int statusCode = response.statusCode();
 		test.getLogger().info("Response's Status Code : "+statusCode);
 				
