@@ -58,12 +58,13 @@ public class TC_API {
 	STC_GetInfo getInfo = new STC_GetInfo();
 	STC_Misc misc = new STC_Misc();
 	Api api = new Api();
+	
 
 	// ==============================================================================================
 //    ***_TEST_CASES_***
 
 	// TC001
-	@Test(enabled = true, priority = 5, description = "V1_D1_CompareLeads")
+	@Test(enabled = false, priority = 5, description = "V1_D1_CompareLeads")
 	@Parameters("ENV")
 	public void TC001(String ENV) throws Throwable {
 
@@ -82,5 +83,28 @@ public class TC_API {
 			// test.tearDown();
 		}
 	}
+	
+	//-----------------------------------------------------------------------------------------------------------------
+	// TC011
+		@Test(enabled = true, priority = 5, description = "V1_D2_011_LM_TEXAS")
+		@Parameters("ENV")
+		public void TC011(String ENV) throws Throwable {
+
+			Testing test = new Testing(ENV, brandName, "V1_D2_011_LM");
+			STC_Agency_V8 v8 = new STC_Agency_V8(test);
+			try {
+
+				String leadURL = api.apiTest(test, brandName, "V1_D2_011_LM");
+				test.driver.get(leadURL);
+				v8.policyHolder(test);
+
+			} catch (Throwable e) {
+				test.markFailed(e.getMessage());
+
+				throw (e);
+			} finally {
+				// test.tearDown();
+			}
+		}
 
 }
