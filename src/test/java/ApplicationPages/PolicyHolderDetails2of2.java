@@ -13,6 +13,8 @@ public class PolicyHolderDetails2of2 {
 	@FindBy(id="driverLicenseStatus")
 	public WebElement dropdown_DriverLicenseStatus;
 
+	public String dropdown_LicenseStatusSelect = "//*[@id=\"driverLicenseStatus\"]/option[contains(text(),'{0}')]";
+	
 	public String btn_AgeFirstLicensed = "//*[@identity='ageLicensedOption']/div/div/label[text()='{0}']";
 
 	public String btn_vehicleAssignment = "//*[@identity='ageLicensedOption']/div/div/label[text()='{0}']";
@@ -24,6 +26,9 @@ public class PolicyHolderDetails2of2 {
 
 	@FindBy(id="btnContinue")
 	public WebElement btn_Next;
+	
+	@FindBy(xpath="//input[@name=\"driverPrimaryVehicle\"]/following::label")
+    public WebElement DPF_btn_VehicleDriveMostOften;
 	
 }
 

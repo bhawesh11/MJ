@@ -18,10 +18,14 @@ public class DriverList {
 	@FindBy(xpath="//*[@id=\"btnCancel\"]")
 	public WebElement btn_RemoveDriverPopup;
 
-
-
-
-
+	//-------DPF Elements-------------------------------------------
+	
+	@FindBy(xpath="(//div[@ng-repeat='driver in driverList.prefillDrivers']/div/input/following::label)")
+	public WebElement checkboxDPF_SelectFirstDriver;
+		
+	String checkboxDPF_SelectDriver = "(//div[@ng-repeat='driver in driverList.prefillDrivers']/div/label)[{0}]";
+	
+	public String checkboxDPF_SelectDrivers = "//div[@ng-repeat='driver in driverList.prefillDrivers']/div/label/div/span[contains(text(),'{0}')]";
 
 
 }

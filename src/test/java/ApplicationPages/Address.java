@@ -16,6 +16,9 @@ public class Address {
 	@FindBy(id="customerCounty")
 	public WebElement dropdown_County;
 	
+	@FindBy(id="customerZip")
+	public WebElement textBox_Zip;
+	
 	@FindBy(id="yearSelection_ddl")
 	public WebElement MoveInYear;
 	
@@ -30,5 +33,12 @@ public class Address {
 	
 	@FindBy(id="btnNext")
 	public WebElement btn_Next;
+	
+	@FindBy(xpath="//div[@class='disclaimer']/p[1]/small")
+	public WebElement Address_Page_Disclaimer;	
+	
+	@FindBy(xpath="//div[@class='disclaimer']/p[2]//small")
+	public WebElement Homesite_Disclaimer;	
+	
 
 }
